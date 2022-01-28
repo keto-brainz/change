@@ -1,5 +1,7 @@
 {
   "current": {
+    "type_header_font": "raleway_n4",
+    "type_body_font": "sans-serif",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
