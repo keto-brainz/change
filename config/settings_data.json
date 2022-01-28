@@ -13,6 +13,7 @@
     "card_style": "standard",
     "card_color_scheme": "background-1",
     "social_twitter_link": "https:\/\/twitter.com\/ketobrainz",
+    "social_facebook_link": "https:\/\/www.facebook.com\/KetoBrainz\/",
     "social_instagram_link": "http:\/\/instagram.com\/ketobrainz",
     "social_youtube_link": "",
     "sections": {
@@ -22,8 +23,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
+              "text": "Get a one-time, 5% off discount code!",
+              "color_scheme": "accent-1",
               "link": ""
             }
           }
