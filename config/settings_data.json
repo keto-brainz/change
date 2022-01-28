@@ -1,8 +1,15 @@
 {
   "current": {
-    "colors_accent_2": "#334FB4",
+    "colors_accent_1": "#212529",
+    "colors_accent_2": "#ffd43b",
+    "gradient_accent_2": "linear-gradient(180deg, rgba(255, 212, 59, 1), rgba(245, 159, 0, 1) 100%)",
+    "colors_text": "#212529",
+    "colors_outline_button_labels": "#212529",
     "type_header_font": "raleway_n4",
     "type_body_font": "sans-serif",
+    "body_scale": 100,
+    "page_width": 1200,
+    "buttons_shadow_blur": 0,
     "card_style": "standard",
     "card_color_scheme": "background-1",
     "sections": {
