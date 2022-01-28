@@ -12,6 +12,9 @@
     "buttons_shadow_blur": 0,
     "card_style": "standard",
     "card_color_scheme": "background-1",
+    "social_twitter_link": "https:\/\/twitter.com\/ketobrainz",
+    "social_instagram_link": "http:\/\/instagram.com\/ketobrainz",
+    "social_youtube_link": "",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -49,28 +52,20 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
+              "heading": "Help Center",
               "menu": "footer"
             }
           },
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
+              "heading": "Our Mission",
               "subtext": "<p>WE MAKE GOOD BRAINS BETTER.<\/p>"
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1",
           "footer-2"
         ],
         "settings": {
