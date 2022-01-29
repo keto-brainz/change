@@ -50,6 +50,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "7172f846-742f-4002-8d46-fe6590fed52f": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Site Navigation",
+              "menu": "quick-links"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -57,20 +64,31 @@
               "menu": "footer"
             }
           },
+          "cfa6feeb-e08c-41e2-84b6-d5a6a6c3f9cf": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/apple-touch-icon.png",
+              "image_width": 200,
+              "alignment": "right"
+            }
+          },
           "footer-2": {
             "type": "text",
+            "disabled": true,
             "settings": {
-              "heading": "Our Mission",
-              "subtext": "<p>WE MAKE GOOD BRAINS BETTER.<\/p>"
+              "heading": "WE MAKE GOOD BRAINS BETTER.",
+              "subtext": ""
             }
           }
         },
         "block_order": [
+          "7172f846-742f-4002-8d46-fe6590fed52f",
           "footer-0",
+          "cfa6feeb-e08c-41e2-84b6-d5a6a6c3f9cf",
           "footer-2"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
