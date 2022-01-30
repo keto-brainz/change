@@ -1,5 +1,26 @@
 {
   "sections": {
+    "1643575004d0712480": {
+      "type": "rich-text",
+      "blocks": {
+        "164357500416dbbc46-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are Keto Brainz",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "164357500416dbbc46-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1643573828366b6bff": {
       "type": "image-with-text",
       "blocks": {
@@ -81,6 +102,7 @@
     }
   },
   "order": [
+    "1643575004d0712480",
     "1643573828366b6bff",
     "16435739576285cc8a",
     "main"
