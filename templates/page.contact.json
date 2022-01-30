@@ -7,26 +7,6 @@
         "padding_bottom": 36
       }
     },
-    "164357260438c061bd": {
-      "type": "rich-text",
-      "blocks": {
-        "1643572604e902f6dc-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If our <a href=\"\/pages\/faqs\" title=\"FAQs\">FAQs<\/a> didn’t provide the answer you’re looking for, we’re here and happy to help! Just fill out the form below.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1643572604e902f6dc-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -39,7 +19,6 @@
   },
   "order": [
     "main",
-    "164357260438c061bd",
     "form"
   ]
 }
