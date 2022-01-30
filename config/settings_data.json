@@ -71,21 +71,12 @@
               "image_width": 200,
               "alignment": "right"
             }
-          },
-          "footer-2": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "heading": "WE MAKE GOOD BRAINS BETTER.",
-              "subtext": ""
-            }
           }
         },
         "block_order": [
           "7172f846-742f-4002-8d46-fe6590fed52f",
           "footer-0",
-          "cfa6feeb-e08c-41e2-84b6-d5a6a6c3f9cf",
-          "footer-2"
+          "cfa6feeb-e08c-41e2-84b6-d5a6a6c3f9cf"
         ],
         "settings": {
           "color_scheme": "accent-1",
