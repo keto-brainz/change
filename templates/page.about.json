@@ -34,7 +34,7 @@
         "16435738284175a499-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Nutritionist, self-hacker & nutraceutical geek with close to 20 years of experience in the supplement industry. COMT AA. Dogs are my favorite people.<\/p><p>I grew up in the woods in a house with 52 stairs, a German Shepherd named Big Dog and hippies for parents. We actually did have a mile walk up a dirt road to the bus stop.<\/p><p>I’ve learned over a life thus far lived that I do not enjoy being unconsciously whipped around by my own emotions or my own biology. This has led me to an unwavering desire to understand the evolutionary mechanisms and neurochemistry that drive us as humans.<\/p><p>I believe CHOICE is the magic we have as humans. We cannot often choose our circumstances but we can always choose our responses to our circumstances.<\/p><p>I’m clear. The fact that we exist is incredibly improbable. Yet here we are, the sentient owners of bodies built for survival and brains that refuse to accept that's all we are. Pretty Fu**ing epic.<\/p>",
+            "text": "<p>Nutritionist, self-hacker & nutraceutical geek with close to 20 years of experience in the supplement industry. COMT AA. Dogs are my favorite people.<\/p><p>I grew up in the woods in a house with 52 stairs, a German Shepherd named Big Dog and hippies for parents. We actually did have a mile walk up a dirt road to the bus stop.<\/p><p>I’ve learned over a life thus far lived that I do not enjoy being unconsciously whipped around by my own emotions or my own biology. This has led me to an unwavering desire to understand the evolutionary mechanisms and neurochemistry that drive us as humans.<\/p><p>I believe CHOICE is the magic we have as humans. We cannot often choose our circumstances but we can always choose our responses to our circumstances.<\/p><p>I’m clear. The fact that we exist is incredibly improbable. Yet here we are, the sentient owners of bodies built for survival and brains that refuse to accept that's all we are. Pretty Fu**ing epic.<\/p><p><strong>Favorite Authors & Books<\/strong><br\/>Oliver Sacks - The Man Who Mistook His Wife For a Hat<br\/>Ayn Rand - Atlas Shrugged<br\/>Matt Ridley - Nature Via Nurture<br\/>EO Wilson - Consilience<br\/>Tom Robbins - Skinny Legs And All<\/p><p><strong>Current Favorite Quote<\/strong><\/p><p>“Suffering is humbling. It pays to know how to get your butt kicked.” – Christopher McDougall from Born to Run<\/p>",
             "text_style": "body"
           }
         }
@@ -45,7 +45,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/mollee.jpg",
-        "height": "large",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -70,7 +70,7 @@
         "164357395744c3c6e9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Photographer, runner, hugger. Serial entrepreneur, business owner, linguistics and philosophy enthusiast with a Masters in Education. Intermittent faster. Intermittent keto. COMT AA.<\/p><p>I grew up in a little town called Murphys on the Western side of Sierras before finding myself in Santa Barbara two weeks after graduating high school. During a gap-year or two between city college and UCSB I backpacked through Western Europe for a while, then studied Spanish and language in Chile thanks to the EAP program at UCSB. I brought my camera along for all of it.<\/p><p>After spending way more time and money than necessary to realize that the purpose of an education isn’t a degree, I made a very conscious decision to see and experience the rest of this life as a photographer.<\/p><p>Most recently (approximately the last 3 years or so), I've become fascinated and a bit obsessed with entrepreneurship, self-optimization, and all things in this life that have the potential to improve the experience and lives of myself and others.<\/p>",
+            "text": "<p>Photographer, runner, hugger. Serial entrepreneur, business owner, linguistics and philosophy enthusiast with a Masters in Education. Intermittent faster. Intermittent keto. COMT AA.<\/p><p>I grew up in a little town called Murphys on the Western side of Sierras before finding myself in Santa Barbara two weeks after graduating high school. During a gap-year or two between city college and UCSB I backpacked through Western Europe for a while, then studied Spanish and language in Chile thanks to the EAP program at UCSB. I brought my camera along for all of it.<\/p><p>After spending way more time and money than necessary to realize that the purpose of an education isn’t a degree, I made a very conscious decision to see and experience the rest of this life as a photographer.<\/p><p>Most recently (approximately the last 3 years or so), I've become fascinated and a bit obsessed with entrepreneurship, self-optimization, and all things in this life that have the potential to improve the experience and lives of myself and others.<\/p><p><strong>Current Favorite Quote<\/strong><\/p><p>\"Most people tend to overestimate what they can do in a year, and underestimate what they can do in 10.\" – Bill Gates.<\/p><p><strong>​Current Favorite Books<\/strong><\/p><p><a href=\"https:\/\/www.gatesnotes.com\/Books\/Homo-Deus\" target=\"_blank\"><span style=\"text-decoration:underline\">Homo Deus,<\/span><\/a> <a href=\"https:\/\/www.miguelruiz.com\/the-four-agreements\" target=\"_blank\"><span style=\"text-decoration:underline\">The 4 Agreements,<\/span><\/a><\/p><p>Damndest, How To Change Your Mind<\/p><p><strong>​Current Endeavors\/Businesses<\/strong><\/p><p><a href=\"https:\/\/headandheartphotography.com\/\" target=\"_blank\"><span style=\"text-decoration:underline\">Keto Brainz, Head & Heart Photography<\/span><\/a>, <a href=\"https:\/\/onekielphotography.com\/\" target=\"_blank\"><span style=\"text-decoration:underline\">One Kiel Photography<\/span><\/a><\/p>",
             "text_style": "body"
           }
         }
@@ -81,7 +81,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/kiel.jpg",
-        "height": "large",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
