@@ -54,7 +54,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "lightning_bolt",
-            "content": "<p>C8 MCT powder both increases and optimizes your liver’s production of ketone bodies<\/p><p>Alpha GPC increases production of Acetlycholine, assists with neuroplasticity, and increases focused flow-state.<\/p><p>L-Theanine increases GABA and production of alpha waves both of which help to ensure a high functioning state of calm focus.<\/p><p>Lion’s Mane has been shown to incease production of Nerve Growth Factor and BDNF, both of which are crucial in neurogenesis.<\/p><p><strong>That's it. No fillers. No flavors. No sweetners<\/strong>.<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.product_ingredients.value }}<\/p>",
             "page": ""
           }
         },
@@ -64,26 +64,6 @@
             "heading": "Shipping & Returns",
             "icon": "truck",
             "content": "<p>All shipping is calculated at checkout using USPS standard Priority Mail rates by weight and delivery location.<\/p><p>We’re confident you’re going to LOVE our products but if you’re dissatisfied we’re happy to take the product back and provide a full refund of your purchase for 30 days after receipt of your order.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
             "page": ""
           }
         },
@@ -105,8 +85,6 @@
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
         "share"
       ],
       "settings": {
