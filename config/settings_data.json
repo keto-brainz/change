@@ -49,6 +49,35 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "679d4c03-bd98-48af-82ec-1a607fe8c005": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Tell Me More",
+              "menu": "tell-me-more"
+            }
+          },
+          "29cd0074-25ce-4242-83d0-d292cbf4b3b4": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Information",
+              "menu": "footer"
+            }
+          },
+          "abc0839a-80f2-488c-843e-58cd4288117e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/apple-touch-icon_0cf507c7-371e-4e4b-a21b-71af105c038b.png",
+              "image_width": 200,
+              "alignment": "right"
+            }
+          }
+        },
+        "block_order": [
+          "679d4c03-bd98-48af-82ec-1a607fe8c005",
+          "29cd0074-25ce-4242-83d0-d292cbf4b3b4",
+          "abc0839a-80f2-488c-843e-58cd4288117e"
+        ],
         "settings": {
           "color_scheme": "accent-1",
           "newsletter_enable": true,
