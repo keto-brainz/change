@@ -146,8 +146,7 @@
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "include_taxes": "Tax included.",
-      "shipping_policy_html":
-      "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
       "label": "Media gallery"
@@ -205,6 +204,19 @@
         "email": "Email",
         "phone": "Phone number",
         "comment": "Comment",
+        "send": "Send",
+        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "error_heading": "Please adjust the following:"
+      }
+    },
+    "wholesale": {
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "company": "Company/Store Name",
+        "website": "Website and/or Instagram Handle",
+        "reseller": "Reseller # (if applicable)",
+        "interested_in": "Interested in",
         "send": "Send",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
