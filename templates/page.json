@@ -1,97 +1,5 @@
 {
   "sections": {
-    "1643635504436c96f4": {
-      "type": "slideshow",
-      "blocks": {
-        "1643635503d5713da7-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/l-theanine-bg.jpg",
-            "heading": "L-Theanine",
-            "heading_size": "small",
-            "subheading": "L-Theanine is a lovely little molecule!  L - Theanine has been shown to cause a significant increase in alpha brain waves. Alpha brain waves are responsible for an increased state of alertness while simultaneously relaxing the mind.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "42757a52-718a-452b-996b-ef76225ca1fd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/l-theanine-bg.jpg",
-            "heading": "Lion's Mane",
-            "heading_size": "small",
-            "subheading": "Lion's Mane is a medicinal mushroom that has been shown to promote nerve regeneration, neurogenesis and an increase of BDNF. BDNF has been spoken of as the \"Miracle Grow\" of the brain.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "1643635503d5713da7-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/l-theanine-bg.jpg",
-            "heading": "Alpha GPC",
-            "heading_size": "small",
-            "subheading": "Alpha GPC is the most efficient form of choline for affecting a sustained and noticeable boost of acetylcholine in the brain. Acetylcholine plays a crucial role in all types of memory formation. In addition, acetylcholine is involved in alertness, attention and learning.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "ab769a80-7876-4fa6-9e3e-aaafee88816c": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/l-theanine-bg.jpg",
-            "heading": "C8 MCT",
-            "heading_size": "small",
-            "subheading": "C8 MCT offers a quick & stable source of energy. MCT’s are fats that are readily available for your your liver to turn into ketone bodies for quick fuel for both your brain and body. And in powdered form they are creamy and delicious too!",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "1643635503d5713da7-1",
-        "42757a52-718a-452b-996b-ef76225ca1fd",
-        "1643635503d5713da7-0",
-        "ab769a80-7876-4fa6-9e3e-aaafee88816c"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -101,7 +9,6 @@
     }
   },
   "order": [
-    "1643635504436c96f4",
     "main"
   ]
 }
