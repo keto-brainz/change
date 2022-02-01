@@ -116,7 +116,7 @@
         "164339282556e8ac72-2": {
           "type": "button",
           "settings": {
-            "button_label": "Learn more",
+            "button_label": "See ingredients",
             "button_link": "shopify:\/\/pages\/our-ingredients"
           }
         }
@@ -177,7 +177,7 @@
         "16433931239f7b8ac7-2": {
           "type": "button",
           "settings": {
-            "button_label": "Read more",
+            "button_label": "Our story",
             "button_link": "shopify:\/\/pages\/about"
           }
         }
