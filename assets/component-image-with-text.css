@@ -320,6 +320,10 @@
   margin-bottom: 1rem;
 }
 
+.image-with-text__content.color-accent-1 strong {
+  color: rgb(var(--color-base-accent-2));
+}
+
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   .image-with-text .grid {
