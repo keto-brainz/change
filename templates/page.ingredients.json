@@ -2,6 +2,7 @@
   "sections": {
     "1643635504436c96f4": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "1643635503d5713da7-1": {
           "type": "slide",
@@ -92,6 +93,193 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "164375852588d426e3": {
+      "type": "image-banner",
+      "blocks": {
+        "1643758525ab5080f7-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1643758525ab5080f7-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "1643758525ab5080f7-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1643758525ab5080f7-0",
+        "1643758525ab5080f7-1",
+        "1643758525ab5080f7-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/asaa.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "164375843539717db6": {
+      "type": "rich-text",
+      "blocks": {
+        "16437584352681270c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CHANGE YOUR BRAIN. CHANGE YOUR LIFE.",
+            "heading_size": "h2"
+          }
+        },
+        "16437584352681270c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet our Nootropic Superstars! All of our raw materials are GMP certified and tested for purity & authenticity by well established third party labs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16437584352681270c-0",
+        "16437584352681270c-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "164375756250892317": {
+      "type": "image-with-text",
+      "blocks": {
+        "1643757562512bfe2c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "L-Theanine",
+            "heading_size": "h1"
+          }
+        },
+        "1643757562512bfe2c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>L-Theanine is a lovely little molecule!  L-Theanine has been shown to cause a significant increase in alpha brain waves. Alpha brain waves are responsible for an increased state of alertness while simultaneously relaxing the mind.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1643757562512bfe2c-0",
+        "1643757562512bfe2c-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_copy.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16437577792dcc2219": {
+      "type": "image-with-text",
+      "blocks": {
+        "1643757779980e630a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lion's Mane",
+            "heading_size": "h1"
+          }
+        },
+        "1643757779980e630a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lion's Mane is a medicinal mushroom that has been shown to promote nerve regeneration, neurogenesis and an increase of BDNF. BDNF has been spoken of as the \"Miracle Grow\" of the brain.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1643757779980e630a-0",
+        "1643757779980e630a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_14.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1643757905685e89ba": {
+      "type": "image-with-text",
+      "blocks": {
+        "16437579052c59b8ec-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alpha GPC",
+            "heading_size": "h1"
+          }
+        },
+        "16437579052c59b8ec-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alpha GPC is the most efficient form of choline for affecting a sustained and noticeable boost of acetylcholine in the brain. Acetylcholine plays a crucial role in all types of memory formation. In addition, acetylcholine is involved in alertness, attention and learning.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "16437579052c59b8ec-0",
+        "16437579052c59b8ec-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_1e1600e3-30ee-4f4e-850f-6bdc4671b0a1.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -102,6 +290,11 @@
   },
   "order": [
     "1643635504436c96f4",
+    "164375852588d426e3",
+    "164375843539717db6",
+    "164375756250892317",
+    "16437577792dcc2219",
+    "1643757905685e89ba",
     "main"
   ]
 }
