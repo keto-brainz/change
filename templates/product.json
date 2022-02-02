@@ -61,9 +61,18 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>All shipping is calculated at checkout using USPS standard Priority Mail rates by weight and delivery location.<\/p><p>We’re confident you’re going to LOVE our products but if you’re dissatisfied we’re happy to take the product back and provide a full refund of your purchase for 30 days after receipt of your order.<\/p>",
+            "content": "<p>All shipping is calculated at checkout using USPS standard Priority Mail rates by weight and delivery location.<\/p>",
+            "page": ""
+          }
+        },
+        "f6451939-3b5b-4cf4-a70c-9da6034ea7a2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Returns",
+            "icon": "return",
+            "content": "<p>We’re confident you’re going to LOVE our products but if you’re dissatisfied we’re happy to take the product back and provide a full refund of your purchase for 30 days after receipt of your order.<\/p>",
             "page": ""
           }
         },
@@ -85,6 +94,7 @@
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
+        "f6451939-3b5b-4cf4-a70c-9da6034ea7a2",
         "share"
       ],
       "settings": {
@@ -98,44 +108,9 @@
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
@@ -190,7 +165,6 @@
   },
   "order": [
     "main",
-    "image-with-text",
     "multicolumn",
     "product-recommendations"
   ]
