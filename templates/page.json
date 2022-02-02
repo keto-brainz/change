@@ -6,81 +6,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "1643825606d70ef523": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Keto Brainz Products",
-        "collection": "keto-brainz-creamer-options",
-        "products_to_show": 12,
-        "color_scheme": "background-1",
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1643825626487cec58": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Keto Brainz Combos",
-        "collection": "kbz-combos",
-        "products_to_show": 12,
-        "color_scheme": "background-1",
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1643825666832e27ea": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Keto Brainz Preferred Products",
-        "collection": "kbz-preferred-products",
-        "products_to_show": 12,
-        "color_scheme": "background-1",
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1643825731f0ddb73d": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Keto Brainz Gear",
-        "collection": "kbz-gear",
-        "products_to_show": 12,
-        "color_scheme": "background-1",
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "main",
-    "1643825606d70ef523",
-    "1643825626487cec58",
-    "1643825666832e27ea",
-    "1643825731f0ddb73d"
+    "main"
   ]
 }
