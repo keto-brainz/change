@@ -114,7 +114,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "11198260182003984193": {
+        "type": "shopify:\/\/apps\/praash-subscriptions\/blocks\/praash-subscription\/8be4450c-55dd-4236-b0f7-c8c7a703de56",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
