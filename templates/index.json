@@ -203,6 +203,7 @@
     },
     "1643826548edf799ee": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Preferred Products",
         "collection": "kbz-preferred-products",
@@ -324,6 +325,7 @@
     },
     "16434200337a46e81d": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Gear & Apparel",
         "collection": "kbz-gear",
