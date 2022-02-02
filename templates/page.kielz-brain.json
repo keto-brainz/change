@@ -6,9 +6,99 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16438287996180e089": {
+      "type": "image-with-text",
+      "blocks": {
+        "16438287999a1488cf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Photography",
+            "heading_size": "h2"
+          }
+        },
+        "16438287999a1488cf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>People, places and things.<\/strong><\/p><p>Take a look at some of my nature, landscape travel photography. <\/p>",
+            "text_style": "body"
+          }
+        },
+        "16438287999a1488cf-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "See photography",
+            "button_link": "https:\/\/www.onekielphotography.com\/"
+          }
+        }
+      },
+      "block_order": [
+        "16438287999a1488cf-0",
+        "16438287999a1488cf-1",
+        "16438287999a1488cf-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_8870_JPG.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1643828971eba8ea30": {
+      "type": "image-with-text",
+      "blocks": {
+        "164382897120cb8c2b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Crypto, NFTs & The Metaverse",
+            "heading_size": "h2"
+          }
+        },
+        "164382897120cb8c2b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>So much happening in this space!<\/strong><\/p><p>A little site I built with the brand-new beginner to crypto. The links and info I've included there are meant to offer interested parties opportunities for the safest and easiest ways to learn about Bitcoin and crypto - as well as to buy.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "164382897120cb8c2b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn about crypto",
+            "button_link": "https:\/\/localbitcoinbusinesses.com\/"
+          }
+        }
+      },
+      "block_order": [
+        "164382897120cb8c2b-0",
+        "164382897120cb8c2b-1",
+        "164382897120cb8c2b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_1019_heic.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16438287996180e089",
+    "1643828971eba8ea30"
   ]
 }
