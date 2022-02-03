@@ -7,6 +7,17 @@ if (!customElements.get('product-form')) {
       this.form.querySelector('[name=id]').disabled = false;
       this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
       this.cartNotification = document.querySelector('cart-notification');
+      
+      this.stylePraash();
+    }
+
+    stylePraash() {
+      const select = document.querySelector('.spg-select-option-values')
+      if (select) {
+        const icon = '<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></svg>';
+        select.classList.add('select__select');
+        select.outerHTML = '<div class="select">' + select.outerHTML + icon + '</div>';
+      }
     }
 
     onSubmitHandler(evt) {
