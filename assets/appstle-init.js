@@ -62,7 +62,7 @@
         "showTooltip" : true,
         "sortByDefaultSequence": false,
         "showSubOptionBeforeOneTime": false,
-        "showStaticTooltip": true,
+        "showStaticTooltip": false,
         "showAppstleLink": false,
         "sellingPlanTitleText" : "{{sellingPlanName}} ({{sellingPlanPrice}}\/delivery)",
         "oneTimePriceText" : "{{price}}",
