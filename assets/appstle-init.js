@@ -127,7 +127,7 @@
             "appstle_selected_background": {
                 "background": "transparent",
             },
-            "customCSS": "",
+            "customCSS": ".appstle_subscription_wrapper {\n  border-color: rgba(var(--color-foreground),var(--inputs-border-opacity)) !important;\n  border-radius: var(--inputs-radius) !important;\n  border-width: var(--inputs-border-width) !important;\n  color: rgba(var(--color-foreground), 0.75) !important;\n}\n\nbody #appstle_subscription_widget0 .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_appstle {\n    display: none !important;\n}",
             "customerPortalCss": "",
             "priceSelector": "span.price-item.price-item--regular",
             "landingPagePriceSelector": "",
