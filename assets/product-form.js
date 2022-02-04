@@ -12,6 +12,7 @@ if (!customElements.get('product-form')) {
     }
 
     styleAppstle() {
+      let attempts = 0;
       function tryLoad() {
         const select = document.querySelector('.appstle_select')        
         if (select) {
@@ -19,7 +20,8 @@ if (!customElements.get('product-form')) {
           select.classList.add('select__select');
           select.outerHTML = '<div class="select">' + select.outerHTML + icon + '</div>';
         } else {
-          setTimeout(tryLoad, 0)
+          attempts += 1;
+          if (attempts < 3) setTimeout(tryLoad, 0)
         }
       }
         
