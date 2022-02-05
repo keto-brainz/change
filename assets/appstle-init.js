@@ -127,7 +127,7 @@
             "appstle_selected_background": {
                 "background": "transparent",
             },
-            "customCSS": ".appstle_subscription_wrapper {\n  border-color: rgba(var(--color-foreground),var(--inputs-border-opacity)) !important;\n  border-radius: var(--inputs-radius) !important;\n  border-width: var(--inputs-border-width) !important;\n  color: rgba(var(--color-foreground), 0.75) !important;\n}\n\n.appstle_tooltip_content {\n  background-color: rgba(var(--color-button),var(--alpha-button-background)) !important;\n  color: rgb(var(--color-button-text)) !important;\n  font-size: 1.4rem;\n}",
+            "customCSS": ".appstle_subscription_wrapper {\n  border-color: rgba(var(--color-foreground),var(--inputs-border-opacity)) !important;\n  border-radius: var(--inputs-radius) !important;\n  border-width: var(--inputs-border-width) !important;\n  color: rgba(var(--color-foreground), 0.75) !important;\n}\n\n.appstle_tooltip {\n  transition: none;\n}\n\n.appstle_tooltip_content {\n  background-color: rgba(var(--color-button),var(--alpha-button-background)) !important;\n  color: rgb(var(--color-button-text)) !important;\n  font-size: 1.4rem;\n}\n\n[data-appstle-icon]:after {\n  border-top-color: rgba(var(--color-button),var(--alpha-button-background)) !important;\n}",
             "customerPortalCss": "",
             "priceSelector": "span.price-item.price-item--regular",
             "landingPagePriceSelector": "",
