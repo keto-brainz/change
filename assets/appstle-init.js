@@ -21,8 +21,8 @@
       RS.Config = {
         "selectors": {
             "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
-            "subscriptionLinkSelector": ":is(.account,.order)>div:nth-of-type(2)",
-            "atcButtonPlacement": "BEFORE",
+            "subscriptionLinkSelector": "div.grid.myaccount",
+            "atcButtonPlacement": "AFTER",
             "subscriptionLinkPlacement": "BEFORE",
             "cartRowSelector": "",
             "cartLineItemSelector": "",
