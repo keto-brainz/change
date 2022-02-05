@@ -21,11 +21,11 @@ if (!customElements.get('product-form')) {
           select.outerHTML = '<div class="select">' + select.outerHTML + icon + '</div>';
         } else {
           attempts += 1;
-          if (attempts < 3) setTimeout(tryLoad, 0)
+          if (attempts < 3) setTimeout(tryLoad, 100)
         }
       }
         
-      setTimeout(tryLoad, 0)
+      setTimeout(tryLoad, 100)
     }
 
     onSubmitHandler(evt) {
