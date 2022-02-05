@@ -71,7 +71,7 @@
         "selectedDiscountFormat" : "SAVE {{selectedDiscountPercentage}}",
         "manageSubscriptionBtnFormat" : "<a href='apps\/subscriptions' class='appstle_manageSubBtn' ><button class='btn' style='padding: 2px 20px'>Manage Subscription<\/button><a><br><br>",
         "manageSubscriptionUrl" : "apps\/subscriptions",
-        "appstlePlanId": 2,
+        "appstlePlanId": 3,
         "showCheckoutSubscriptionBtn": true,
         "disableLoadingJquery": false,
         "widgetEnabledOnSoldVariant": "false",
