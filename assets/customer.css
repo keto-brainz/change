@@ -450,7 +450,11 @@
   }
 }
 
-.account h1 + a {
+.account .grid {
+  column-gap: 2rem;
+}
+
+.account .grid a {
   display: inline-flex;
   align-items: center;
 }
