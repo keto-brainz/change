@@ -15,7 +15,7 @@
         };
         document.getElementsByTagName("head")[0].appendChild(script)
       };
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0609/1079/7055/t/17/assets/appstle-subscription.js?v=1644013997");
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0609/1079/7055/t/17/assets/appstle-subscription.js?v=1644480183");
 
       window.RS = Window.RS || {};
       RS.Config = {
@@ -75,6 +75,8 @@
         "showCheckoutSubscriptionBtn": true,
         "disableLoadingJquery": false,
         "widgetEnabledOnSoldVariant": "false",
+        "switchRadioButtonWidget": "false",
+        "appstlePlanName": "BUSINESS",
         "css": {
             "appstle_subscription_widget": {
                 "margin-top": "" ,
