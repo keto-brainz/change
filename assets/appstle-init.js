@@ -75,7 +75,7 @@
         "showCheckoutSubscriptionBtn": true,
         "disableLoadingJquery": false,
         "widgetEnabledOnSoldVariant": "false",
-        "switchRadioButtonWidget": "false",
+        "switchRadioButtonWidget": false,
         "appstlePlanName": "BUSINESS",
         "css": {
             "appstle_subscription_widget": {
