@@ -64,7 +64,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Tell Me More",
-              "menu": "tell-me-more"
+              "menu": ""
             }
           },
           "29cd0074-25ce-4242-83d0-d292cbf4b3b4": {
@@ -77,7 +77,6 @@
           "abc0839a-80f2-488c-843e-58cd4288117e": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/keto-brainz-logo.png",
               "image_width": 200,
               "alignment": "right"
             }
@@ -116,12 +115,6 @@
 
     ],
     "blocks": {
-      "11198260182003984193": {
-        "type": "shopify:\/\/apps\/praash-subscriptions\/blocks\/praash-subscription\/8be4450c-55dd-4236-b0f7-c8c7a703de56",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "10436698916776057164": {
         "type": "shopify:\/\/apps\/appstle-subscriptions\/blocks\/appstle-subscription-helper\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
         "disabled": false,
