@@ -32,6 +32,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Get a one-time, 5% off discount code!",
               "color_scheme": "accent-1",
