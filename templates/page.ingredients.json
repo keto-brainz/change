@@ -60,6 +60,7 @@
         },
         "ab769a80-7876-4fa6-9e3e-aaafee88816c": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/coconut-1kpix.png",
             "heading": "C8 MCT",
@@ -303,6 +304,7 @@
         "16450392903981360c-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/coconut-1kpix-smaller_0ad2567c-1294-4713-a158-aadd7cfdde91.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
