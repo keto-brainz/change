@@ -26,6 +26,7 @@
     "social_facebook_link": "https:\/\/www.facebook.com\/KetoBrainz\/",
     "social_instagram_link": "http:\/\/instagram.com\/ketobrainz",
     "social_youtube_link": "",
+    "favicon": "shopify:\/\/shop_images\/keto-brainz-home-banner.jpg",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
