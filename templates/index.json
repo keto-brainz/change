@@ -340,6 +340,41 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1647272983816bb360": {
+      "type": "apps",
+      "blocks": {
+        "9dffb0ac-e843-4fb9-ba80-c28bf0d16394": {
+          "type": "shopify:\/\/apps\/section-feed\/blocks\/app-block\/43cd482b-515a-4e82-b170-05d391763cd2",
+          "settings": {
+            "title": "Instagram feed",
+            "subheading": "<p>Write content about your brand<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "layout": "grid",
+            "image_size": "small",
+            "add_spacing": true,
+            "rows_count": 2,
+            "show_author": false,
+            "show_caption": true,
+            "show_date": true,
+            "click_action": "open_instagram",
+            "heading_color": "#000000",
+            "subheading_color": "#000000",
+            "button_background": "#000000",
+            "button_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_text_color": "#ffffff",
+            "overlay_opacity": 65
+          }
+        }
+      },
+      "block_order": [
+        "9dffb0ac-e843-4fb9-ba80-c28bf0d16394"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -353,6 +388,7 @@
     "multicolumn",
     "1643343002f61d97f3",
     "16433430085ead5677",
-    "16434200337a46e81d"
+    "16434200337a46e81d",
+    "1647272983816bb360"
   ]
 }
