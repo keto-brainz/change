@@ -71,7 +71,7 @@
         "164382897120cb8c2b-2": {
           "type": "button",
           "settings": {
-            "button_label": "Learn about crypto",
+            "button_label": "Crypto, NFTs, DeFI & More",
             "button_link": "https:\/\/localbitcoinbusinesses.com\/"
           }
         }
@@ -94,11 +94,47 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1647272703cf31e0a9": {
+      "type": "apps",
+      "blocks": {
+        "c4206303-78d5-480b-b14c-c330a1511579": {
+          "type": "shopify:\/\/apps\/section-feed\/blocks\/app-block\/43cd482b-515a-4e82-b170-05d391763cd2",
+          "settings": {
+            "title": "Instagram feed",
+            "subheading": "<p>Write content about your brand<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "layout": "grid",
+            "image_size": "small",
+            "add_spacing": true,
+            "rows_count": 2,
+            "show_author": false,
+            "show_caption": true,
+            "show_date": true,
+            "click_action": "open_instagram",
+            "heading_color": "#000000",
+            "subheading_color": "#000000",
+            "button_background": "#000000",
+            "button_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_text_color": "#ffffff",
+            "overlay_opacity": 65
+          }
+        }
+      },
+      "block_order": [
+        "c4206303-78d5-480b-b14c-c330a1511579"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "16438287996180e089",
-    "1643828971eba8ea30"
+    "1643828971eba8ea30",
+    "1647272703cf31e0a9"
   ]
 }
