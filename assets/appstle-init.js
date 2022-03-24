@@ -36,7 +36,7 @@
         },
         "enableCartWidgetFeature": "false",
         "useUrlWithCustomerId": "false",
-        "atcButtonSelector": ".product-form__submit.button.button--full-width.button--primary",
+        "atcButtonSelector": "div.product-form__buttons",
         "moneyFormat": "{% raw %}${{amount}}{% endraw %}",
         "oneTimePurchaseText": "One Time Purchase",
         "shop": "keto-brainz.myshopify.com",
