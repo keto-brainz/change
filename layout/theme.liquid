@@ -208,6 +208,7 @@
     }
     </script>
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+  {% include 'appstle-subscription-helper' %}
 </head>
 
   <body class="gradient">
