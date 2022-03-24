@@ -62,7 +62,7 @@
         "nonMemberOnlySellingPlansJson": {},
         "widgetEnabled": true,
         "showTooltip" : true,
-        "sortByDefaultSequence": false,
+        "sortByDefaultSequence": true,
         "showSubOptionBeforeOneTime": false,
         "showStaticTooltip": false,
         "showAppstleLink": false,
