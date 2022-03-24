@@ -1,1 +1,2081 @@
-"use strict";!function(){var n,e,t=document.getElementsByTagName("head")[0],C=(new Date).getTime();if("undefined"==typeof jQuery&&(null===(n=RS)||void 0===n||null===(e=n.Config)||void 0===e||!e.disableLoadingJquery)){var i=document.createElement("script");i.src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js",i.type="text/javascript",t.appendChild(i)}if("undefined"==typeof Mustache){var o=document.createElement("script");o.src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js",o.type="text/javascript",t.appendChild(o)}new URLSearchParams(window.location.search).get("variant");!function n(e){window.jQuery&&window.Mustache?e(jQuery):window.setTimeout(function(){n(e)},20)}(function(j){j(function(){var n,e,t,i,o,a,l,s,p,r,c,d,u,_,f,g,v,m,b,h=(new Date).getTime()-C;function y(n,g,P){var e,t;RS.Config=Object.assign(RS.Config,"undefined"!=typeof _RSConfig&&null!==_RSConfig?_RSConfig:{}),window.RSConfig=RS.Config;var v=RSConfig.product;n&&(RSConfig.product=v=n),function(n){if(!n)return;for(var e=n.variants,t={},i={},o=0;o<e.length;o++){var a=e[o];t[a.title]=Object.assign({},a),i[a.id]=Object.assign({},a)}RSConfig.variantsByTitle=t,RSConfig.variantsById=i}(v);var Q,s=RSConfig.variantsByTitle,p=RSConfig.variantsById;function m(){for(var n=location.search.substr(1).split("&"),e={},t=0;t<n.length;t++){var i=n[t].split("=");e[i[0]]=i[1]}return e}function b(n,e,t){var i,o,a,l=(i="variant",m()[i]||null);return 0<e.closest('form[action="/cart/add"]').find("[name=id]").length&&e.closest('form[action="/cart/add"]').find("[name=id]")[0].value?(l=e.closest('form[action="/cart/add"]').find("[name=id]")[0].value,p[l]):l?p[l]:Object.values(p).some(function(n){var e;return(null==n?void 0:n.title)==(null===(e=j("form select[name='options[Bundle]']"))||void 0===e?void 0:e.val())})?Object.values(p).find(function(n){return(null==n?void 0:n.title)==j("select[name='options[Bundle]']").val()}):(o=[],null!=(a=e.closest('form[action="/cart/add"]').find("select.single-option-selector"))&&null!=a.selectedIndex&&-1!==a.selectedIndex?o.push(a[a.selectedIndex].value):o.push(void 0),s[o.join(" / ")]||t.variants[0])}function T(n,e){return p[n].selling_plan_allocations.find(function(n){return n.selling_plan_id===e})}function u(n){var e,t=__st.cid,i=RSConfig.customer_tags||[],o=!0;if(!t&&RSConfig.memberOnlySellingPlansJson&&RSConfig.memberOnlySellingPlansJson[n]&&(o=!1),t&&RSConfig.nonMemberOnlySellingPlansJson&&RSConfig.nonMemberOnlySellingPlansJson[n]&&(o=!1),o&&t&&RSConfig.memberOnlySellingPlansJson&&RSConfig.memberOnlySellingPlansJson[n]&&RSConfig.memberOnlySellingPlansJson[n].memberInclusiveTags&&RSConfig.memberOnlySellingPlansJson[n].memberInclusiveTags.trim()){var a=RSConfig.memberOnlySellingPlansJson[n].memberInclusiveTags.split(",");o=0<(e=a,i.filter(function(n){return-1!=e.indexOf(n)})).length}return o}function _(n){var e,t,i=n.totalPrice==n.formattedPrice?{sellingPlanName:n.name,sellingPlanPrice:'<span class="transcy-money">'.concat(n.formattedPrice,"</span>"),secondSellingPlanPrice:'<span class="transcy-money">'.concat(n.secondFormattedPrice,"</span>"),discountText:null==n?void 0:n.discountText,totalPrice:'<span class="transcy-money">'.concat(null==n?void 0:n.totalPrice,"</span>")}:{sellingPlanName:n.name,totalPrice:'<span class="transcy-money">'.concat(null==n?void 0:n.totalPrice,"</span>"),sellingPlanPrice:'<span class="transcy-money">'.concat(n.formattedPrice,"</span>"),secondSellingPlanPrice:'<span class="transcy-money">'.concat(n.secondFormattedPrice,"</span>"),discountText:n.discountText},o=Mustache.render(RS.Config.sellingPlanTitleText,i);return e=o,(t=document.createElement("span")).innerHTML=e,t.textContent||t.innerText}function h(n,e){var t,i,o;v.requires_selling_plan||jQuery('<div class="appstle_subscription_wrapper_option '.concat(v.requires_selling_plan||RS.Config.subscriptionOptionSelectedByDefault?"":"appstle_selected_background",'">\n          <input type="radio" ').concat(RS.Config.subscriptionOptionSelectedByDefault?"":"checked",' id="appstle_selling_plan_label_1').concat(P,'" name="selling_plan" value="" ').concat(RS.Config.formMappingAttributeName&&RS.Config.formMappingAttributeSelector&&jQuery(RS.Config.formMappingAttributeSelector).length&&jQuery(RS.Config.formMappingAttributeSelector).attr("id")?"".concat(RS.Config.formMappingAttributeName,"=").concat(jQuery(RS.Config.formMappingAttributeSelector).attr("id")):"",'>\n          <label for="appstle_selling_plan_label_1').concat(P,'" class="appstle_radio_label">\n            <span class="appstle_circle"><span class="appstle_dot"></span></span>\n              <span class="appstle_one_time_text">').concat(RS.Config.oneTimePurchaseText,'</span>\n             </label>\n          <span class="appstle_subscription_amount transcy-money">').concat((i=D(e.price),o={price:i},Mustache.render(RS.Config.oneTimePriceText,o)),"</span>\n         </div>")).appendTo(n);var a,l,s,p=jQuery('<div class="appstle_subscription_wrapper_option appstle_include_dropdown '.concat(v.requires_selling_plan||RS.Config.subscriptionOptionSelectedByDefault?"appstle_selected_background":"",'">\n            <div class="appstle_subscription_radio_wrapper">\n                <input type="radio" id="appstle_selling_plan_label_2').concat(P,'" name="selling_plan" value="Subscribe and save" ').concat(v.requires_selling_plan||RS.Config.subscriptionOptionSelectedByDefault?"checked":""," ").concat(RS.Config.formMappingAttributeName&&RS.Config.formMappingAttributeSelector&&jQuery(RS.Config.formMappingAttributeSelector).length&&jQuery(RS.Config.formMappingAttributeSelector).attr("id")?"".concat(RS.Config.formMappingAttributeName,"=").concat(jQuery(RS.Config.formMappingAttributeSelector).attr("id")):"",'>\n                <label for="appstle_selling_plan_label_2').concat(P,'" class="appstle_radio_label">\n                    <span class="appstle_circle"><span class="appstle_dot"></span></span>\n                    <span class="appstle_subscribe_save_text">').concat(RS.Config.subscriptionOptionText,'</span>\n                </label>\n                <div class="appstle_subscription_amount_wrapper">\n                  <span class="appstle_subscription_amount transcy-money"></span>\n                </div>\n            </div>\n            <div class="appstle_subscribe_option ').concat(v.requires_selling_plan||RS.Config.subscriptionOptionSelectedByDefault?"":"appstle_hide_subsOption",'">\n                ').concat(RS.Config.sellingPlanSelectTitle?'<label for="appstle_selling_plan'.concat(P,'" class="appstle_select_label">').concat(RS.Config.sellingPlanSelectTitle,"</label>"):"","\n                ").concat(null!==(t=RSConfig)&&void 0!==t&&t.switchRadioButtonWidget?"":' <select id="appstle_selling_plan'.concat(P,'" class="appstle_select">\n                </select>'),"\n\n            </div>\n        </div>")),r=function(o,c){var d=[];if(jQuery.each(v.selling_plan_groups,function(n,e){"appstle"===e.app_id&&jQuery.each(e.selling_plans,function(n,e){if(u(e.id)){var t=T(c.id,e.id);if(!t)return;var i,o=t.per_delivery_price,a=D(null==t?void 0:t.price),l=D(o),s=null,p=null;p=t&&t.price_adjustments&&2===t.price_adjustments.length?D(s=t.price_adjustments[1].price):(s=o,l);var r=null==e?void 0:e.price_adjustments[0];i="percentage"!==(null==r?void 0:r.value_type)?D(null==r?void 0:r.value):(null==r?void 0:r.value)+"%",d.push({name:e.name,id:e.id,formattedPrice:l,price:o,totalPrice:a,secondPrice:s,secondFormattedPrice:p,discountText:i})}})}),0<d.length){var n;if(d.length<2){jQuery(o).find(".appstle_subscribe_option").children().hide();var e=_(d[0]);jQuery('<div class="appstle_single_option_text">'.concat(e,"</div>")).appendTo(o.find(".appstle_subscribe_option"))}null!==(n=RSConfig)&&void 0!==n&&n.sortByDefaultSequence||d.sort(function(n,e){return n.price-e.price}),jQuery(d).each(function(n,e){var t,i=_(e);null!==(t=RSConfig)&&void 0!==t&&t.switchRadioButtonWidget?jQuery('<label style="margin-top: 10px;">\n                <input type="radio" value="'.concat(e.id,'" ').concat(n?"":"checked",' name="selling_plan_radio" style="display: inline;"></input>\n                ').concat(i,"\n              </label>")).appendTo(o.find(".appstle_subscribe_option")):jQuery("<option />",{value:e.id,html:i}).appendTo(o.find("select"))})}else try{jQuery("#appstle_subscription_widget"+P).remove();var t=setTimeout(function(){jQuery("#appstle_subscription_widget"+P).remove(),clearTimeout(t)})}catch(n){}return d}(p,e);r&&0<r.length&&(null!==(a=RSConfig)&&void 0!==a&&a.showSubOptionBeforeOneTime?p.prependTo(n):p.appendTo(n));l=P,s=RSConfig.css,jQuery("<style>\n\n     #appstle_subscription_widget".concat(l,"{\n            width: 100%;\n            text-align: left;\n            margin-top: 17px;\n            clear: both;\n            max-width: 400px;\n            ").concat(c(s.appstle_subscription_widget),"\n        }\n\n        #appstle_subscription_widget").concat(l,"{\n          ").concat(c(s.appstle_widget_text_color),"\n        }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper {\n               border: 1.5px solid #cccccc;\n              // box-shadow: 0 0 0 1px #c4cdd5;\n              border-radius: 5px;\n              margin-bottom: 5px;\n              margin-top: 10px;\n              ").concat(c(s.appstle_subscription_wrapper),"\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option {\n              display: flex;\n              position: relative;\n              padding: 16px 16px;\n          }\n          #appstle_subscription_widget").concat(l," .appstle_selected_background {\n            ").concat(c(s.appstle_selected_background),"\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option:first-child {\n             // box-shadow: 0 1px 0 0 #c4cdd5;\n             border-bottom: inherit;\n          }\n            #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option:first-child:last-child {\n             border-bottom: none;\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option:not(.appstle_include_dropdown) {\n            align-items: center;\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option.appstle_include_dropdown {\n            flex-direction: column;\n            justify-content: center;\n          }\n\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option input[type='radio'] {\n            display: none;\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscribe_option {\n              margin-left: 29px;\n              margin-top: 25px;\n              display: flex;\n                  flex-direction: column;\n              align-items: flex-start;\n              text-align: left;\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_amount {\n              margin-left: auto;\n          }\n\n          #appstle_subscription_widget").concat(l," .appstle_circle {\n              display: flex;\n              height: 18px;\n              width: 18px;\n              border: 2px solid #3a3a3a;\n              border-radius: 50%;\n              margin-right: 10px;\n              justify-content: center;\n              align-items: center;\n              flex-shrink: 0;\n              ").concat(c(s.appstle_circle),"\n            }\n\n          #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper_option input[type=radio]:checked + label .appstle_circle .appstle_dot {\n              height: 10px;\n              width: 10px;\n              background-color: #3a3a3a;\n              border-radius: 50%;\n              flex-shrink: 0;\n              ").concat(c(s.appstle_dot),"\n            }\n\n\n        #appstle_subscription_widget").concat(l," .appstle_radio_label {\n          display: flex !important;\n          align-items: center;\n          margin: 0;\n          padding: 0;\n          background: none;\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_select_label {\n          display: flex !important;\n          align-items: center;\n          margin: 0;\n          padding: 0;\n          background: none;\n          margin-bottom: 7px;\n          font-size: 12px;\n\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_tooltip {\n          -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n          box-shadow: 0 2px 4px rgb(0 0 0 / 15%);\n          background-color: #3a3a3a;\n          border-radius: 5px;\n          left: 0;\n          color: #fff;\n          transition: transform .2s cubic-bezier(.215,.61,.355,1);\n          -ms-transform: translateY(0);\n          transform: translateY(100%) scaleY(0);\n          transform-origin: center top;\n          opacity: 0;\n          position: absolute;\n          bottom: 1px;\n          // border-bottom-left-radius: 0;\n          min-width: 250px;\n          ").concat(c(s.appstle_tooltip),"\n        }\n\n        #appstle_subscription_widget").concat(l," [data-appstle-icon]:hover .appstle_tooltip {\n          opacity: 1;\n          visibility: visible;\n          transform: translateY(100%) scaleY(1);\n          bottom: 1px;\n          z-index: 99999999;\n        }\n\n\n        #appstle_subscription_widget").concat(l," [data-appstle-icon] {\n            -ms-flex-item-align: end;\n            backface-visibility: hidden;\n        }\n\n        #appstle_subscription_widget").concat(l," [data-appstle-icon]:after {\n              border: solid transparent;\n              border-top-color: #3a3a3a;\n              border-width: 9px;\n              content: '';\n              position: absolute;\n              pointer-events: none;\n              opacity: 0;\n              left: 2px;\n              bottom: 0;\n              -ms-transform: translateX(-50%) translateY(10px) rotate(180deg);\n              transform: translateY(10px) rotate(180deg);\n              transition-delay: 0;\n              visibility: hidden;\n              transition: transform .2s cubic-bezier(.215,.61,.355,1);\n              z-index: 99999999;\n              background: none;\n              padding: 0;\n              ").concat(c(s.appstle_tooltip_border_top_color),"\n        }\n\n        #appstle_subscription_widget").concat(l," [data-appstle-icon]:hover:after {\n          opacity: 1;\n          visibility: visible;\n          -ms-transform: translateX(-50%) translateY(0) rotate(180deg);\n          transform: translateY(0) rotate(180deg);\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_tooltip_wrapper {\n          position: relative;\n          margin-bottom: 6px;\n          display: inline-flex;\n          align-items: center;\n          padding-top: 11px;\n          box-sizing: border-box;\n          margin-left: 0px;\n          padding-bottom: 11px;\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_tooltip_wrapper_static {\n          font-size: 13px;\n          background-color: beige;\n          border-radius: 6px;\n          padding: 23px;\n          margin-bottom: 10px;\n          ").concat(c(s.appstle_tooltip),"\n        }\n\n        #appstle_subscription_widget").concat(l," .tooltip_subscription_svg {\n             height: 22px;\n            width: 22px;\n            margin-right: 10px;\n            fill: black;\n            ").concat(c(s.tooltip_subscription_svg),"\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_subscription_radio_wrapper {\n            display: flex;\n            align-items: flex-start;\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_subscription_amount_wrapper {\n          margin-left: auto;\n          text-align: right;\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_subscription_amount_wrapper .appstle_prepaid_description {\n          font-size: 12px;\n          opacity: 0.8;\n        }\n\n        .appstle_subscription_final_price {\n            margin-right: 10px;\n            text-decoration: none;\n            color: #da4f49;\n            ").concat(c(s.appstle_subscription_final_price),"\n        }\n\n        .appstle_subscription_save {\n            margin-left: 10px;\n              padding: 2px 6px;\n              border: 1px solid #da4f49;\n              border-radius: 3px;\n              font-size: 10px;\n              color: #da4f49;\n              font-weight: bold;\n              display: inline;\n              position: relative;\n              top: -3px;\n              letter-spacing: 1px;\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_subscription_wrapper .appstle_select {\n            width: 100%;\n            margin: 0;\n            ").concat(c(s.appstle_select),"\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_hide_subsOption {\n          opacity: 0;\n          margin-top: 0;\n          visibility: hidden;\n          height: 0;\n        }\n\n        #appstle_subscription_widget").concat(l," .appstle_tooltip_content {\n          background-color: #3a3a3a;\n          padding: 16px;\n        }\n\n        body #appstle_subscription_widget").concat(l," .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_appstle {\n          padding: 12px !important;\n          font-size: 8px !important;\n          letter-spacing: 2px !important;\n          text-align: right !important;\n          background: #13b5ea !important;\n          border-bottom-left-radius: 4px !important;\n          border-bottom-right-radius: 4px !important;\n          display: block !important;\n        }\n\n        .appstle_link {\n          color: inherit !important;\n          text-decoration: none !important;\n          cursor: pointer !important;\n        }\n\n\n        </style>\n        <style>").concat(s.customCSS,"</style>")).appendTo(jQuery("head"))}function k(){var n=null;try{var e;n=null!==(e=RSConfig)&&void 0!==e&&e.switchRadioButtonWidget?jQuery("#appstle_subscription_widget"+P).find(".appstle_subscribe_option input:checked").val():jQuery("#appstle_subscription_widget"+P).find(".appstle_subscription_wrapper_option.appstle_include_dropdown select").val()}catch(n){}return n}function i(){var n,e,t,i,o,a,l,s,p,r,c,d,u,_,f,g=k();if(g){var v=T(null==jQuery("#appstle_subscription_widget"+P).closest('form[action="/cart/add"]').find("[name=id]")[0]?Q.id:jQuery("#appstle_subscription_widget"+P).closest('form[action="/cart/add"]').find("[name=id]")[0].value,parseInt(g)),m=D(v.per_delivery_price);jQuery("#appstle_subscription_widget"+P+" #appstle_selling_plan_label_2"+P).attr("value",g);var b=v.per_delivery_price!==v.price,h=(c=m,d=b,u=D(v.price),_=d?{pricePerDelivery:c,totalPrice:u}:{price:c},f=d?RS.Config.selectedPrepaidSellingPlanPriceText:RS.Config.selectedPayAsYouGoSellingPlanPriceText,Mustache.render(f,_)),y=M(),w=M(!0),S=(l=m,s=D(v.price),p={pricePerDelivery:l,totalPrice:s},r=RS.Config.tooltipDescriptionOnPrepaidPlan,Mustache.render(r,p)),C=function(n,e){var t;if(2==(null==n?void 0:null===(t=n.price_adjustments)||void 0===t?void 0:t.length)){var i,o,a={firstPrice:D(null==n?void 0:null===(i=n.price_adjustments[0])||void 0===i?void 0:i.price),secondPrice:D(null==n?void 0:null===(o=n.price_adjustments[1])||void 0===o?void 0:o.price),discountOne:0<e.length?e[0]:"",discountTwo:2==e.length?e[1]:""};return Mustache.render(RS.Config.tooltipDescriptionOnMultipleDiscount,a)}}(v,w),x=(t=S,i=C,o=b?{prepaidDetails:t,discountDetails:i,defaultTooltipDescription:RS.Config.tooltipDesctiption}:{defaultTooltipDescription:RS.Config.tooltipDesctiption,discountDetails:i},a=RS.Config.tooltipDescriptionCustomization,Mustache.render(a,o)),j=(e={discountValue:y},Mustache.render(RS.Config.subscriptionOptionText,e)),R=(n={prepaidPerDeliveryPrice:m},Mustache.render(RS.Config.totalPricePerDeliveryText,n));jQuery("#appstle_subscription_widget"+P+" .appstle_prepaid_description").remove(),jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper_option.appstle_include_dropdown .appstle_subscription_amount").html(h),b&&R&&jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_amount_wrapper").append('<div class="appstle_prepaid_description">'.concat(R||D(v.price)+"/delivery","</div>")),jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper_option.appstle_include_dropdown .appstle_subscription_radio_wrapper .appstle_subscribe_save_text").html(j),O()&&x&&x.trim()?RS.Config.showStaticTooltip?jQuery("#appstle_subscription_widget"+P+" .appstle_tooltip_wrapper_static").html(x):jQuery("#appstle_subscription_widget"+P+" .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_content").html(x):RS.Config.showStaticTooltip&&RS.Config.tooltipDesctiption&&RS.Config.tooltipDesctiption.trim()?jQuery("#appstle_subscription_widget"+P+" .appstle_tooltip_wrapper_static").html(RS.Config.tooltipDesctiption):jQuery("#appstle_subscription_widget"+P+" .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_content").html(RS.Config.tooltipDesctiption)}}function O(){var n=!1;try{n=jQuery("#appstle_subscription_widget"+P).find(".appstle_subscription_wrapper_option.appstle_include_dropdown input")[0].checked}catch(n){}return n}function o(){var n={regular:{sellingPrice:RSConfig.priceSelector,saleBadgeTop:RSConfig.badgeTop}}.regular;jQuery(".appstle_subscription_final_price").remove(),jQuery(".appstle_subscription_element").remove(),jQuery(".appstle_subscription_compare_price").remove();var e,t,i=(e=k())?D(T(Q.id,parseInt(e)).per_delivery_price):null,o=M(),a=jQuery(n.sellingPrice);if((a.css("text-decoration",""),n.sellingPrice&&o)&&(O()&&1===a.length)){var l=(t={selectedDiscountPercentage:o},Mustache.render(RS.Config.selectedDiscountFormat,t));if(l){var s=jQuery('<span class="appstle_subscription_element appstle_subscription_save"> '.concat(l," </span>"));s&&s.css("top",n.saleBadgeTop);var p=a.first().clone();p.addClass("appstle_subscription_final_price transcy-money"),p.text(i),a.css("text-decoration","line-through"),0<p.length&&p.insertBefore(a),s.insertAfter(a)}}}function M(n){var e,t,i,o,a;if(!(a=parseInt(k())))return null;if(v.selling_plan_groups.forEach(function(e){"appstle"===e.app_id&&e.selling_plans.forEach(function(n){u(n.id)&&n.id===a&&(o=e)})}),o.selling_plans.forEach(function(n){n.id===a&&(a=n)}),n&&2==(null===(e=a)||void 0===e?void 0:null===(t=e.price_adjustments)||void 0===t?void 0:t.length)){var l,s,p=[];return null===(l=a)||void 0===l||null===(s=l.price_adjustments)||void 0===s||s.forEach(function(n){"percentage"!==(null==n?void 0:n.value_type)?p.push(D(null==n?void 0:n.value)):p.push((null==n?void 0:n.value)+"%")}),p}var r=null===(i=a)||void 0===i?void 0:i.price_adjustments[0];return null==r||null==r.value||0==r.value?null:"percentage"!==(null==r?void 0:r.value_type)?D(null==r?void 0:r.value):(null==r?void 0:r.value)+"%"}function y(){i(),o()}function c(e){var t={};return Object.keys(e).forEach(function(n){e[n]&&(t[n]=e[n])}),JSON.stringify(t).split('"').join("").split("{").join("").split("}").join("").split(",").join(";")}function w(){if(Q){var n=Q.id;if(history.replaceState&&n){var e=window.location.protocol+"//"+window.location.host+window.location.pathname+"?";if(O()){var t=k();t&&(e+="selling_plan="+t+"&")}(e+="variant="+n)!==location.href&&window.history.replaceState({path:e},"",e)}}}if(function n(e){window.jQuery?e():setTimeout(function(){n(e)},50)}(function(){if(!0===decodeURIComponent(window.location.pathname).includes("/products/")||S()){var p,r,c,d,u,_=(n=RSConfig.atcButtonSelector||"form[action$='/cart/add'] [type='submit']",e={productId:v.id},n=Mustache.render(n,e)),f=jQuery(_).first();g&&(f=g);var o=function(){try{f=jQuery(_).first(),g&&(f=g);var n=b(0,f,v);if(n){var e,t=n.id;if(r&&r===t)return;if(v.selling_plan_groups&&0<v.selling_plan_groups.length&&(e=v.selling_plan_groups.filter(function(n){return"appstle"===n.app_id})),e&&0<e.length&&RS.Config.widgetEnabled){var i,o;Q=n;var a,l=RS.Config.selectors.atcButtonPlacement;if(c?(jQuery(".appstle_subscription_wrapper input[type=radio], .appstle_subscription_wrapper select").off("change"),c.children().remove(),h(c,n),u?c.insertBefore(u):c.appendTo(d)):(d=jQuery('<div class="appstle_sub_widget" id="appstle_subscription_widget'+P+'"></div>'),p=RS.Config.purchaseOptionsText?jQuery('<div class="appstle_widget_title">'+RS.Config.purchaseOptionsText+"</div>"):"",c=jQuery('<div class="appstle_subscription_wrapper"></div>'),u=RS.Config.tooltipTitle&&RS.Config.showTooltip&&!RS.Config.showStaticTooltip?jQuery('<div data-appstle-icon="" class="appstle_tooltip_wrapper">\n                        <svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" class="tooltip_subscription_svg">\n                          <path d="M45 0C20.1827 0 0 20.1827 0 45C0 69.8173 20.1827 90 45 90C69.8173 90 90 69.8174 90 45C90.0056 44.6025 89.9322 44.2078 89.7839 43.8389C89.6357 43.47 89.4156 43.1342 89.1365 42.8511C88.8573 42.568 88.5247 42.3432 88.158 42.1897C87.7912 42.0363 87.3976 41.9573 87 41.9573C86.6024 41.9573 86.2088 42.0363 85.842 42.1897C85.4753 42.3432 85.1427 42.568 84.8635 42.8511C84.5844 43.1342 84.3643 43.47 84.2161 43.8389C84.0678 44.2078 83.9944 44.6025 84 45C84 66.5748 66.5747 84 45 84C23.4253 84 6 66.5747 6 45C6 23.4254 23.4253 6 45 6C56.1538 6 66.3012 10.5882 73.4375 18H65.4062C65.0087 17.9944 64.614 18.0678 64.2451 18.2161C63.8762 18.3643 63.5405 18.5844 63.2573 18.8635C62.9742 19.1427 62.7494 19.4753 62.596 19.842C62.4425 20.2088 62.3635 20.6024 62.3635 21C62.3635 21.3976 62.4425 21.7912 62.596 22.158C62.7494 22.5247 62.9742 22.8573 63.2573 23.1365C63.5405 23.4156 63.8762 23.6357 64.2451 23.7839C64.614 23.9322 65.0087 24.0056 65.4062 24H79.8125C80.6081 23.9999 81.3711 23.6838 81.9337 23.1212C82.4963 22.5586 82.8124 21.7956 82.8125 21V6.59375C82.821 6.18925 82.7476 5.78722 82.5966 5.41183C82.4457 5.03644 82.2205 4.69545 81.9344 4.40936C81.6483 4.12327 81.3073 3.898 80.9319 3.7471C80.5565 3.5962 80.1545 3.52277 79.75 3.53125C79.356 3.53941 78.9675 3.62511 78.6067 3.78344C78.2458 3.94177 77.9197 4.16963 77.6469 4.45402C77.3741 4.73841 77.16 5.07375 77.0168 5.44089C76.8737 5.80803 76.8042 6.19977 76.8125 6.59375V12.875C68.6156 4.86282 57.3081 0 45 0ZM43.75 20.75C43.356 20.7582 42.9675 20.8439 42.6067 21.0022C42.2458 21.1605 41.9197 21.3884 41.6469 21.6728C41.3741 21.9572 41.16 22.2925 41.0168 22.6596C40.8737 23.0268 40.8042 23.4185 40.8125 23.8125V47.375C40.8116 47.7693 40.8883 48.16 41.0385 48.5246C41.1886 48.8892 41.4092 49.2207 41.6875 49.5L54.0938 61.9375C54.6573 62.5011 55.4217 62.8177 56.2188 62.8177C57.0158 62.8177 57.7802 62.5011 58.3438 61.9375C58.9073 61.3739 59.224 60.6095 59.224 59.8125C59.224 59.0155 58.9073 58.2511 58.3438 57.6875L46.8125 46.1875V23.8125C46.821 23.408 46.7476 23.006 46.5966 22.6306C46.4457 22.2552 46.2205 21.9142 45.9344 21.6281C45.6483 21.342 45.3073 21.1168 44.9319 20.9658C44.5565 20.8149 44.1545 20.7415 43.75 20.75Z">\n                          </path>\n                        </svg>\n                        <span class="appstle_tooltip_title">'.concat(RS.Config.tooltipTitle,'</span>\n                        <div class="appstle_tooltip">\n                          <div class="appstle_tooltip_content">\n                              ').concat(RS.Config.tooltipDesctiption,"\n                          </div>\n                          ").concat(RS.Config.showAppstleLink?'<div class="appstle_tooltip_appstle">\n                            <a href="https://appstle.com/" class="appstle_link" target="_blank">\n                              POWERED BY APPSTLE\n                            </a>\n                          </div>':"<span></span>","\n                                        </div>\n                                      </div>")):RS.Config.showTooltip&&RS.Config.showStaticTooltip&&jQuery('<div class="appstle_tooltip_wrapper_static">'.concat(RS.Config.tooltipDesctiption,"</div>")),p&&p.appendTo(d),h(c,n),c.appendTo(d),u&&u.appendTo(d)),(null===(i=RSConfig)||void 0===i||null===(o=i.product)||void 0===o||!o.available)&&"false"==(null===(a=RS.Config)||void 0===a?void 0:a.widgetEnabledOnSoldVariant))return;"BEFORE"===l?d.insertBefore(f):"AFTER"===l?d.insertAfter(f):"FIRST_CHILD"===l?d.prependTo(f):"LAST_CHILD"===l&&d.appendTo(f),jQuery("#appstle_subscription_widget"+P).find(".appstle_subscription_wrapper input[type=radio]").on("change",function(){var n=jQuery("#appstle_subscription_widget"+P+" .appstle_subscribe_option");0<n.length&&(O()?(n.removeClass("appstle_hide_subsOption"),jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper_option.appstle_include_dropdown").addClass("appstle_selected_background"),jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper_option").first().removeClass("appstle_selected_background")):(jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper_option.appstle_include_dropdown").removeClass("appstle_selected_background"),jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper_option").first().addClass("appstle_selected_background"),n.addClass("appstle_hide_subsOption"))),y()}),null!==(s=RSConfig)&&void 0!==s&&s.switchRadioButtonWidget?jQuery("#appstle_subscription_widget"+P+" .appstle_subscribe_option input").on("change",function(n){y()}):jQuery("#appstle_subscription_widget"+P+" .appstle_subscription_wrapper select").on("change",function(n){y()}),y(),jQuery(document).trigger("appstle_widget_updated")}r=t}}catch(n){console.log(n)}var s};setTimeout(function(){o(),function(){if(0!==jQuery("#appstle_subscription_widget"+P).length){var t=m(),n=jQuery("#appstle_subscription_widget"+P).closest('form[action="/cart/add"]');if((0<n.find("input[value="+t.variant+"]").length||0<n.find("option[value="+t.variant+"]").length)&&0<n.find("option[value="+t.selling_plan+"]").length&&t.selling_plan){var e,i,o=jQuery("#appstle_subscription_widget"+P+" #appstle_selling_plan_label_2"+P);o[0].checked=!0;var a=null;a=null!==(e=RSConfig)&&void 0!==e&&e.switchRadioButtonWidget?jQuery("#appstle_subscription_widget"+P+" .appstle_subscribe_option"):jQuery("#appstle_subscription_widget"+P+" select#appstle_selling_plan"+P),null!==(i=RSConfig)&&void 0!==i&&i.switchRadioButtonWidget?a.find("input[type=radio]").each(function(n,e){j(e).removeAttr("checked"),jQuery(e).attr("value")===t.selling_plan&&j(e).attr("checked",!0)}):a.find("option").each(function(n,e){jQuery(e).attr("value")===t.selling_plan&&(a[0].selectedIndex=n)}),o.change(),a.change()}}}()},13),g?(g.closest('form[action="/cart/add"]').on("change",function(){setTimeout(function(){var n,e,t,i;o(),w(),null!==(n=window)&&void 0!==n&&n._transcy&&(null===(e=window)||void 0===e||null===(t=e._transcy)||void 0===t||null===(i=t.methods)||void 0===i||i.reConvertCurrency())},30)}),g.closest('form[action="/cart/add"]').on("click",function(){setTimeout(function(){var n,e,t,i;o(),w(),null!==(n=window)&&void 0!==n&&n._transcy&&(null===(e=window)||void 0===e||null===(t=e._transcy)||void 0===t||null===(i=t.methods)||void 0===i||i.reConvertCurrency())},30)})):(jQuery(document).on("change",function(){setTimeout(function(){var n,e,t,i;o(),w(),null!==(n=window)&&void 0!==n&&n._transcy&&(null===(e=window)||void 0===e||null===(t=e._transcy)||void 0===t||null===(i=t.methods)||void 0===i||i.reConvertCurrency())},30)}),jQuery(document).on("click",function(){setTimeout(function(){var n,e,t,i;o(),w(),null!==(n=window)&&void 0!==n&&n._transcy&&(null===(e=window)||void 0===e||null===(t=e._transcy)||void 0===t||null===(i=t.methods)||void 0===i||i.reConvertCurrency())},30)}))}var n,e,t;if("/account"===window.location.pathname==1){var i=RSConfig.selectors.subscriptionLinkSelector,a=RSConfig.selectors.subscriptionLinkPlacement,l=RSConfig.manageSubscriptionBtnFormat;"after"===a.toLowerCase()?jQuery(i).after(l):"first_child"===a.toLowerCase()?jQuery(i).first(l):"last_child"===a.toLowerCase()?jQuery(i).last(l):jQuery(i).before(l),t=RSConfig.css,jQuery("<style>".concat(t.customCSS,"</style>")).appendTo(jQuery("head"))}}),Shopify&&Shopify.Checkout&&Shopify.Checkout.hasSellingPlan&&null!==(e=RS)&&void 0!==e&&null!==(t=e.Config)&&void 0!==t&&t.showCheckoutSubscriptionBtn){var a="/"+RS.Config.manageSubscriptionUrl,l=RS.Config.orderStatusManageSubscriptionDescription||"Continue to your account to view and manage your subscriptions.";if(Shopify.checkout&&Shopify.checkout.customer_id){console.log("cusomterId="+Shopify.checkout.customer_id);var r={async:!0,crossDomain:!0,url:location.origin+"/apps/subscriptions?action=customer_payment_token&customer_id="+Shopify.checkout.customer_id,method:"GET",headers:{accept:"*/*","cache-control":"no-cache"}};jQuery.ajax(r).done(function(n){a=a+"?token="+n.token,Shopify.Checkout.OrderStatus.addContentBox('<h2 class="heading-2 os-step__title">'+(RS.Config.orderStatusManageSubscriptionTitle||"Subscription")+'</h2><div class="os-step__info--item"><p class="os-step__description" style="margin-top: 0.5714285714em;">'+l+'</p></div><a class="ui-button btn btn--subdued btn--size-small shown-if-js os-step__info" href="'+a+'"> '+(RS.Config.orderStatusManageSubscriptionButtonText||"Manage your subscription")+"</a>")})}else Shopify.Checkout.OrderStatus.addContentBox('<h2 class="heading-2 os-step__title">'+(RS.Config.orderStatusManageSubscriptionTitle||"Subscription")+'</h2><div class="os-step__info--item"><p class="os-step__description" style="margin-top: 0.5714285714em;">'+l+'</p></div><a class="ui-button btn btn--subdued btn--size-small shown-if-js os-step__info" href="'+a+'"> '+(RS.Config.orderStatusManageSubscriptionButtonText||"Manage your subscription")+"</a>")}}function w(){var i=Array.prototype.slice.call(jQuery(".appstle_stand_alone_selector")),o=-1;!function e(){if(null!=i&&i.length){var t=i.shift(),n=j(t).data("product-data");o+=1,jQuery(t).parents("form").find(".appstle_sub_widget").length?e():n?(y(n,j(t),o),e()):jQuery.get(location.origin+"/products/".concat(jQuery(t).data("product-handle"),".js")).then(function(n){jQuery(t).attr("data-product-data",n),y(JSON.parse(n),j(t),o),e()})}}()}(console.log("jQuery is loaded, after "+h+" milliseconds!"),S())?null!==(o=window)&&void 0!==o&&null!==(a=o.RS)&&void 0!==a&&null!==(l=a.Config)&&void 0!==l&&null!==(s=l.appstlePlanName)&&void 0!==s&&null!==(p=s.toLowerCase())&&void 0!==p&&p.includes("enterprise")||null!==(r=window)&&void 0!==r&&null!==(c=r.RS)&&void 0!==c&&null!==(d=c.Config)&&void 0!==d&&null!==(u=d.appstlePlanName)&&void 0!==u&&null!==(_=u.toLowerCase())&&void 0!==_&&_.includes("business")||null!==(f=jQuery(".appstle_stand_alone_selector"))&&void 0!==f&&null!==(g=f.parents("form"))&&void 0!==g&&null!==(v=g.attr("class"))&&void 0!==v&&v.includes("pf")?w():console.log("you are not in business plan or enterprise plan. please switch the plan"):y(void 0,void 0,0);function D(n){var e,t,i,o,a,l,s=RS.Config.moneyFormat,p=s;s&&(p=null==s?void 0:null===(l=s.replace("{% raw %}",""))||void 0===l?void 0:l.replace("{% endraw %}",""));"string"==typeof n&&(n=n.replace(".",""));var r,c="",d=/\{\{\s*(\w+)\s*\}\}/,u="undefined"!=typeof Shopify&&Shopify.money_format&&1<Shopify.money_format.length?Shopify.money_format:"";r="undefined"!=typeof theme?theme.moneyFormat?theme.moneyFormat:theme.money_format?theme.money_format:theme.settings&&theme.settings.moneyFormat?theme.settings.moneyFormat:theme.strings?theme.strings.moneyFormat:"":"";var _,f=(null===(e=window)||void 0===e?void 0:e.shopifyCurrencyFormat)||(null===(t=window)||void 0===t?void 0:t.moneyFormat)||(null===(i=window)||void 0===i?void 0:null===(o=i.Currency)||void 0===o?void 0:o.money_format_no_currency)||r||(null===(a=RSConfig)||void 0===a?void 0:a.shopMoneyFormat)||p||u||(_=RSConfig.shopMoneyFormatWithCurrencyFormat,(new DOMParser).parseFromString(_,"text/html").documentElement.textContent);function g(n,e,t,i){if(t=t||",",i=i||".",isNaN(n)||null===n)return 0;var o=(n=(n/100).toFixed(e)).split(".");return o[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g,"$1"+t)+(o[1]?i+o[1]:"")}switch(f.match(d)[1]){case"amount":c=g(n,2);break;case"amount_no_decimals":c=g(n,0);break;case"amount_with_comma_separator":c=g(n,2,".",",");break;case"amount_no_decimals_with_comma_separator":c=g(n,0,".",",");break;case"amount_no_decimals_with_space_separator":c=g(n,0," ");break;case"amount_with_apostrophe_separator":c=g(n,2,"'")}var v=document.createElement("span");return v.innerHTML=f.replace(d,c),v.textContent||v.innerText}function S(){return 0<jQuery(".appstle_stand_alone_selector").length}jQuery("".concat(null===(n=window)||void 0===n?void 0:null===(e=n.RS)||void 0===e?void 0:null===(t=e.Config)||void 0===t?void 0:t.quickViewClickSelector)||"a.grid-product__link").on("click",function(){var n,e,t,i,o,a,l,s,p,r,c,d,u;if(0<jQuery("".concat(null===(n=window)||void 0===n?void 0:null===(e=n.RS)||void 0===e?void 0:null===(t=e.Config)||void 0===t?void 0:t.quickViewClickSelector)||"a.grid-product__link").length&&(null!==(i=window)&&void 0!==i&&null!==(o=i.RS)&&void 0!==o&&null!==(a=o.Config)&&void 0!==a&&null!==(l=a.appstlePlanName)&&void 0!==l&&null!==(s=l.toLowerCase())&&void 0!==s&&s.includes("enterprise")||null!==(p=window)&&void 0!==p&&null!==(r=p.RS)&&void 0!==r&&null!==(c=r.Config)&&void 0!==c&&null!==(d=c.appstlePlanName)&&void 0!==d&&null!==(u=d.toLowerCase())&&void 0!==u&&u.includes("business"))){var _,f,g,v,m,b=function(){var n;S()?w():0==(null===(n=jQuery("#appstle_subscription_widget0"))||void 0===n?void 0:n.length)&&y(void 0,void 0,0)};if("".concat(null===(_=window)||void 0===_?void 0:null===(f=_.RS)||void 0===f?void 0:null===(g=f.Config)||void 0===g?void 0:g.quickViewModalPollingSelector)||"mahalia-coffee.myshopify.com"==(null===(v=window)||void 0===v?void 0:null===(m=v.Shopify)||void 0===m?void 0:m.shop)){!function n(){var e,t,i;jQuery(".quickshop.quickshop-visible.quickshop-loaded").length||jQuery("".concat(null===(e=window)||void 0===e?void 0:null===(t=e.RS)||void 0===t?void 0:null===(i=t.Config)||void 0===i?void 0:i.quickViewModalPollingSelector)).length?b():setTimeout(function(){n()},200)}()}else setTimeout(function(){b()},500)}}),0<jQuery(".appstle_stand_alone_price_display_selector").length&&(b=null===(m=RSConfig)||void 0===m?void 0:m.css,jQuery("<style>.appstle_subscribesavetext{\n                  background-color:#c00303;\n                  color:#fff;\n                  padding:4px 8px;\n                  font-size:13px;\n                    }</style>\n                <style>".concat(null==b?void 0:b.customCSS,"</style>")).appendTo(jQuery("head")),jQuery(".appstle_stand_alone_price_display_selector").each(function(n){var e,t,i=j(this).data("product-data"),o=Number.MAX_SAFE_INTEGER,a=!1;i.variants.forEach(function(n){n.selling_plan_allocations.forEach(function(n){n.price_adjustments[0].price<o&&(o=n.price_adjustments[0].price,a=!0)})}),a&&(j(this).siblings("span.price, span.appstle_hide_old_price").hide(),j(this).html((t={subscriptionPrice:D(o)},Mustache.render(null===(e=RSConfig)||void 0===e?void 0:e.subscriptionPriceDisplayText,t)))),j(this).show()})),"true"===(null===(i=RSConfig)||void 0===i?void 0:i.enableCartWidgetFeature)&&j(function(){var n,e,m=RSConfig.selectors.cartRowSelector,b=RSConfig.selectors.cartLineItemSelector,h="[data-appstle-selector]",y=RSConfig.selectors.cartLineItemPerQuantityPriceSelector,w=RSConfig.selectors.cartLineItemTotalPriceSelector,S=RSConfig.selectors.cartLineItemSellingPlanNameSelector,o=RSConfig.selectors.cartSubTotalSelector,C=RSConfig.selectors.cartLineItemPriceSelector,t="";function a(){jQuery("#appstle_overlay").length||s(),jQuery(".appstle_subscription_cart_wrapper select").each(function(n,e){jQuery(e).off()}),jQuery(".appstle_subscribe_selected input").each(function(n,e){jQuery(e).off()}),jQuery(".appstle_subscribe_title").each(function(n,e){jQuery(e).off()}),jQuery(".appstle_selected_frequency").each(function(n,e){jQuery(e).off()}),fetch("/cart.js").then(function(n){return n.json()}).then(function(g){var n,t=[],v=[];function i(){g.items.forEach(function(e,n){var t,i,o,a,l,s=v.filter(function(n){return n.handle===e.handle}).pop(),p=(o=JSON.parse(JSON.stringify(s)),a=null==e?void 0:e.variant_id,!!((l=(null==o?void 0:o.variants.filter(function(n){return n.id===a})).pop())&&null!=l&&l.selling_plan_allocations&&null!=l&&l.selling_plan_allocations.length)),r=null==e?void 0:null===(t=e.selling_plan_allocation)||void 0===t?void 0:null===(i=t.selling_plan)||void 0===i?void 0:i.id;if(p){var c=jQuery('\n                    <div class="appstle_subscription_cart_wrapper">\n                        <div class="appstle_subscribe_title">\n                            <input type="checkbox"></input>\n                            <span class="appstle_discount_text">Subscribe and <span class="appstle_highest_discount">Save {{highestDiscount}}</span></span>\n                        </div>\n                        <div class="appstle_subscribe_selected_wrapper" style="display: none;">\n                            <div class="appstle_subscribe_selected">\n                              <input type="checkbox" checked '.concat(null!=s&&s.requires_selling_plan?"disabled":"",'></input>\n                              <div class="appstle_subscribe_selected_text">{{appliedDiscount}} Subscribe and Save applied.</div>\n                            </div>\n                            <div class="appstle_selected_frequency">\n                                <span class="appstle_deliveryText">{{deliveryText}}</span>&nbsp;\n                                <span class="appstle_applied_sellingPlanName">{{appliedSellingPlanName}}</span>\n                            </div>\n                        </div>\n                        <div class="appstle_radio_section" style="display: none">\n\n                            <select id="appstle_selling_plan_cart" data-product-select-id="').concat(JSON.parse(JSON.stringify(s)).id,"-").concat(r,'" class="appstle_select_cart"></select>\n                        </div>\n                    </div>'));!function(n,s,p,r){var c=[];if(jQuery.each(n.selling_plan_groups,function(n,e){"appstle"===e.app_id&&jQuery.each(e.selling_plans,function(n,e){if(function(n){var e=__st.cid,t=RSConfig.customer_tags||[],i=!0;if(!e&&RSConfig.memberOnlySellingPlansJson&&RSConfig.memberOnlySellingPlansJson[n]&&(i=!1),e&&RSConfig.nonMemberOnlySellingPlansJson&&RSConfig.nonMemberOnlySellingPlansJson[n]&&(i=!1),i&&e&&RSConfig.memberOnlySellingPlansJson&&RSConfig.memberOnlySellingPlansJson[n]&&RSConfig.memberOnlySellingPlansJson[n].memberInclusiveTags&&RSConfig.memberOnlySellingPlansJson[n].memberInclusiveTags.trim()){var o=RSConfig.memberOnlySellingPlansJson[n].memberInclusiveTags.split(","),a=compareCustomerTags(t,o);i=0<a.length}return i}(e.id)){var t=r.selling_plan_allocations.find(function(n){return n.selling_plan_id===e.id});if(!t)return;var i=t.per_delivery_price,o=D(null==t?void 0:t.price),a=D(i),l=null,s=null;s=t&&t.price_adjustments&&2===t.price_adjustments.length?D(l=t.price_adjustments[1].price):(l=i,a);var p=e.price_adjustments.shift();c.push({name:e.name,id:e.id,formattedPrice:a,price:i,totalPrice:o,secondPrice:l,secondFormattedPrice:s,discount:p?"percentage"===p.value_type?"".concat(p.value,"%"):D(p.value):"",deliveryText:e.options[0].name})}})}),0<c.length){c.sort(function(n,e){return n.price-e.price}),jQuery("<option />",{html:"Select Delivery Option",value:""}).appendTo(s.find("select")),jQuery(c).each(function(n,e){var t,i,o,a,l=(i=(t=e).totalPrice==t.formattedPrice?{sellingPlanName:t.name,sellingPlanPrice:'<span class="transcy-money">'.concat(t.formattedPrice,"</span>"),secondSellingPlanPrice:'<span class="transcy-money">'.concat(t.secondFormattedPrice,"</span>")}:{sellingPlanName:t.name,totalPrice:'<span class="transcy-money">'.concat(null==t?void 0:t.totalPrice,"</span>"),sellingPlanPrice:'<span class="transcy-money">'.concat(t.formattedPrice,"</span>"),secondSellingPlanPrice:'<span class="transcy-money">'.concat(t.secondFormattedPrice,"</span>")},o=Mustache.render(RS.Config.sellingPlanTitleText,i),(a=document.createElement("span")).innerHTML=o,a.textContent||a.innerText);jQuery("<option />",{value:e.id,html:l,selected:p===(null==e?void 0:e.id)}).appendTo(s.find("select"))}),null!=n&&n.requires_selling_plan||jQuery("<option />",{value:"appstle_unsubscribe",html:"Unsubscribe"}).appendTo(s.find("select"));var e=c.filter(function(n){return(null==n?void 0:n.id)===p}).pop();if(e){var t=s.find(".appstle_selected_frequency .appstle_deliveryText").text().split("{{deliveryText}}").join(e.deliveryText||"");s.find(".appstle_deliveryText").html(t);var i=s.find(".appstle_selected_frequency .appstle_applied_sellingPlanName").text().split("{{appliedSellingPlanName}}").join(e.name);s.find(".appstle_applied_sellingPlanName").html(i);var o=s.find(".appstle_subscribe_selected_text").text().split("{{appliedDiscount}}").join(e.discount);s.find(".appstle_subscribe_selected_text").html(o)}else{var a=s.find(".appstle_highest_discount").text().split("{{highestDiscount}}").join(c[0].discount);s.find(".appstle_highest_discount").html(a)}}}(JSON.parse(JSON.stringify(s)),c,r,JSON.parse(JSON.stringify(s.variants.filter(function(n){return n.id===e.id}).pop()))),jQuery(c).find("select").on("change",function(n){x(null==g?void 0:g.items,e,s.id,n.target.value,!1)}),jQuery(c).find(".appstle_subscribe_selected input").on("change",function(n){x(null==g?void 0:g.items,e,s.id,jQuery(c).find("select").val(),!0)}),jQuery(c).find(".appstle_subscribe_title, .appstle_selected_frequency").on("click",function(){j(this).hide(),j(this).parents(".appstle_subscription_cart_wrapper").find(".appstle_radio_section").show()});var d,u,_=jQuery(jQuery(m)[n]);if(r&&(c.find(".appstle_subscribe_title").hide(),c.find(".appstle_subscribe_selected_wrapper").show(),_.find(S).text(null==e?void 0:null===(d=e.selling_plan_allocation)||void 0===d?void 0:null===(u=d.selling_plan)||void 0===u?void 0:u.name)),_.find(S).hide(),_.find(".appstle_subscription_cart_wrapper").remove(),1===_.find(b).length?c.insertBefore(_.find(b)):c.insertBefore(_.find(h)),_.find(y).text(D(e.final_price)),_.find(w).text(D(e.final_line_price)),r&&e.selling_plan_allocation.compare_at_price){_.find(C).text("");var f='<span class="appstle_cart_sellingPlan_price">'.concat(D(e.final_price),'</span><span  class="appstle_cart_compare_price">').concat(D(e.selling_plan_allocation.compare_at_price),"</span>");_.find(C).html(f)}}}),jQuery(o).text(D(null==g?void 0:g.total_price)),jQuery("#appstle_overlay").remove()}0<(null==g?void 0:null===(n=g.items)||void 0===n?void 0:n.length)?(null==g||g.items.forEach(function(n){-1===t.indexOf(null==n?void 0:n.handle)&&t.push(null==n?void 0:n.handle)}),function e(){t.length?fetch("/products/".concat(t.shift(),".js")).then(function(n){return n.json()}).then(function(n){v.push(n),e()}):i()}()):jQuery("#appstle_overlay").remove()})}if("/cart"===location.pathname){var i=window.XMLHttpRequest.prototype.open;window.XMLHttpRequest.prototype.open=function(){this.addEventListener("load",function(){var n=this.responseURL;console.log("origOpe.n -> url="+n),-1!==n.indexOf("cart/change.js")&&t!==JSON.stringify(this.response)&&(jQuery("#appstle_overlay").length||s(),setTimeout(a,100),t=JSON.stringify(this.response))}),i.apply(this,arguments)};var l=window.fetch;window.fetch=function(){var n=arguments,i=this;return new Promise(function(e,t){l.apply(i,n).then(function(n){-1!==n.url.indexOf("cart/change.js")&&(jQuery("#appstle_overlay").length||s(),setTimeout(a,100)),e(n)}).catch(function(n){t(response)})})},a(),e=null===(n=RSConfig)||void 0===n?void 0:n.css,jQuery("<style>\n                 .appstle-subsccribe-cart-discount{\n                       margin-left: 2px;\n                 }\n\n                .appstle_cart_radio_selected .appstle_cart_selling_plan_dropdown{\n                    display: block;\n                }\n            .appstle_cart_radio_selected {\n                  background-color: #eee;\n                 border-radius: 6px;\n            }\n            .appstle-cart-radio-label{\n              margin-left: 10px;\n            }\n            .appstle_subscription_cart_wrapper{\n              max-width: 100%;\n              justify-content: flex-start;\n              flex-direction: column;\n              font-size: 13px;\n            }\n              .appstle_cart_radio_label {\n                margin-left: 10px;\n                font-weight: bold;\n              }\n\n              .appstle_radio_section{\n              }\n              .appstle_subscribe_title {\n                      cursor: pointer;\n                      font-size: 13px;\n                      display: flex;\n                      align-items: center;\n                      line-height: 1.5;\n                      margin-bottom: 0.2rem;\n\n              }\n              .appstle_subscribe_title .appstle_highest_discount, .appstle_applied_sellingPlanName {\n                      border-bottom: 1px solid currentColor;\n              }\n\n              .appstle_subscribe_title input {\n                      margin-right: 5px;\n              }\n\n              .appstle_subscribe_selected {\n                      display: flex;\n                      align-items: center;\n                      margin-bottom: 0.2rem;\n\n              }\n\n              .appstle_subscribe_selected input {\n                      margin-right: 5px;\n              }\n\n              .appstle_selected_frequency  {\n                     display: inline;\n                     margin-bottom: 0.2rem;\n                     cursor: pointer;\n              }\n\n              .appstle_selected_frequency .appstle_applied_sellingPlanName {\n                       border-bottom: 1px solid currentColor;\n              }\n\n              .appstle_highest_discount, .appstle_applied_sellingPlanName {\n                      color: #198946;\n              }\n\n              #appstle_overlay {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.7);\n  z-index: 999999;\n  text-align: center;\n }\n\n.appstle_loader {\n  border: 6px solid rgba(255, 255, 255, 0.2);\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-top: -36px;\n  margin-left: -36px;\n  border-top: 6px solid #fff;\n  border-radius: 50%;\n  width: 60px;\n  height: 60px;\n  animation: appstle_loading_spin 0.7s linear infinite; }\n\n  .appstle_loader_text {\n    position: absolute;\n    left: 50%;\n    top: calc(50% + 60px);\n    transform: translate(-50%, -50%);\n    color: white;\n  }\n\n  .appstle_subscribe_selected input[type=checkbox] {\n      height: inherit;\n  }\n\n  .appstle_cart_compare_price {\n    text-decoration: line-through;\n    font-size: 13px;\n    margin-left: 5px;\n    opacity: 0.85;\n  }\n\n\n@keyframes appstle_loading_spin {\n  0% {\n    transform: rotate(0deg); }\n\n  100% {\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n\n  100% {\n    transform: rotate(360deg); } }\n\n              </style>\n          <style>".concat(null==e?void 0:e.customCSS,"</style>")).appendTo(jQuery("head"))}function s(n){jQuery("#appstle_overlay").length||jQuery("body").append("<div id='appstle_overlay'><div class='appstle_loader'></div><div class='appstle_loader_text'>"+(n||" ")+"</div></div></div>")}function x(n,p,e,r,c){if(r){"appstle_unsubscribe"===r&&(c=!0),s();var d={items:[]};n.forEach(function(n){if((null==n?void 0:n.key)===(null==p?void 0:p.key)){var e,t={id:null==n?void 0:n.variant_id,quantity:null==n?void 0:n.quantity};c||(t.selling_plan=r),null==d||null===(e=d.items)||void 0===e||e.unshift(t)}else{var i,o,a,l,s;t={id:null==n?void 0:n.variant_id,quantity:null==n?void 0:n.quantity};if(null!=n&&null!==(i=n.selling_plan_allocation)&&void 0!==i&&null!==(o=i.selling_plan)&&void 0!==o&&o.id)t.selling_plan=null==n?void 0:null===(l=n.selling_plan_allocation)||void 0===l?void 0:null===(s=l.selling_plan)||void 0===s?void 0:s.id;null==d||null===(a=d.items)||void 0===a||a.unshift(t)}});var t={method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)};fetch("/cart/clear.js").then(function(n){return n.json()}).then(function(n){fetch("/cart/add.js",t).then(function(n){return n.json()}).then(function(n){setTimeout(function(){a()},200)}).catch(function(n){return console.log(n)})}).catch(function(n){return console.log(n)})}}})})})}();
+var appstleInit = function () {
+  var head = document.getElementsByTagName('head')[0];
+  var startingTime = new Date().getTime();
+
+  if (typeof jQuery == 'undefined' && !RS?.Config?.disableLoadingJquery) {
+    var jQueryScript = document.createElement('script');
+    jQueryScript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
+    jQueryScript.type = 'text/javascript';
+    head.appendChild(jQueryScript);
+  }
+
+  if (typeof Mustache == 'undefined') {
+    var mustacheScript = document.createElement('script');
+    mustacheScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js';
+    mustacheScript.type = 'text/javascript';
+    head.appendChild(mustacheScript);
+  }
+
+  // Poll for jQuery to come into existance
+  var checkReady = function (callback) {
+    if (window.jQuery && window.Mustache) {
+      callback(jQuery);
+    } else {
+      window.setTimeout(function () {
+        checkReady(callback);
+      }, 20);
+    }
+  };
+
+  const urlParams = new URLSearchParams(window.location.search);
+  var globalUrlParameter = urlParams.get('variant');
+  // Start polling...
+  checkReady(function ($) {
+    $(function () {
+      var endingTime = new Date().getTime();
+      var tookTime = endingTime - startingTime;
+      console.log("jQuery is loaded, after " + tookTime + " milliseconds!");
+
+
+      function renderWidget(standAloneProduct, standAloneElement, widgetId) {
+        RS.Config = Object.assign(RS.Config, "undefined" != typeof _RSConfig && null !== _RSConfig ? _RSConfig : {})
+
+        window.RSConfig = RS.Config;
+
+        var product = RSConfig.product;
+
+        if (standAloneProduct) {
+          RSConfig.product = product = standAloneProduct;
+        }
+
+        processProductVariants(product);
+
+        var localVariantsByTitle = RSConfig.variantsByTitle;
+        var localVariantsById = RSConfig.variantsById;
+        var localWindowVariant;
+
+        function processProductVariants(product) {
+          if (!product) {
+            return;
+          }
+
+          var variants = product.variants;
+          var _variantsByTitle = {};
+          var _variantsById = {};
+          for (var index = 0; index < variants.length; index++) {
+            var variant = variants[index];
+            _variantsByTitle[variant.title] = Object.assign({}, variant);
+            _variantsById[variant.id] = Object.assign({}, variant);
+          }
+          RSConfig.variantsByTitle = _variantsByTitle;
+          RSConfig.variantsById = _variantsById;
+        }
+
+        function urlParamsToObject() {
+          var queryStringTokens = location.search.substr(1).split("&");
+          var result = {};
+          for (var index = 0; index < queryStringTokens.length; index++) {
+            var keyValues = queryStringTokens[index].split("=")
+            result[keyValues[0]] = keyValues[1];
+          }
+          return result
+        }
+
+        function urlParam(key) {
+          return urlParamsToObject()[key] || null
+        }
+
+        function detectVariant(previousVariantId, selector, product) {
+          var variantId = urlParam("variant");
+
+          if (selector.closest('form[action="/cart/add"]').find('[name=id]').length > 0 && selector.closest('form[action="/cart/add"]').find('[name=id]')[0].value) {
+            variantId = selector.closest('form[action="/cart/add"]').find('[name=id]')[0].value;
+            return localVariantsById[variantId];
+          } else if (variantId) {
+            return localVariantsById[variantId];
+          } else if (Object.values(localVariantsById).some(data => data?.title == $("form select[name='options[Bundle]']")?.val())) {
+            return Object.values(localVariantsById).find(data => data?.title == $("select[name='options[Bundle]']").val())
+          } else {
+            var titleTokens;
+
+            titleTokens = function () {
+              var variantTokens = [];
+              var singleOptionSelector = selector.closest('form[action="/cart/add"]').find("select.single-option-selector");
+              if (singleOptionSelector != null && singleOptionSelector.selectedIndex != null && singleOptionSelector.selectedIndex !== -1) {
+                variantTokens.push(singleOptionSelector[singleOptionSelector.selectedIndex].value)
+              } else {
+                variantTokens.push(void 0);
+              }
+              return variantTokens
+            }();
+
+            var variant = localVariantsByTitle[titleTokens.join(" / ")]
+            if (variant) {
+              return variant;
+            } else {
+              var variant = product.variants[0];
+              return variant;
+            }
+          }
+        }
+
+        function getSellingPlanAllocation(variantId, sellingPlanId) {
+          var variant = localVariantsById[variantId];
+          return variant.selling_plan_allocations.find(function (plan) {
+            return plan.selling_plan_id === sellingPlanId;
+          });
+        }
+
+        function compareCustomerTags(array1, array2) {
+          return array1.filter(function (n) {
+            return array2.indexOf(n) != -1;
+          });
+        }
+
+        function isSellingPlanVisible(sellingPlanId) {
+          var customerId = __st.cid;
+          var userTags = RSConfig.customer_tags || [];
+          var isVisible = true;
+
+          if (!customerId && RSConfig.memberOnlySellingPlansJson && RSConfig.memberOnlySellingPlansJson[sellingPlanId]) {
+            isVisible = false;
+          }
+
+          if (customerId && RSConfig.nonMemberOnlySellingPlansJson && RSConfig.nonMemberOnlySellingPlansJson[sellingPlanId]) {
+            isVisible = false;
+          }
+
+          if (isVisible && customerId && RSConfig.memberOnlySellingPlansJson && RSConfig.memberOnlySellingPlansJson[sellingPlanId]) {
+            if (RSConfig.memberOnlySellingPlansJson[sellingPlanId].memberInclusiveTags && RSConfig.memberOnlySellingPlansJson[sellingPlanId].memberInclusiveTags.trim()) {
+              var sellingPlanTags = RSConfig.memberOnlySellingPlansJson[sellingPlanId].memberInclusiveTags.split(",");
+              var tagFound = compareCustomerTags(userTags, sellingPlanTags);
+              isVisible = (tagFound.length > 0);
+            }
+          }
+
+          return isVisible;
+        }
+
+        function buildSellingPlantText(sellingPlan) {
+          var sellingPlanModel = sellingPlan.totalPrice == sellingPlan.formattedPrice ?
+            {
+              sellingPlanName: sellingPlan.name,
+              sellingPlanPrice: `<span class="transcy-money money">${sellingPlan.formattedPrice}</span>`,
+              secondSellingPlanPrice: `<span class="transcy-money money">${sellingPlan.secondFormattedPrice}</span>`,
+              discountText: sellingPlan?.discountText,
+              totalPrice: `<span class="transcy-money money">${sellingPlan?.totalPrice}</span>`,
+            }
+            : {
+              sellingPlanName: sellingPlan.name,
+              totalPrice: `<span class="transcy-money money">${sellingPlan?.totalPrice}</span>`,
+              sellingPlanPrice: `<span class="transcy-money money">${sellingPlan.formattedPrice}</span>`,
+              secondSellingPlanPrice: `<span class="transcy-money money">${sellingPlan.secondFormattedPrice}</span>`,
+              discountText: sellingPlan.discountText
+            };
+
+          var sellingPlanDisplayText = Mustache.render(RS.Config.sellingPlanTitleText, sellingPlanModel);
+          return wrapPriceWithSpanTag(sellingPlanDisplayText);
+        }
+
+        function wrapPriceWithSpanTag(price) {
+          var spanElement = document.createElement('span');
+          spanElement.innerHTML = price;
+          return spanElement.textContent || spanElement.innerText;
+        }
+
+        function buildAtcButtonSelector() {
+          var atcButtonSelector = RSConfig.atcButtonSelector || "form[action$='/cart/add'] [type='submit']"
+
+          var atcButtonSelectorModel = {
+            productId: product.id,
+          };
+
+          atcButtonSelector = Mustache.render(atcButtonSelector, atcButtonSelectorModel);
+          return atcButtonSelector;
+        }
+
+        function buildOneTimePriceText(price) {
+          var priceModel = {
+            price: price,
+          };
+
+          var priceText = Mustache.render(RS.Config.oneTimePriceText, priceModel);
+          return priceText;
+        }
+
+        function buildSubscriptionOptionText(isPrepaidPlan, discountValue) {
+          let subscriptionOptionModel = {
+            discountValue: discountValue
+          };
+
+          let subscriptionOptionText = Mustache.render(RS.Config.subscriptionOptionText, subscriptionOptionModel);
+          return subscriptionOptionText;
+        }
+
+        function buildSelectedPriceText(price, isPrePaid, totalPrice) {
+          var priceModel = isPrePaid ? {
+            pricePerDelivery: price,
+            totalPrice: totalPrice
+          } : {
+            price: price,
+          };
+
+          var text = isPrePaid ? RS.Config.selectedPrepaidSellingPlanPriceText : RS.Config.selectedPayAsYouGoSellingPlanPriceText;
+          var priceText = Mustache.render(text, priceModel);
+          return priceText;
+        }
+
+        function buildPrepaidPerDeliveryPriceText(price) {
+          var priceModel = {
+            prepaidPerDeliveryPrice: price,
+          }
+        return Mustache.render(RS.Config.totalPricePerDeliveryText, priceModel);
+        }
+
+        function buildSelectedTooltipPrePaidText(price, totalPrice) {
+          var prepaidPricetooltipModel = {
+            pricePerDelivery: price,
+            totalPrice: totalPrice
+          }
+
+          var text = RS.Config.tooltipDescriptionOnPrepaidPlan;
+          var prepaidPricetooltipText = Mustache.render(text, prepaidPricetooltipModel);
+          return prepaidPricetooltipText;
+        }
+
+        function buildSelectedTooltipDiscountText(selectedSellingPlanAllocationObj, multipleDiscount) {
+          if (selectedSellingPlanAllocationObj?.price_adjustments?.length == 2) {
+            var discountModel = {
+              firstPrice: formatPrice(selectedSellingPlanAllocationObj?.price_adjustments[0]?.price),
+              secondPrice: formatPrice(selectedSellingPlanAllocationObj?.price_adjustments[1]?.price),
+              discountOne: multipleDiscount.length > 0 ? multipleDiscount[0] : "",
+              discountTwo: multipleDiscount.length == 2 ? multipleDiscount[1] : ""
+            };
+
+            return Mustache.render(RS.Config.tooltipDescriptionOnMultipleDiscount, discountModel);
+          }
+        }
+
+        function buildTooltipDetailsText(prepaidText, isPrePaid, discountText) {
+          var tooltipDetailModel = isPrePaid ? {
+              prepaidDetails: prepaidText,
+              discountDetails: discountText,
+              defaultTooltipDescription: RS.Config.tooltipDesctiption
+            }
+            :
+            {
+              defaultTooltipDescription: RS.Config.tooltipDesctiption,
+              discountDetails: discountText
+            };
+          // let text = RS.Config.tooltipDesctiption + (isPrePaid ?  "</br>{{prepaidDetails}}" : "") + (discountText!= undefined ? "</br>{{discountDetails}}": "");
+          let text = RS.Config.tooltipDescriptionCustomization;
+          var tooltipText = Mustache.render(text, tooltipDetailModel);
+          return tooltipText;
+        }
+
+        function populateDropdown(purchaseOptions, variant) {
+          var sellingPlanVariants = [];
+          jQuery.each(product.selling_plan_groups, function (index, sellingPlanGroup) {
+            if (sellingPlanGroup.app_id === 'appstle') {
+              jQuery.each(sellingPlanGroup.selling_plans, function (subIndex, sellingPlan) {
+                var visible = isSellingPlanVisible(sellingPlan.id);
+                if (visible) {
+                  var sellingPlanAllocation = getSellingPlanAllocation(variant.id, sellingPlan.id);
+                  if (!sellingPlanAllocation) {
+                    return
+                  }
+                  var price = sellingPlanAllocation.per_delivery_price;
+                  var totalPrice = formatPrice(sellingPlanAllocation?.price);
+                  var formattedPrice = formatPrice(price);
+
+                  var secondPrice = null;
+                  var secondFormattedPrice = null;
+
+                  if (sellingPlanAllocation
+                    && sellingPlanAllocation.price_adjustments
+                    && sellingPlanAllocation.price_adjustments.length === 2) {
+                    secondPrice = sellingPlanAllocation.price_adjustments[1].price;
+                    secondFormattedPrice = formatPrice(secondPrice);
+                  } else {
+                    secondPrice = price;
+                    secondFormattedPrice = formattedPrice;
+                  }
+                  let discountText;
+                  var priceAdjustment = sellingPlan?.price_adjustments[0];
+                  if (priceAdjustment?.value_type !== 'percentage') {
+                    discountText = formatPrice(priceAdjustment?.value);
+                  } else {
+                    discountText = priceAdjustment?.value + '%';
+                  }
+
+                  sellingPlanVariants.push({
+                    "name": sellingPlan.name,
+                    "id": sellingPlan.id,
+                    "formattedPrice": formattedPrice,
+                    "price": price,
+                    "totalPrice": totalPrice,
+                    "secondPrice": secondPrice,
+                    "secondFormattedPrice": secondFormattedPrice,
+                    "discountText": discountText
+                  });
+                }
+              });
+            }
+          });
+          if (sellingPlanVariants.length > 0) {
+            if (sellingPlanVariants.length < 2) {
+              jQuery(purchaseOptions).find('.appstle_subscribe_option').children().hide();
+
+              var singleSellingPlanDisplayText = buildSellingPlantText(sellingPlanVariants[0]);
+
+              var planText = jQuery(`<div class="appstle_single_option_text">${singleSellingPlanDisplayText}</div>`);
+              planText.appendTo(purchaseOptions.find('.appstle_subscribe_option'))
+            }
+            if (!RSConfig?.sortByDefaultSequence) {
+              sellingPlanVariants.sort(function (sellingPlanA, sellingPlanB) {
+                return sellingPlanA.price - sellingPlanB.price;
+              })
+            }
+
+            jQuery(sellingPlanVariants).each(function (index, sellingPlan) {
+
+              var sellingPlanDisplayText = buildSellingPlantText(sellingPlan);
+              if (!RSConfig?.switchRadioButtonWidget) {
+                jQuery('<option />', {
+                  value: sellingPlan.id,
+                  html: sellingPlanDisplayText
+                }).appendTo(purchaseOptions.find('select'));
+              } else {
+                jQuery(`<label style="margin-top: 10px;">
+                <input type="radio" value="${sellingPlan.id}" ${!index ? 'checked' : ''} name="selling_plan_radio" style="display: inline;"></input>
+                ${sellingPlanDisplayText}
+              </label>`).appendTo(purchaseOptions.find('.appstle_subscribe_option'));
+              }
+            });
+          } else {
+            try {
+              jQuery('#appstle_subscription_widget' + widgetId).remove()
+              var timer = setTimeout(function () {
+                jQuery('#appstle_subscription_widget' + widgetId).remove()
+                clearTimeout(timer)
+              })
+            } catch (e) {
+            }
+          }
+
+          /*sellingPlanVariants.length > 0 ? purchaseOptions.find('.appstle_subscription_amount')
+            .text(sellingPlanVariants[0].formattedPrice) : '';*/
+          return sellingPlanVariants;
+        }
+
+        var appstleSubscriptionFunction = function () {
+          if (urlIsProductPage() === true || appstleStandAloneSelectorExists()) {
+            var atcButtonSelector = buildAtcButtonSelector();
+
+            var atcButton = jQuery(atcButtonSelector).first();
+
+            if (standAloneElement) {
+              atcButton = standAloneElement;
+            }
+
+            var purchaseOptionsText;
+            var purchaseOptions;
+            var variantId;
+            var subscriptionWrapper;
+            var subscriptionWidget;
+            var subscriptionTooltip;
+
+            var reload = function () {
+              // RSConfig.switchRadioButtonWidget = true;
+              try {
+                // if(!product.available)
+                // {
+                //   return;
+                // }
+                atcButton = jQuery(atcButtonSelector).first();
+
+                if (standAloneElement) {
+                  atcButton = standAloneElement;
+                }
+                var variant = detectVariant(variantId, atcButton, product);
+                if (variant) {
+
+                  var localVariantId = variant.id;
+
+                  if (variantId) {
+                    if (variantId === localVariantId) {
+                      return;
+                    }
+                  }
+                  var appstle_selling_plan_groups;
+                  if (product.selling_plan_groups && product.selling_plan_groups.length > 0) {
+                    appstle_selling_plan_groups = product.selling_plan_groups.filter(function (group) {
+                      return group.app_id === 'appstle'
+                    })
+                  }
+                  if (appstle_selling_plan_groups && appstle_selling_plan_groups.length > 0 && RS.Config.widgetEnabled) {
+                    localWindowVariant = variant;
+                    var widgetPlacement = RS.Config.selectors.atcButtonPlacement;
+                    if (!subscriptionWrapper) {
+
+                      subscriptionWidget = jQuery('<div class="appstle_sub_widget" id="appstle_subscription_widget' + widgetId + '"></div>');
+                      purchaseOptionsText = RS.Config.purchaseOptionsText ? jQuery('<div class="appstle_widget_title">' + RS.Config.purchaseOptionsText + '</div>') : '';
+                      subscriptionWrapper = jQuery('<div class="appstle_subscription_wrapper"></div>');
+                      subscriptionTooltip = RS.Config.tooltipTitle && RS.Config.showTooltip && !RS.Config.showStaticTooltip ?
+                      jQuery(`<div data-appstle-icon="" class="appstle_tooltip_wrapper">
+                        <svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" class="tooltip_subscription_svg">
+                          <path d="M45 0C20.1827 0 0 20.1827 0 45C0 69.8173 20.1827 90 45 90C69.8173 90 90 69.8174 90 45C90.0056 44.6025 89.9322 44.2078 89.7839 43.8389C89.6357 43.47 89.4156 43.1342 89.1365 42.8511C88.8573 42.568 88.5247 42.3432 88.158 42.1897C87.7912 42.0363 87.3976 41.9573 87 41.9573C86.6024 41.9573 86.2088 42.0363 85.842 42.1897C85.4753 42.3432 85.1427 42.568 84.8635 42.8511C84.5844 43.1342 84.3643 43.47 84.2161 43.8389C84.0678 44.2078 83.9944 44.6025 84 45C84 66.5748 66.5747 84 45 84C23.4253 84 6 66.5747 6 45C6 23.4254 23.4253 6 45 6C56.1538 6 66.3012 10.5882 73.4375 18H65.4062C65.0087 17.9944 64.614 18.0678 64.2451 18.2161C63.8762 18.3643 63.5405 18.5844 63.2573 18.8635C62.9742 19.1427 62.7494 19.4753 62.596 19.842C62.4425 20.2088 62.3635 20.6024 62.3635 21C62.3635 21.3976 62.4425 21.7912 62.596 22.158C62.7494 22.5247 62.9742 22.8573 63.2573 23.1365C63.5405 23.4156 63.8762 23.6357 64.2451 23.7839C64.614 23.9322 65.0087 24.0056 65.4062 24H79.8125C80.6081 23.9999 81.3711 23.6838 81.9337 23.1212C82.4963 22.5586 82.8124 21.7956 82.8125 21V6.59375C82.821 6.18925 82.7476 5.78722 82.5966 5.41183C82.4457 5.03644 82.2205 4.69545 81.9344 4.40936C81.6483 4.12327 81.3073 3.898 80.9319 3.7471C80.5565 3.5962 80.1545 3.52277 79.75 3.53125C79.356 3.53941 78.9675 3.62511 78.6067 3.78344C78.2458 3.94177 77.9197 4.16963 77.6469 4.45402C77.3741 4.73841 77.16 5.07375 77.0168 5.44089C76.8737 5.80803 76.8042 6.19977 76.8125 6.59375V12.875C68.6156 4.86282 57.3081 0 45 0ZM43.75 20.75C43.356 20.7582 42.9675 20.8439 42.6067 21.0022C42.2458 21.1605 41.9197 21.3884 41.6469 21.6728C41.3741 21.9572 41.16 22.2925 41.0168 22.6596C40.8737 23.0268 40.8042 23.4185 40.8125 23.8125V47.375C40.8116 47.7693 40.8883 48.16 41.0385 48.5246C41.1886 48.8892 41.4092 49.2207 41.6875 49.5L54.0938 61.9375C54.6573 62.5011 55.4217 62.8177 56.2188 62.8177C57.0158 62.8177 57.7802 62.5011 58.3438 61.9375C58.9073 61.3739 59.224 60.6095 59.224 59.8125C59.224 59.0155 58.9073 58.2511 58.3438 57.6875L46.8125 46.1875V23.8125C46.821 23.408 46.7476 23.006 46.5966 22.6306C46.4457 22.2552 46.2205 21.9142 45.9344 21.6281C45.6483 21.342 45.3073 21.1168 44.9319 20.9658C44.5565 20.8149 44.1545 20.7415 43.75 20.75Z">
+                          </path>
+                        </svg>
+                        <span class="appstle_tooltip_title">${RS.Config.tooltipTitle}</span>
+                        <div class="appstle_tooltip">
+                          <div class="appstle_tooltip_content">
+                              ${RS.Config.tooltipDesctiption}
+                          </div>
+                          ${RS.Config.showAppstleLink ? `<div class="appstle_tooltip_appstle">
+                            <a href="https://appstle.com/" class="appstle_link" target="_blank">
+                              POWERED BY APPSTLE
+                            </a>
+                          </div>` : "<span></span>"}
+                                        </div>
+                                      </div>`) : RS.Config.showTooltip && RS.Config.showStaticTooltip && jQuery(`<div class="appstle_tooltip_wrapper_static">${RS.Config.tooltipDesctiption}</div>`);
+
+                      purchaseOptionsText ? purchaseOptionsText.appendTo(subscriptionWidget) : '';
+
+                      addSubscriptionItems(subscriptionWrapper, variant);
+
+                      subscriptionWrapper.appendTo(subscriptionWidget);
+                      subscriptionTooltip ? subscriptionTooltip.appendTo(subscriptionWidget) : '';
+
+                    } else {
+                      unbindEventListeners();
+                      subscriptionWrapper.children().remove();
+                      addSubscriptionItems(subscriptionWrapper, variant);
+                      subscriptionTooltip ? subscriptionWrapper.insertBefore(subscriptionTooltip) : subscriptionWrapper.appendTo(subscriptionWidget);
+                    }
+
+                    if(!RSConfig?.product?.available)
+                    {
+                      if(RS.Config?.widgetEnabledOnSoldVariant == "false")
+                      {
+                        return;
+                      }
+                    }
+
+                    if (widgetPlacement === 'BEFORE') {
+                      subscriptionWidget.insertBefore(atcButton);
+                    } else if (widgetPlacement === 'AFTER') {
+                      subscriptionWidget.insertAfter(atcButton);
+                    } else if (widgetPlacement === 'FIRST_CHILD') {
+                      subscriptionWidget.prependTo(atcButton);
+                    } else if (widgetPlacement === 'LAST_CHILD') {
+                      subscriptionWidget.appendTo(atcButton);
+                    }
+
+                    updateWidgetElements();
+                    jQuery(document).trigger("appstle_widget_updated");
+                  }
+
+                  variantId = localVariantId;
+                }
+              } catch (e) {
+                console.log(e)
+              }
+            }
+
+            setTimeout(function () {
+              reload();
+              updateWidgetUIBasedOnQueryParams();
+            }, 13);
+
+            //  CODE FOR CALL A FUNCTION AUTOMATICALLY WHEN URL VARIANT ID WILL CHANGE. IT WILL CHECK ON EVERY 5ms
+            // setInterval(()=>{
+            //   var currentURLparam = new URLSearchParams(window.location.search)
+            //   var currentParameter = currentURLparam.get('variant');
+            //   if(globalUrlParameter != currentParameter)
+            //     reload();
+            //     updateHistoryState();
+            //     globalUrlParameter= currentParameter;
+            // }, 500)
+
+            if (standAloneElement) {
+              standAloneElement.closest('form[action="/cart/add"]').on('change', function () {
+                setTimeout(function () {
+                  reload();
+                  updateHistoryState();
+                  if(window?._transcy)
+                    {
+                      window?._transcy?.methods?.reConvertCurrency()
+                    }
+              }, 30);
+              });
+              standAloneElement.closest('form[action="/cart/add"]').on('click', function () {
+                setTimeout(function () {
+                  reload();
+                  updateHistoryState();
+                  if(window?._transcy)
+                    {
+                      window?._transcy?.methods?.reConvertCurrency()
+                    }
+              }, 30);
+              });
+            } else {
+              jQuery(document).on('change', function () {
+                setTimeout(function () {
+                    reload();
+                    updateHistoryState();
+                    if(window?._transcy)
+                    {
+                      window?._transcy?.methods?.reConvertCurrency()
+                    }
+                }, 30);
+              });
+              jQuery(document).on('click', function () {
+                setTimeout(function () {
+                  reload();
+                  updateHistoryState();
+                  if(window?._transcy)
+                    {
+                      window?._transcy?.methods?.reConvertCurrency()
+                    }
+              }, 30);
+              });
+            }
+          }
+
+          if (urlIsAccountPage() === true) {
+            var subscriptionLinkSelector = RSConfig.selectors.subscriptionLinkSelector;
+            var subscriptionLinkPlacement = RSConfig.selectors.subscriptionLinkPlacement;
+            var manageSubscriptionLink = RSConfig.manageSubscriptionBtnFormat
+            if (subscriptionLinkPlacement.toLowerCase() === "after")
+              jQuery(subscriptionLinkSelector).after(manageSubscriptionLink)
+            else if (subscriptionLinkPlacement.toLowerCase() === "first_child")
+              jQuery(subscriptionLinkSelector).first(manageSubscriptionLink)
+            else if (subscriptionLinkPlacement.toLowerCase() === "last_child")
+              jQuery(subscriptionLinkSelector).last(manageSubscriptionLink)
+            else
+              jQuery(subscriptionLinkSelector).before(manageSubscriptionLink)
+            accountPageStyle();
+          }
+        }
+
+        deferJquery(appstleSubscriptionFunction);
+
+        function hidePaymentButtons() {
+          jQuery(RSConfig.selectors.payment_button_selectors).hide();
+        }
+
+        function showPaymentButtons() {
+          jQuery(RSConfig.selectors.payment_button_selectors).show();
+        }
+
+        function urlIsProductPage() {
+          // return null != decodeURIComponent(window.location.pathname).match(/\/products\/(([a-zA-Z0-9]|[\-\.\_\~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[\ud83c\ud83d\ud83e][\ud000-\udfff]){1,})\/?/)
+          return decodeURIComponent(window.location.pathname).includes('/products/');
+        }
+
+        function urlIsAccountPage() {
+          return window.location.pathname === '/account'
+          // if(window.location.pathname.includes('/account') || window.location.pathname === '/account')
+          // {
+          //   return true
+          // }
+        }
+
+        function deferJquery(method) {
+          if (window.jQuery)
+            method();
+          else
+            setTimeout(function () {
+              deferJquery(method)
+            }, 50);
+        }
+
+        function addSubscriptionItems(subscriptionWrapper, variant) {
+          if (!product.requires_selling_plan) {
+            var oneTimePurchaseOption = jQuery(
+              `<div class="appstle_subscription_wrapper_option ${(product.requires_selling_plan || RS.Config.subscriptionOptionSelectedByDefault ? '' : 'appstle_selected_background')}">
+          <input type="radio" ${RS.Config.subscriptionOptionSelectedByDefault ? '' : 'checked'} id="appstle_selling_plan_label_1${widgetId}" name="selling_plan" value="" ${(RS.Config.formMappingAttributeName && RS.Config.formMappingAttributeSelector && jQuery(RS.Config.formMappingAttributeSelector).length && jQuery(RS.Config.formMappingAttributeSelector).attr("id")) ? `${RS.Config.formMappingAttributeName}=${jQuery(RS.Config.formMappingAttributeSelector).attr("id")}` : ``}>
+          <label for="appstle_selling_plan_label_1${widgetId}" class="appstle_radio_label">
+            <span class="appstle_circle"><span class="appstle_dot"></span></span>
+              <span class="appstle_one_time_text">${RS.Config.oneTimePurchaseText}</span>
+             </label>
+          <span class="appstle_subscription_amount transcy-money money">${buildOneTimePriceText(formatPrice(variant.price))}</span>
+         </div>`
+            );
+            oneTimePurchaseOption.appendTo(subscriptionWrapper);
+          }
+
+          var subscriptionDropdown = jQuery(
+            `<div class="appstle_subscription_wrapper_option appstle_include_dropdown ${(product.requires_selling_plan || RS.Config.subscriptionOptionSelectedByDefault ? 'appstle_selected_background' : '')}">
+            <div class="appstle_subscription_radio_wrapper">
+                <input type="radio" id="appstle_selling_plan_label_2${widgetId}" name="selling_plan" value="Subscribe and save" ${product.requires_selling_plan || RS.Config.subscriptionOptionSelectedByDefault ? 'checked' : ''} ${(RS.Config.formMappingAttributeName && RS.Config.formMappingAttributeSelector && jQuery(RS.Config.formMappingAttributeSelector).length && jQuery(RS.Config.formMappingAttributeSelector).attr("id")) ? `${RS.Config.formMappingAttributeName}=${jQuery(RS.Config.formMappingAttributeSelector).attr("id")}` : ``}>
+                <label for="appstle_selling_plan_label_2${widgetId}" class="appstle_radio_label">
+                    <span class="appstle_circle"><span class="appstle_dot"></span></span>
+                    <span class="appstle_subscribe_save_text">${RS.Config.subscriptionOptionText}</span>
+                </label>
+                <div class="appstle_subscription_amount_wrapper">
+                  <span class="appstle_subscription_amount transcy-money money"></span>
+                </div>
+            </div>
+            <div class="appstle_subscribe_option ${(product.requires_selling_plan || RS.Config.subscriptionOptionSelectedByDefault ? '' : 'appstle_hide_subsOption')}">
+                ${RS.Config.sellingPlanSelectTitle ? `<label for="appstle_selling_plan${widgetId}" class="appstle_select_label">${RS.Config.sellingPlanSelectTitle}</label>` : ``}
+                ${!RSConfig?.switchRadioButtonWidget ? ` <select id="appstle_selling_plan${widgetId}" class="appstle_select">
+                </select>` : ``}
+
+            </div>
+        </div>`
+          )
+
+          var sellingPlanVariants = populateDropdown(subscriptionDropdown, variant)
+          if (sellingPlanVariants && sellingPlanVariants.length > 0) {
+            if(RSConfig?.showSubOptionBeforeOneTime)
+            {
+              subscriptionDropdown.prependTo(subscriptionWrapper);
+            } else {
+              subscriptionDropdown.appendTo(subscriptionWrapper);
+            }
+          }
+
+          addStyle(widgetId);
+        }
+
+        function changeEventHandlerForRadio() {
+          jQuery('#appstle_subscription_widget' + widgetId).find('.appstle_subscription_wrapper input[type=radio]').on('change',
+            function () {
+              var subsOption = jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscribe_option');
+              if (subsOption.length > 0) {
+                if (checkIfSellingPlanGroupIsSelected()) {
+                  subsOption.removeClass('appstle_hide_subsOption')
+                  jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper_option.appstle_include_dropdown').addClass('appstle_selected_background')
+                  jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper_option').first().removeClass('appstle_selected_background')
+                } else {
+                  jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper_option.appstle_include_dropdown').removeClass('appstle_selected_background')
+                  jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper_option').first().addClass('appstle_selected_background')
+                  subsOption.addClass('appstle_hide_subsOption')
+                }
+              }
+              updateStateOfWidget();
+            });
+        }
+
+        function changeHandlerForSelect() {
+          if (!RSConfig?.switchRadioButtonWidget) {
+            jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper select').on('change', function (event) {
+              updateStateOfWidget();
+            });
+          } else {
+            jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscribe_option input').on('change', function (event) {
+              updateStateOfWidget();
+            });
+          }
+        }
+
+        function triggerChangeEvent(selector) {
+          jQuery(selector).change();
+        }
+
+        function registerAndTriggerEventsForFormFields() {
+          changeEventHandlerForRadio();
+          changeHandlerForSelect();
+        }
+
+        function unbindEventListeners() {
+          jQuery('.appstle_subscription_wrapper input[type=radio], .appstle_subscription_wrapper select').off('change')
+        }
+
+        function getSelectedSellingPlanPrice() {
+          var selectedSellingPlan = getSelectedSellingPlanId();
+          if (selectedSellingPlan) {
+            var selectedSellingPlanAllocation = getSellingPlanAllocation(localWindowVariant.id, parseInt(selectedSellingPlan));
+            return formatPrice(selectedSellingPlanAllocation.per_delivery_price);
+          } else {
+            return null;
+          }
+
+        }
+
+        function getSelectedSellingPlanId() {
+          var value = null;
+          try {
+            if (!RSConfig?.switchRadioButtonWidget) {
+              value = jQuery("#appstle_subscription_widget" + widgetId).find('.appstle_subscription_wrapper_option.appstle_include_dropdown select').val();
+            } else {
+              value = jQuery("#appstle_subscription_widget" + widgetId).find('.appstle_subscribe_option input:checked').val();
+            }
+          } catch (e) {
+          }
+          return value;
+        }
+
+        function updateSelectValueToRadio() {
+          var selectedSellingPlan = getSelectedSellingPlanId();
+          if (selectedSellingPlan) {
+            var variantId = jQuery('#appstle_subscription_widget' + widgetId).closest('form[action="/cart/add"]').find('[name=id]')[0] == undefined ? localWindowVariant.id : jQuery('#appstle_subscription_widget' + widgetId).closest('form[action="/cart/add"]').find('[name=id]')[0].value;
+            var selectedSellingPlanAllocation = getSellingPlanAllocation(variantId, parseInt(selectedSellingPlan));
+            var formattedSelectedSellingPlanPrice = formatPrice(selectedSellingPlanAllocation.per_delivery_price);
+
+            jQuery('#appstle_subscription_widget' + widgetId + ' #appstle_selling_plan_label_2' + widgetId).attr('value', selectedSellingPlan);
+            var isPrepaidPlan = selectedSellingPlanAllocation.per_delivery_price !== selectedSellingPlanAllocation.price;
+            var selectedPriceText = buildSelectedPriceText(
+              formattedSelectedSellingPlanPrice,
+              isPrepaidPlan,
+              formatPrice(selectedSellingPlanAllocation.price));
+
+            let selectedDiscountSub = getSellingPlanDiscountPercentage();
+            let multipleDiscount = getSellingPlanDiscountPercentage(true);
+            var toolTipPrepaidText = buildSelectedTooltipPrePaidText(formattedSelectedSellingPlanPrice, formatPrice(selectedSellingPlanAllocation.price));
+            var toolTipDiscountText = buildSelectedTooltipDiscountText(selectedSellingPlanAllocation, multipleDiscount);
+            var tooltipText = buildTooltipDetailsText(toolTipPrepaidText, isPrepaidPlan, toolTipDiscountText);
+            var subscribesaveText = buildSubscriptionOptionText(isPrepaidPlan, selectedDiscountSub);
+            var prepaidPerDeliveryPriceText = buildPrepaidPerDeliveryPriceText(formattedSelectedSellingPlanPrice);
+
+            jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_prepaid_description').remove();
+            jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper_option.appstle_include_dropdown .appstle_subscription_amount').html(selectedPriceText);
+            if (isPrepaidPlan && prepaidPerDeliveryPriceText) {
+              jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_amount_wrapper').append(
+                `<div class="appstle_prepaid_description transcy-money money">${prepaidPerDeliveryPriceText || ( formatPrice(selectedSellingPlanAllocation.price) + '/delivery')}</div>`
+              )
+            }
+
+            jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscription_wrapper_option.appstle_include_dropdown .appstle_subscription_radio_wrapper .appstle_subscribe_save_text').html(subscribesaveText);
+
+            if (checkIfSellingPlanGroupIsSelected() && tooltipText && tooltipText.trim()) {
+              if (RS.Config.showStaticTooltip) {
+                jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_tooltip_wrapper_static').html(tooltipText);
+              } else {
+                jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_content').html(tooltipText);
+              }
+            } else {
+              if (RS.Config.showStaticTooltip && RS.Config.tooltipDesctiption && RS.Config.tooltipDesctiption.trim()) {
+                jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_tooltip_wrapper_static').html(RS.Config.tooltipDesctiption);
+              } else {
+                jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_content').html(RS.Config.tooltipDesctiption);
+              }
+            }
+          }
+        }
+
+        function checkIfSellingPlanGroupIsSelected() {
+          var selected = false;
+          try {
+            selected = jQuery('#appstle_subscription_widget' + widgetId).find('.appstle_subscription_wrapper_option.appstle_include_dropdown input')[0].checked;
+          } catch (e) {
+          }
+          return selected;
+        }
+
+        function buildDiscountText(selectedDiscount) {
+          // selected discount customization start
+          var selectedDiscountModel = {
+            selectedDiscountPercentage: selectedDiscount
+          }
+          var selectedDiscountFormatDisplay = Mustache.render(RS.Config.selectedDiscountFormat, selectedDiscountModel);
+
+          // selected discount customization end
+          return selectedDiscountFormatDisplay;
+        }
+
+        function updateSellingPlanValueToFinalPrice() {
+
+          var selectorsObject = {
+            regular: {
+              sellingPrice: RSConfig.priceSelector,
+              saleBadgeTop: RSConfig.badgeTop
+            }
+          }
+
+          var selectors = selectorsObject.regular;
+          jQuery('.appstle_subscription_final_price').remove();
+          jQuery('.appstle_subscription_element').remove();
+          jQuery('.appstle_subscription_compare_price').remove();
+
+          var formattedPrice = getSelectedSellingPlanPrice();
+          var selectedDiscount = getSellingPlanDiscountPercentage();
+
+          var sellingPrice = jQuery(selectors.sellingPrice);
+
+          sellingPrice.css('text-decoration', '');
+          // sellingPrice.css('display', '');
+
+          if (!selectors.sellingPrice || !selectedDiscount) {
+            return;
+          }
+
+          if (checkIfSellingPlanGroupIsSelected() && sellingPrice.length === 1) {
+
+            var selectedDiscountFormatDisplay = buildDiscountText(selectedDiscount);
+
+            if (selectedDiscountFormatDisplay) {
+              var subscriptionPercentageSavingElement =
+                jQuery(`<span class="appstle_subscription_element appstle_subscription_save"> ${selectedDiscountFormatDisplay} </span>`)
+
+              subscriptionPercentageSavingElement && subscriptionPercentageSavingElement.css('top', selectors.saleBadgeTop);
+
+              var clonedSellingPrice = sellingPrice.first().clone();
+              clonedSellingPrice.addClass('appstle_subscription_final_price transcy-money money')
+              clonedSellingPrice.text(formattedPrice);
+
+              sellingPrice.css('text-decoration', 'line-through');
+
+
+              (clonedSellingPrice.length > 0) && clonedSellingPrice.insertBefore(sellingPrice);
+              subscriptionPercentageSavingElement.insertAfter(sellingPrice);
+            }
+          }
+        }
+
+
+        function getSellingPlanDiscountPercentage(isMultipleDiscount) {
+          var selectedSellingPlan = parseInt(getSelectedSellingPlanId());
+          if (!selectedSellingPlan) {
+            return null;
+          }
+          var selectedSellingPlanGroup;
+          product.selling_plan_groups.forEach(function (sellingPlanGroup) {
+            if (sellingPlanGroup.app_id === 'appstle') {
+              sellingPlanGroup.selling_plans.forEach(function (sellingPlan) {
+                var visible = isSellingPlanVisible(sellingPlan.id);
+                if (visible && sellingPlan.id === selectedSellingPlan) {
+                  selectedSellingPlanGroup = sellingPlanGroup;
+                }
+              })
+            }
+          })
+          var selectedSellingPlan;
+          selectedSellingPlanGroup.selling_plans.forEach(function (selling_plan) {
+            if (selling_plan.id === selectedSellingPlan) {
+              selectedSellingPlan = selling_plan;
+            }
+          })
+
+          if (isMultipleDiscount && selectedSellingPlan?.price_adjustments?.length == 2) {
+            var multipleDiscount = [];
+            selectedSellingPlan?.price_adjustments?.forEach((discountValue) => {
+              if (discountValue?.value_type !== 'percentage') {
+                multipleDiscount.push(formatPrice(discountValue?.value))
+              } else {
+                multipleDiscount.push(discountValue?.value + '%');
+              }
+            })
+            return multipleDiscount;
+
+          }
+
+          var priceAdjustment = selectedSellingPlan?.price_adjustments[0];
+
+          if (priceAdjustment == null || priceAdjustment.value == null || priceAdjustment.value == 0) {
+            return null;
+          }
+          var selectedPriceAdjustment;
+          if (priceAdjustment?.value_type !== 'percentage') {
+            selectedPriceAdjustment = formatPrice(priceAdjustment?.value);
+          } else {
+            selectedPriceAdjustment = priceAdjustment?.value + '%';
+          }
+
+          return selectedPriceAdjustment
+
+        }
+
+        function updateWidgetElements() {
+          registerAndTriggerEventsForFormFields();
+          updateStateOfWidget();
+        }
+
+        function updateStateOfWidget() {
+          updateSelectValueToRadio();
+          updateSellingPlanValueToFinalPrice();
+        }
+
+        function getCssAsString(cssObject) {
+          var cssObjectWithValidValues = {};
+          Object.keys(cssObject).forEach(function (key) {
+            if (cssObject[key]) {
+              cssObjectWithValidValues[key] = cssObject[key]
+            }
+          })
+          return JSON.stringify(cssObjectWithValidValues)
+            .split('"').join('')
+            .split('{').join('')
+            .split('}').join('')
+            .split(',').join(';');
+        }
+
+        function updateHistoryState() {
+          if (!localWindowVariant) {
+            return;
+          }
+          var variantId = localWindowVariant.id;
+          if (!history.replaceState || !variantId) {
+            return;
+          }
+          var newurl =
+            window.location.protocol +
+            '//' +
+            window.location.host +
+            window.location.pathname +
+            '?';
+          if (checkIfSellingPlanGroupIsSelected()) {
+            var selectedSellingPlanId = getSelectedSellingPlanId();
+            if (selectedSellingPlanId) {
+              newurl += 'selling_plan=' + selectedSellingPlanId + '&';
+            }
+          }
+
+          newurl += 'variant=' + variantId;
+
+          if (newurl !== location.href) {
+            window.history.replaceState({path: newurl}, '', newurl);
+          }
+          updateWidgetUIBasedOnQueryParams(0)
+        }
+
+        function updateWidgetUIBasedOnQueryParams() {
+          if (jQuery('#appstle_subscription_widget' + widgetId).length === 0) {
+            return;
+          }
+          var paramsObj = urlParamsToObject();
+          var formElement = jQuery('#appstle_subscription_widget' + widgetId).closest('form[action="/cart/add"]')
+          if ((formElement.find('input[value=' + paramsObj["variant"] + ']').length > 0 || formElement.find('option[value=' + paramsObj["variant"] + ']').length > 0) && formElement.find('option[value=' + paramsObj["selling_plan"] + ']').length > 0) {
+
+            if (paramsObj['selling_plan']) {
+              var sellingPlanGroup = jQuery('#appstle_subscription_widget' + widgetId + ' #appstle_selling_plan_label_2' + widgetId);
+              sellingPlanGroup[0].checked = true;
+              var sellingPlanDropdown = null;
+              if (!RSConfig?.switchRadioButtonWidget) {
+                sellingPlanDropdown = jQuery('#appstle_subscription_widget' + widgetId + ' select#appstle_selling_plan' + widgetId)
+              } else {
+                sellingPlanDropdown = jQuery('#appstle_subscription_widget' + widgetId + ' .appstle_subscribe_option')
+              }
+              if (!RSConfig?.switchRadioButtonWidget) {
+                sellingPlanDropdown.find('option').each(function (index, option) {
+                  if (jQuery(option).attr('value') === paramsObj['selling_plan']) {
+                    sellingPlanDropdown[0].selectedIndex = index;
+                  }
+                });
+              } else {
+                sellingPlanDropdown.find('input[type=radio]').each(function (index, option) {
+                  $(option).removeAttr("checked");
+                  if (jQuery(option).attr('value') === paramsObj['selling_plan']) {
+                    $(option).attr("checked", true)
+                  }
+                });
+              }
+              sellingPlanGroup.change();
+              sellingPlanDropdown.change();
+            }
+          }
+        }
+
+        if (Shopify && Shopify.Checkout && Shopify.Checkout.hasSellingPlan && RS?.Config?.showCheckoutSubscriptionBtn) {
+          var destination = "/" + RS.Config.manageSubscriptionUrl;
+          var message = RS.Config.orderStatusManageSubscriptionDescription || 'Continue to your account to view and manage your subscriptions.';
+
+          if (Shopify.checkout && Shopify.checkout.customer_id) {
+            console.log("cusomterId=" + Shopify.checkout.customer_id);
+
+            var settings = {
+              "async": true,
+              "crossDomain": true,
+              "url": location.origin + "/apps/subscriptions?action=customer_payment_token&customer_id=" + Shopify.checkout.customer_id,
+              "method": "GET",
+              "headers": {
+                "accept": "*/*",
+                "cache-control": "no-cache",
+              }
+            }
+
+            jQuery.ajax(settings).done(function (response) {
+              destination = destination + "?token=" + response.token;
+              Shopify.Checkout.OrderStatus.addContentBox(
+                '<h2 class="heading-2 os-step__title">' + (RS.Config.orderStatusManageSubscriptionTitle || 'Subscription') + '</h2><div class="os-step__info--item"><p class="os-step__description" style="margin-top: 0.5714285714em;">' + message + '</p></div><a class="ui-button btn btn--subdued btn--size-small shown-if-js os-step__info" href="' + destination + '"> ' + (RS.Config.orderStatusManageSubscriptionButtonText || 'Manage your subscription') + '</a>'
+              );
+            });
+          } else {
+            Shopify.Checkout.OrderStatus.addContentBox(
+              '<h2 class="heading-2 os-step__title">' + (RS.Config.orderStatusManageSubscriptionTitle || 'Subscription') + '</h2><div class="os-step__info--item"><p class="os-step__description" style="margin-top: 0.5714285714em;">' + message + '</p></div><a class="ui-button btn btn--subdued btn--size-small shown-if-js os-step__info" href="' + destination + '"> ' + (RS.Config.orderStatusManageSubscriptionButtonText || 'Manage your subscription') + '</a>'
+            );
+          }
+        }
+
+        function accountPageStyle() {
+          var css = RSConfig.css;
+          jQuery(
+            `<style>${css.customCSS}</style>`).appendTo(jQuery('head'));
+        }
+
+        function addStyle(widgetId) {
+          var css = RSConfig.css;
+          jQuery(
+            `<style>
+
+     #appstle_subscription_widget${widgetId}{
+            width: 100%;
+            text-align: left;
+            margin-top: 17px;
+            clear: both;
+            max-width: 400px;
+            ${getCssAsString(css.appstle_subscription_widget)}
+        }
+
+        #appstle_subscription_widget${widgetId}{
+          ${getCssAsString(css.appstle_widget_text_color)}
+        }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper {
+               border: 1.5px solid #cccccc;
+              // box-shadow: 0 0 0 1px #c4cdd5;
+              border-radius: 5px;
+              margin-bottom: 5px;
+              margin-top: 10px;
+              ${getCssAsString(css.appstle_subscription_wrapper)}
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option {
+              display: flex;
+              position: relative;
+              padding: 16px 16px;
+          }
+          #appstle_subscription_widget${widgetId} .appstle_selected_background {
+            ${getCssAsString(css.appstle_selected_background)}
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option:first-child {
+             // box-shadow: 0 1px 0 0 #c4cdd5;
+             border-bottom: inherit;
+          }
+            #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option:first-child:last-child {
+             border-bottom: none;
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option:not(.appstle_include_dropdown) {
+            align-items: center;
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option.appstle_include_dropdown {
+            flex-direction: column;
+            justify-content: center;
+          }
+
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option input[type='radio'] {
+            display: none;
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscribe_option {
+              margin-left: 29px;
+              margin-top: 25px;
+              display: flex;
+                  flex-direction: column;
+              align-items: flex-start;
+              text-align: left;
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_amount {
+              margin-left: auto;
+          }
+
+          #appstle_subscription_widget${widgetId} .appstle_circle {
+              display: flex;
+              height: 18px;
+              width: 18px;
+              border: 2px solid #3a3a3a;
+              border-radius: 50%;
+              margin-right: 10px;
+              justify-content: center;
+              align-items: center;
+              flex-shrink: 0;
+              ${getCssAsString(css.appstle_circle)}
+            }
+
+          #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper_option input[type=radio]:checked + label .appstle_circle .appstle_dot {
+              height: 10px;
+              width: 10px;
+              background-color: #3a3a3a;
+              border-radius: 50%;
+              flex-shrink: 0;
+              ${getCssAsString(css.appstle_dot)}
+            }
+
+
+        #appstle_subscription_widget${widgetId} .appstle_radio_label {
+          display: flex !important;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          background: none;
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_select_label {
+          display: flex !important;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          background: none;
+          margin-bottom: 7px;
+          font-size: 12px;
+
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_tooltip {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+          background-color: #3a3a3a;
+          border-radius: 5px;
+          left: 0;
+          color: #fff;
+          transition: transform .2s cubic-bezier(.215,.61,.355,1);
+          -ms-transform: translateY(0);
+          transform: translateY(100%) scaleY(0);
+          transform-origin: center top;
+          opacity: 0;
+          position: absolute;
+          bottom: 1px;
+          // border-bottom-left-radius: 0;
+          min-width: 250px;
+          ${getCssAsString(css.appstle_tooltip)}
+        }
+
+        #appstle_subscription_widget${widgetId} [data-appstle-icon]:hover .appstle_tooltip {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(100%) scaleY(1);
+          bottom: 1px;
+          z-index: 99999999;
+        }
+
+
+        #appstle_subscription_widget${widgetId} [data-appstle-icon] {
+            -ms-flex-item-align: end;
+            backface-visibility: hidden;
+        }
+
+        #appstle_subscription_widget${widgetId} [data-appstle-icon]:after {
+              border: solid transparent;
+              border-top-color: #3a3a3a;
+              border-width: 9px;
+              content: '';
+              position: absolute;
+              pointer-events: none;
+              opacity: 0;
+              left: 2px;
+              bottom: 0;
+              -ms-transform: translateX(-50%) translateY(10px) rotate(180deg);
+              transform: translateY(10px) rotate(180deg);
+              transition-delay: 0;
+              visibility: hidden;
+              transition: transform .2s cubic-bezier(.215,.61,.355,1);
+              z-index: 99999999;
+              background: none;
+              padding: 0;
+              ${getCssAsString(css.appstle_tooltip_border_top_color)}
+        }
+
+        #appstle_subscription_widget${widgetId} [data-appstle-icon]:hover:after {
+          opacity: 1;
+          visibility: visible;
+          -ms-transform: translateX(-50%) translateY(0) rotate(180deg);
+          transform: translateY(0) rotate(180deg);
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_tooltip_wrapper {
+          position: relative;
+          margin-bottom: 6px;
+          display: inline-flex;
+          align-items: center;
+          padding-top: 11px;
+          box-sizing: border-box;
+          margin-left: 0px;
+          padding-bottom: 11px;
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_tooltip_wrapper_static {
+          font-size: 13px;
+          background-color: beige;
+          border-radius: 6px;
+          padding: 23px;
+          margin-bottom: 10px;
+          ${getCssAsString(css.appstle_tooltip)}
+        }
+
+        #appstle_subscription_widget${widgetId} .tooltip_subscription_svg {
+             height: 22px;
+            width: 22px;
+            margin-right: 10px;
+            fill: black;
+            ${getCssAsString(css.tooltip_subscription_svg)}
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_subscription_radio_wrapper {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_subscription_amount_wrapper {
+          margin-left: auto;
+          text-align: right;
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_subscription_amount_wrapper .appstle_prepaid_description {
+          font-size: 12px;
+          opacity: 0.8;
+        }
+
+        .appstle_subscription_final_price {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #da4f49;
+            ${getCssAsString(css.appstle_subscription_final_price)}
+        }
+
+        .appstle_subscription_save {
+            margin-left: 10px;
+              padding: 2px 6px;
+              border: 1px solid #da4f49;
+              border-radius: 3px;
+              font-size: 10px;
+              color: #da4f49;
+              font-weight: bold;
+              display: inline;
+              position: relative;
+              top: -3px;
+              letter-spacing: 1px;
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_subscription_wrapper .appstle_select {
+            width: 100%;
+            margin: 0;
+            ${getCssAsString(css.appstle_select)}
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_hide_subsOption {
+          opacity: 0;
+          margin-top: 0;
+          visibility: hidden;
+          height: 0;
+        }
+
+        #appstle_subscription_widget${widgetId} .appstle_tooltip_content {
+          background-color: #3a3a3a;
+          padding: 16px;
+        }
+
+        body #appstle_subscription_widget${widgetId} .appstle_tooltip_wrapper .appstle_tooltip .appstle_tooltip_appstle {
+          padding: 12px !important;
+          font-size: 8px !important;
+          letter-spacing: 2px !important;
+          text-align: right !important;
+          background: #13b5ea !important;
+          border-bottom-left-radius: 4px !important;
+          border-bottom-right-radius: 4px !important;
+          display: block !important;
+        }
+
+        .appstle_link {
+          color: inherit !important;
+          text-decoration: none !important;
+          cursor: pointer !important;
+        }
+
+
+        </style>
+        <style>${css.customCSS}</style>`
+          ).appendTo(jQuery('head'));
+        }
+      }
+
+      function renderStandAloneWidget() {
+        var standaloneElements = Array.prototype.slice.call(jQuery(".appstle_stand_alone_selector"));
+          let index = -1
+          function attatchWidgetToStandAloneElement() {
+              if (standaloneElements?.length) {
+                let standAloneElement = standaloneElements.shift();
+                let product = $(standAloneElement).data("product-data");
+                index = index + 1;
+                if(!jQuery(standAloneElement).parents('form').find('.appstle_sub_widget').length) {
+                  if (!product) {
+                    jQuery.get(location.origin + `/products/${jQuery(standAloneElement).data("product-handle")}.js`)
+                    .then((productHandleData) => {
+                      jQuery(standAloneElement).attr("data-product-data", productHandleData);
+                      renderWidget(JSON.parse(productHandleData), $(standAloneElement), index);
+                      attatchWidgetToStandAloneElement();
+                    })
+                  } else {
+                      renderWidget(product, $(standAloneElement), index);
+                      attatchWidgetToStandAloneElement();
+                    }
+                  } else {
+                   attatchWidgetToStandAloneElement();
+                  }
+
+              }
+          }
+          attatchWidgetToStandAloneElement()
+      }
+
+      jQuery(".appstle_sub_widget").remove();
+      // Init appstle render widget
+      if (appstleStandAloneSelectorExists()) {
+        if(window?.RS?.Config?.appstlePlanName?.toLowerCase()?.includes("enterprise") || window?.RS?.Config?.appstlePlanName?.toLowerCase()?.includes("business")
+        || jQuery('.appstle_stand_alone_selector')?.parents('form')?.attr('class')?.includes('pf')) {
+          renderStandAloneWidget();
+        }
+        else {
+          console.log("you are not in business plan or enterprise plan. please switch the plan")
+        }
+      } else {
+        renderWidget(undefined, undefined, 0);
+      }
+
+            // Code For Quick View Page (It will load on click of quickview page)  It's compulsory to have a standalone script otherwise it won't work
+            jQuery(`${window?.RS?.Config?.quickViewClickSelector}` || "a.grid-product__link").on("click",function(){
+
+              if(jQuery(`${window?.RS?.Config?.quickViewClickSelector}` || "a.grid-product__link").length > 0)
+              {
+                if(window?.RS?.Config?.appstlePlanName?.toLowerCase()?.includes("enterprise") || window?.RS?.Config?.appstlePlanName?.toLowerCase()?.includes("business"))
+                  {
+                    var initiateQuickView = function() {
+                      if (appstleStandAloneSelectorExists()) {
+                        renderStandAloneWidget();
+                    } else {
+                        if(jQuery("#appstle_subscription_widget0")?.length == 0)
+                        {
+                          renderWidget(undefined, undefined, 0);
+                        }
+                      }
+                    }
+
+                    if(`${window?.RS?.Config?.quickViewModalPollingSelector}` || window?.Shopify?.shop == 'mahalia-coffee.myshopify.com')
+                    {
+                      var pollQuickView = function() {
+                        if (jQuery(".quickshop.quickshop-visible.quickshop-loaded").length || jQuery(`${window?.RS?.Config?.quickViewModalPollingSelector}`).length) {
+                          initiateQuickView()
+                        } else {
+                          setTimeout(()=> {
+                            pollQuickView();
+                          },200)
+                        }
+                      }
+                      pollQuickView();
+                    }
+                    else {
+                      setTimeout(()=> {
+                        initiateQuickView()
+                      }, 500)
+                    }
+                }
+              }
+            })
+
+      function formatPrice(price) {
+
+        var configMoneyFormat = RS.Config.moneyFormat;
+
+        var moneyFormat = configMoneyFormat;
+        if (configMoneyFormat) {
+          moneyFormat = configMoneyFormat?.replace('{% raw %}', '')?.replace('{% endraw %}', '');
+        }
+
+        if (typeof price === 'string') {
+          price = price.replace('.', '');
+        }
+
+        var value = '';
+        var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+        var shopifyMoneyFormat = typeof Shopify !== 'undefined' && Shopify.money_format && Shopify.money_format.length > 1 ? Shopify.money_format : '';
+        var themeMoneyFormat;
+        if (typeof theme !== 'undefined') {
+          if (theme.moneyFormat) {
+            themeMoneyFormat = theme.moneyFormat;
+          } else if (theme.money_format) {
+            themeMoneyFormat = theme.money_format;
+          } else if (theme.settings && theme.settings.moneyFormat) {
+            themeMoneyFormat = theme.settings.moneyFormat;
+          } else {
+            themeMoneyFormat = theme.strings ? theme.strings.moneyFormat : '';
+          }
+        } else {
+          themeMoneyFormat = '';
+        }
+
+        function htmlDecode(input) {
+          var doc = new DOMParser().parseFromString(input, "text/html");
+          return doc.documentElement.textContent;
+        }
+
+        var formatString = window?.shopifyCurrencyFormat || window?.moneyFormat || window?.Currency?.money_format_no_currency || themeMoneyFormat || RSConfig?.shopMoneyFormat || moneyFormat  || shopifyMoneyFormat || htmlDecode(RSConfig.shopMoneyFormatWithCurrencyFormat);
+
+        function formatWithDelimiters(number, precision, thousands, decimal) {
+          thousands = thousands || ',';
+          decimal = decimal || '.';
+
+          if (isNaN(number) || number === null) {
+            return 0;
+          }
+
+          number = (number / 100.0).toFixed(precision);
+
+          var parts = number.split('.');
+          var dollarsAmount = parts[0].replace(
+            /(\d)(?=(\d\d\d)+(?!\d))/g,
+            '$1' + thousands
+          );
+          var centsAmount = parts[1] ? decimal + parts[1] : '';
+
+          return dollarsAmount + centsAmount;
+        }
+
+        switch (formatString.match(placeholderRegex)[1]) {
+          case 'amount':
+            value = formatWithDelimiters(price, 2);
+            break;
+          case 'amount_no_decimals':
+            value = formatWithDelimiters(price, 0);
+            break;
+          case 'amount_with_comma_separator':
+            value = formatWithDelimiters(price, 2, '.', ',');
+            break;
+          case 'amount_no_decimals_with_comma_separator':
+            value = formatWithDelimiters(price, 0, '.', ',');
+            break;
+          case 'amount_no_decimals_with_space_separator':
+            value = formatWithDelimiters(price, 0, ' ');
+            break;
+          case 'amount_with_apostrophe_separator':
+            value = formatWithDelimiters(price, 2, "'");
+            break;
+        }
+        var spanElement = document.createElement('span');
+        spanElement.innerHTML = formatString.replace(placeholderRegex, value);
+        return spanElement.textContent || spanElement.innerText;
+      }
+
+      if (appstlePriceDisplaySelectorExists()) {
+        addFeaturePageCSS();
+        jQuery(".appstle_stand_alone_price_display_selector").each(function (index) {
+          let product = $(this).data("product-data");
+
+          let subscription_price = Number.MAX_SAFE_INTEGER;
+          let has_subscription_price = false
+
+          product.variants.forEach(variant => {
+            variant.selling_plan_allocations.forEach(allocation => {
+              if (allocation.price_adjustments[0].price < subscription_price) {
+                subscription_price = allocation.price_adjustments[0].price
+                has_subscription_price = true;
+              }
+            })
+          })
+
+          if (has_subscription_price) {
+            $(this).siblings("span.price, span.appstle_hide_old_price").hide(); // hide old price from home page
+            $(this).html(buildSubscribeSaveSelector(subscription_price));
+          }
+          $(this).show();
+        })
+      }
+
+      function addFeaturePageCSS() {
+        let cssFeaturedProduct = RSConfig?.css;
+        jQuery(`<style>.appstle_subscribesavetext{
+                  background-color:#c00303;
+                  color:#fff;
+                  padding:4px 8px;
+                  font-size:13px;
+                    }</style>
+                <style>${cssFeaturedProduct?.customCSS}</style>`).appendTo(jQuery('head'));
+      }
+
+      function buildSubscribeSaveSelector(subscription_price) {
+        let subscribeSaveModel = {
+          subscriptionPrice: formatPrice(subscription_price)
+        };
+
+        return Mustache.render(RSConfig?.subscriptionPriceDisplayText, subscribeSaveModel);
+      }
+
+      function appstleStandAloneSelectorExists() {
+        return jQuery(".appstle_stand_alone_selector").length > 0
+      }
+
+      function appstlePriceDisplaySelectorExists() {
+        return jQuery(".appstle_stand_alone_price_display_selector").length > 0
+      }
+
+      //============================ CART PAGE WIDGET START HERE  =========================================================
+      if (RSConfig?.enableCartWidgetFeature !== "true") {
+        return;
+      }
+      $(function () {
+        //global variable
+        var cartRowSelector = RSConfig.selectors.cartRowSelector;
+        var cartLineItemSelector = RSConfig.selectors.cartLineItemSelector;
+        var appstleCustomSelector = "[data-appstle-selector]";
+        var cartLineItemPerQuantityPriceSelector = RSConfig.selectors.cartLineItemPerQuantityPriceSelector;
+        var cartLineItemTotalPriceSelector = RSConfig.selectors.cartLineItemTotalPriceSelector;
+        var lineItemSellingPlanNameSelector = RSConfig.selectors.cartLineItemSellingPlanNameSelector;
+        var cartSubTotalSelector =  RSConfig.selectors.cartSubTotalSelector;
+        var cartLineItemPriceSelector = RSConfig.selectors.cartLineItemPriceSelector;
+
+        var cartPageSellingPlan = [];
+        var totalSubscriptionPlanOnCartPage = 0;
+        var prevChangeResponse = "";
+        function appstleCartPageSubscription() {
+          if (!jQuery("#appstle_overlay").length) {
+            addLoader();
+          }
+          removeEventListners();
+         checkingSellingPlan();
+        }
+
+        if (location.pathname === '/cart') {
+
+                    var origOpen = window.XMLHttpRequest.prototype.open;
+                    window.XMLHttpRequest.prototype.open = function() {
+                    this.addEventListener('load', function() {
+                      var url = this.responseURL;
+                      console.log("origOpe.n -> url=" + url);
+                      if (url.indexOf("cart/change.js") !== -1) {
+                        if (prevChangeResponse !== JSON.stringify(this.response)) {
+                             if (!jQuery("#appstle_overlay").length) {
+                                addLoader();
+                            }
+                            setTimeout(appstleCartPageSubscription, 100);
+                            prevChangeResponse = JSON.stringify(this.response);
+                        }
+
+                    }
+                    });
+                    origOpen.apply(this, arguments);
+                  };
+
+                const originalFetch = window.fetch;
+                  window.fetch = function() {
+                    return new Promise((resolve, reject) => {
+                      originalFetch.apply(this, arguments)
+                        .then((response) => {
+                          var url = response.url;
+                          if (url.indexOf("cart/change.js") !== -1) {
+
+                            if (!jQuery("#appstle_overlay").length) {
+                                addLoader();
+                            }
+                            setTimeout(appstleCartPageSubscription, 100);
+                          }
+
+                          resolve(response);
+                        })
+                        .catch((error) => {
+                          reject(response);
+                        })
+                    });
+                  }
+          appstleCartPageSubscription();
+          addCartPageCSS();
+
+        }
+
+        function addLoader(text) {
+            if (!jQuery("#appstle_overlay").length) {
+              jQuery('body').append("<div id='appstle_overlay'><div class='appstle_loader'></div><div class='appstle_loader_text'>" + (text || " ") + "</div></div></div>");
+            }
+        }
+
+
+        function removeEventListners() {
+            jQuery('.appstle_subscription_cart_wrapper select').each((idx, item) => {
+               jQuery(item).off()
+            });
+            jQuery(".appstle_subscribe_selected input").each((idx, item) => {
+                jQuery(item).off()
+            });
+            jQuery(".appstle_subscribe_title").each((idx, item) => {
+                jQuery(item).off()
+            });
+            jQuery(".appstle_selected_frequency").each((idx, item) => {
+                jQuery(item).off()
+            });
+        }
+
+
+
+        function checkingSellingPlan(sellingPlanIdToBeSet, removeSellingPlan) {
+          fetchCartData()
+          .then((cartResponse) => cartResponse.json())
+          .then((cartDataArray) => {
+            var hasSubscriptionPlan;
+            var handleURL = []
+            var productDataList = []
+            totalSubscriptionPlanOnCartPage = 0;
+            function updateCartLineItems() {
+              cartDataArray.items.forEach(function(cartItem, index) {
+                var productData = (productDataList.filter(prdData => prdData.handle === cartItem.handle)).pop();
+                var sellingPlanIsAvailable = checkIfSellingPlanIsAvailable(JSON.parse(JSON.stringify(productData)), cartItem?.variant_id);
+                var sellingPlanId = cartItem?.selling_plan_allocation?.selling_plan?.id;
+                if (sellingPlanIsAvailable) {
+                var appstle_cartpage_widget = jQuery(`
+                    <div class="appstle_subscription_cart_wrapper">
+                        <div class="appstle_subscribe_title">
+                            <input type="checkbox"></input>
+                            <span class="appstle_discount_text">Subscribe and <span class="appstle_highest_discount">Save {{highestDiscount}}</span></span>
+                        </div>
+                        <div class="appstle_subscribe_selected_wrapper" style="display: none;">
+                            <div class="appstle_subscribe_selected">
+                              <input type="checkbox" checked ${productData?.requires_selling_plan ? 'disabled' : ''}></input>
+                              <div class="appstle_subscribe_selected_text">{{appliedDiscount}} Subscribe and Save applied.</div>
+                            </div>
+                            <div class="appstle_selected_frequency">
+                                <span class="appstle_deliveryText">{{deliveryText}}</span>&nbsp;
+                                <span class="appstle_applied_sellingPlanName">{{appliedSellingPlanName}}</span>
+                            </div>
+                        </div>
+                        <div class="appstle_radio_section" style="display: none">
+
+                            <select id="appstle_selling_plan_cart" data-product-select-id="${JSON.parse(JSON.stringify(productData)).id}-${sellingPlanId}" class="appstle_select_cart"></select>
+                        </div>
+                    </div>`);
+
+
+
+
+
+                populateSellingPlanDropdownOnCart(JSON.parse(JSON.stringify(productData)), appstle_cartpage_widget, sellingPlanId, JSON.parse(JSON.stringify(productData.variants.filter(item => item.id === cartItem.id).pop())))
+                jQuery(appstle_cartpage_widget).find('select').on('change', function (event) {
+                     updateCartProductWithSelectedSellingPlan(cartDataArray?.items, cartItem, productData.id, event.target.value, false);
+                    // window.location.reload();
+                });
+
+                jQuery(appstle_cartpage_widget).find('.appstle_subscribe_selected input').on('change', function (event) {
+                    updateCartProductWithSelectedSellingPlan(cartDataArray?.items, cartItem, productData.id, jQuery(appstle_cartpage_widget).find('select').val(), true);
+                    // window.location.reload();
+
+                });
+
+                 jQuery(appstle_cartpage_widget).find(".appstle_subscribe_title, .appstle_selected_frequency").on("click", function() {
+                   $(this).hide();
+                   $(this).parents(".appstle_subscription_cart_wrapper").find('.appstle_radio_section').show();
+                 })
+
+                var lineItemNew = jQuery(jQuery(cartRowSelector)[index]);
+
+                if (sellingPlanId) {
+                  appstle_cartpage_widget.find(".appstle_subscribe_title").hide();
+                  appstle_cartpage_widget.find(".appstle_subscribe_selected_wrapper").show();
+                  lineItemNew.find(lineItemSellingPlanNameSelector).text(cartItem?.selling_plan_allocation?.selling_plan?.name);
+                  lineItemNew.find(lineItemSellingPlanNameSelector).hide();
+                } else {
+                  lineItemNew.find(lineItemSellingPlanNameSelector).hide();
+                }
+
+                lineItemNew.find(".appstle_subscription_cart_wrapper").remove();
+                if (lineItemNew.find(cartLineItemSelector).length === 1) {
+                    appstle_cartpage_widget.insertBefore(lineItemNew.find(cartLineItemSelector));
+                } else {
+                    appstle_cartpage_widget.insertBefore(lineItemNew.find(appstleCustomSelector));
+                }
+
+                lineItemNew.find(cartLineItemPerQuantityPriceSelector).text(formatPrice(cartItem.final_price))
+                lineItemNew.find(cartLineItemTotalPriceSelector).text(formatPrice(cartItem.final_line_price))
+
+                if (sellingPlanId && cartItem.selling_plan_allocation.compare_at_price) {
+                  lineItemNew.find(cartLineItemPriceSelector).text("");
+                  var priceHtml = `<span class="appstle_cart_sellingPlan_price">${formatPrice(cartItem.final_price)}</span><span  class="appstle_cart_compare_price">${formatPrice(cartItem.selling_plan_allocation.compare_at_price)}</span>`
+                  lineItemNew.find(cartLineItemPriceSelector).html(priceHtml)
+                }
+              }
+            });
+            jQuery(cartSubTotalSelector).text(formatPrice(cartDataArray?.total_price))
+            jQuery("#appstle_overlay").remove();
+            }
+            function getProductData() {
+              if (handleURL.length) {
+                fetch(`/products/${handleURL.shift()}.js`)
+                .then(function(prdData) {
+                  return prdData.json();
+                })
+                .then(function(prdData) {
+                  productDataList.push(prdData);
+                  getProductData();
+                })
+              } else {
+                updateCartLineItems()
+              }
+            }
+            if (cartDataArray?.items?.length > 0) {
+              cartDataArray?.items.forEach(function(item) {
+                if (handleURL.indexOf(item?.handle) === -1) {
+                  handleURL.push(item?.handle)
+                }
+              })
+              getProductData();
+            } else {
+              jQuery("#appstle_overlay").remove();
+            }
+          })
+        }
+
+
+
+      function updateCartProductWithSelectedSellingPlan(items, lineItem, productId, sellingPlanId, removeSellingPlan) {
+            if (!sellingPlanId) {
+              return;
+            }
+            if (sellingPlanId === "appstle_unsubscribe") {
+                    removeSellingPlan = true;
+            }
+          addLoader();
+          var addPayload = {items: []};
+
+          items.forEach((cartItem) => {
+              if (cartItem?.key === lineItem?.key) {
+                var payloadData = {
+                'id': cartItem?.variant_id,
+                'quantity': cartItem?.quantity
+                }
+
+                if (!removeSellingPlan) {
+                  payloadData["selling_plan"] = sellingPlanId;
+                }
+                addPayload?.items?.unshift(payloadData)
+               } else {
+                var payloadData = {
+                    'id': cartItem?.variant_id,
+                    'quantity': cartItem?.quantity
+                }
+                if (cartItem?.selling_plan_allocation?.selling_plan?.id) {
+                    payloadData["selling_plan"] = cartItem?.selling_plan_allocation?.selling_plan?.id
+                }
+                addPayload?.items?.unshift(payloadData)
+              }
+          })
+
+          var config = {
+            method: 'POST', // or 'PUT'
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(addPayload)
+          }
+
+          // set quanity is 0
+         fetch("/cart/clear.js")
+         .then((res) => res.json())
+         .then(data => {
+                 fetch("/cart/add.js", config)
+                .then((res) => res.json())
+                .then(data => {
+                    setTimeout(function() {
+                      appstleCartPageSubscription();
+                    }, 200)
+                 })
+                .catch((err) => console.log(err))
+            })
+            .catch((err) => console.log(err))
+
+
+          // add same variant with selling plan Id
+
+        }
+
+
+
+        function isSellingPlanVisible(sellingPlanId) {
+          var customerId = __st.cid;
+          var userTags = RSConfig.customer_tags || [];
+          var isVisible = true;
+
+          if (!customerId && RSConfig.memberOnlySellingPlansJson && RSConfig.memberOnlySellingPlansJson[sellingPlanId]) {
+            isVisible = false;
+          }
+
+          if (customerId && RSConfig.nonMemberOnlySellingPlansJson && RSConfig.nonMemberOnlySellingPlansJson[sellingPlanId]) {
+            isVisible = false;
+          }
+
+          if (isVisible && customerId && RSConfig.memberOnlySellingPlansJson && RSConfig.memberOnlySellingPlansJson[sellingPlanId]) {
+            if (RSConfig.memberOnlySellingPlansJson[sellingPlanId].memberInclusiveTags && RSConfig.memberOnlySellingPlansJson[sellingPlanId].memberInclusiveTags.trim()) {
+              var sellingPlanTags = RSConfig.memberOnlySellingPlansJson[sellingPlanId].memberInclusiveTags.split(",");
+              var tagFound = compareCustomerTags(userTags, sellingPlanTags);
+              isVisible = (tagFound.length > 0);
+            }
+          }
+
+          return isVisible;
+        }
+
+        function buildSellingPlantText(sellingPlan) {
+          var sellingPlanModel = sellingPlan.totalPrice == sellingPlan.formattedPrice ?
+            {
+              sellingPlanName: sellingPlan.name,
+              sellingPlanPrice: `<span class="transcy-money money">${sellingPlan.formattedPrice}</span>`,
+              secondSellingPlanPrice: `<span class="transcy-money money">${sellingPlan.secondFormattedPrice}</span>`,
+            }
+            : {
+              sellingPlanName: sellingPlan.name,
+              totalPrice: `<span class="transcy-money money">${sellingPlan?.totalPrice}</span>`,
+              sellingPlanPrice: `<span class="transcy-money money">${sellingPlan.formattedPrice}</span>`,
+              secondSellingPlanPrice: `<span class="transcy-money money">${sellingPlan.secondFormattedPrice}</span>`
+            };
+
+          var sellingPlanDisplayText = Mustache.render(RS.Config.sellingPlanTitleText, sellingPlanModel);
+          return wrapPriceWithSpanTag(sellingPlanDisplayText);
+        }
+
+        function wrapPriceWithSpanTag(price) {
+          var spanElement = document.createElement('span');
+          spanElement.innerHTML = price;
+          return spanElement.textContent || spanElement.innerText;
+        }
+
+        function populateSellingPlanDropdownOnCart(product, selectItem, selectedSellingPlan, variant) {
+
+          var sellingPlanVariants = [];
+          jQuery.each(product.selling_plan_groups, function (index, sellingPlanGroup) {
+            if (sellingPlanGroup.app_id === 'appstle') {
+              jQuery.each(sellingPlanGroup.selling_plans, function (subIndex, sellingPlan) {
+                var visible = isSellingPlanVisible(sellingPlan.id);
+                if (visible) {
+                  var sellingPlanAllocation = variant.selling_plan_allocations.find(function (plan) {
+                                        return plan.selling_plan_id === sellingPlan.id;
+                   });
+                  if (!sellingPlanAllocation) {
+                    return
+                  }
+                  var price = sellingPlanAllocation.per_delivery_price;
+                  var totalPrice = formatPrice(sellingPlanAllocation?.price);
+                  var formattedPrice = formatPrice(price);
+
+                  var secondPrice = null;
+                  var secondFormattedPrice = null;
+
+                  if (sellingPlanAllocation
+                    && sellingPlanAllocation.price_adjustments
+                    && sellingPlanAllocation.price_adjustments.length === 2) {
+                    secondPrice = sellingPlanAllocation.price_adjustments[1].price;
+                    secondFormattedPrice = formatPrice(secondPrice);
+                  } else {
+                    secondPrice = price;
+                    secondFormattedPrice = formattedPrice;
+                  }
+
+                  var price_adjustments = sellingPlan.price_adjustments.shift();
+
+                  sellingPlanVariants.push({
+                    "name": sellingPlan.name,
+                    "id": sellingPlan.id,
+                    "formattedPrice": formattedPrice,
+                    "price": price,
+                    "totalPrice": totalPrice,
+                    "secondPrice": secondPrice,
+                    "secondFormattedPrice": secondFormattedPrice,
+                    "discount": price_adjustments ? (price_adjustments.value_type === 'percentage' ? `${price_adjustments.value}%` : formatPrice(price_adjustments.value)) : '',
+                    "deliveryText": sellingPlan.options[0].name
+                  });
+                }
+              });
+            }
+          });
+          if (sellingPlanVariants.length > 0) {
+            sellingPlanVariants.sort(function (sellingPlanA, sellingPlanB) {
+              return sellingPlanA.price - sellingPlanB.price;
+            })
+
+              jQuery('<option />', {
+                  html: "Select Delivery Option",
+                  value: ""
+                }).appendTo(selectItem.find('select'));
+
+            jQuery(sellingPlanVariants).each(function (index, sellingPlan) {
+
+              var sellingPlanDisplayText = buildSellingPlantText(sellingPlan);
+
+              jQuery('<option />', {
+                value: sellingPlan.id,
+                html: sellingPlanDisplayText,
+                selected: selectedSellingPlan === sellingPlan?.id
+              }).appendTo(selectItem.find('select'));
+            });
+            if (!product?.requires_selling_plan) {
+              jQuery('<option />', {
+                value: "appstle_unsubscribe",
+                html: "Unsubscribe"
+              }).appendTo(selectItem.find('select'));
+            }
+
+            var selectedSellingPlanItem = sellingPlanVariants.filter((item) => item?.id === selectedSellingPlan).pop()
+            if (selectedSellingPlanItem) {
+                var appstle_deliveryText = selectItem.find(".appstle_selected_frequency .appstle_deliveryText").text().split("{{deliveryText}}").join(selectedSellingPlanItem.deliveryText || "")
+                selectItem.find(".appstle_deliveryText").html(appstle_deliveryText);
+                var appstle_applied_sellingPlanName = selectItem.find(".appstle_selected_frequency .appstle_applied_sellingPlanName").text().split("{{appliedSellingPlanName}}").join(selectedSellingPlanItem.name)
+                selectItem.find(".appstle_applied_sellingPlanName").html(appstle_applied_sellingPlanName);
+                var appstle_subscribe_selected_text = selectItem.find(".appstle_subscribe_selected_text").text().split("{{appliedDiscount}}").join(selectedSellingPlanItem.discount)
+                selectItem.find(".appstle_subscribe_selected_text").html(appstle_subscribe_selected_text);
+            } else {
+                    var appstle_highest_discount_text = selectItem.find(".appstle_highest_discount").text().split("{{highestDiscount}}").join(sellingPlanVariants[0].discount)
+                    selectItem.find(".appstle_highest_discount").html(appstle_highest_discount_text);
+            }
+
+
+          }
+          return sellingPlanVariants;
+
+        }
+
+        function checkIfSellingPlanIsAvailable(productData, variantId) {
+          var variant = (productData?.variants.filter(function(item) {
+            return item.id === variantId
+          })).pop()
+          if (variant && variant?.selling_plan_allocations && variant?.selling_plan_allocations.length) {
+            return true;
+          }
+          return false;
+        }
+
+
+        function fetchCartData() {
+          return fetch('/cart.js');
+        }
+
+        function addCartPageCSS() {
+          var cssFeaturedProduct = RSConfig?.css;
+          jQuery(`<style>
+                 .appstle-subsccribe-cart-discount{
+                       margin-left: 2px;
+                 }
+
+                .appstle_cart_radio_selected .appstle_cart_selling_plan_dropdown{
+                    display: block;
+                }
+            .appstle_cart_radio_selected {
+                  background-color: #eee;
+                 border-radius: 6px;
+            }
+            .appstle-cart-radio-label{
+              margin-left: 10px;
+            }
+            .appstle_subscription_cart_wrapper{
+              max-width: 100%;
+              justify-content: flex-start;
+              flex-direction: column;
+              font-size: 13px;
+            }
+              .appstle_cart_radio_label {
+                margin-left: 10px;
+                font-weight: bold;
+              }
+
+              .appstle_radio_section{
+              }
+              .appstle_subscribe_title {
+                      cursor: pointer;
+                      font-size: 13px;
+                      display: flex;
+                      align-items: center;
+                      line-height: 1.5;
+                      margin-bottom: 0.2rem;
+
+              }
+              .appstle_subscribe_title .appstle_highest_discount, .appstle_applied_sellingPlanName {
+                      border-bottom: 1px solid currentColor;
+              }
+
+              .appstle_subscribe_title input {
+                      margin-right: 5px;
+              }
+
+              .appstle_subscribe_selected {
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 0.2rem;
+
+              }
+
+              .appstle_subscribe_selected input {
+                      margin-right: 5px;
+              }
+
+              .appstle_selected_frequency  {
+                     display: inline;
+                     margin-bottom: 0.2rem;
+                     cursor: pointer;
+              }
+
+              .appstle_selected_frequency .appstle_applied_sellingPlanName {
+                       border-bottom: 1px solid currentColor;
+              }
+
+              .appstle_highest_discount, .appstle_applied_sellingPlanName {
+                      color: #198946;
+              }
+
+              #appstle_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  text-align: center;
+ }
+
+.appstle_loader {
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -36px;
+  margin-left: -36px;
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: appstle_loading_spin 0.7s linear infinite; }
+
+  .appstle_loader_text {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 60px);
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .appstle_subscribe_selected input[type=checkbox] {
+      height: inherit;
+  }
+
+  .appstle_cart_compare_price {
+    text-decoration: line-through;
+    font-size: 13px;
+    margin-left: 5px;
+    opacity: 0.85;
+  }
+
+
+@keyframes appstle_loading_spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+              </style>
+          <style>${cssFeaturedProduct?.customCSS}</style>`).appendTo(jQuery('head'));
+        }
+      })
+//============================ CART PAGE WIDGET END HERE  =========================================================
+
+    });
+  });
+
+};
+appstleInit();
