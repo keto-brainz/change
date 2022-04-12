@@ -23,7 +23,7 @@
       RS.Config = {
         "selectors": {
             "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
-            "subscriptionLinkSelector": "div.grid.myaccount",
+            "subscriptionLinkSelector": "#MainContent > div > div:nth-child(2) > div:nth-child(2) > h2",
             "atcButtonPlacement": "BEFORE",
             "subscriptionLinkPlacement": "BEFORE",
             "cartRowSelector": "",
@@ -82,6 +82,8 @@
         "formMappingAttributeName": "",
         "formMappingAttributeSelector": "",
         "quickViewModalPollingSelector": "",
+        "scriptLoadDelay": "0",
+        "formatMoneyOverride": "false",
         "css": {
             "appstle_subscription_widget": {
                 "margin-top": "" ,
