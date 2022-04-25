@@ -22,10 +22,24 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16509177588e86b19c": {
+      "type": "video",
+      "settings": {
+        "heading": "Phenomenal Nootropics Icing Keto Brick Review by AD Keto!",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-25_at_1.18.52_PM.png",
+        "video_url": "https:\/\/youtu.be\/-CsXgFabDls",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "16509177588e86b19c"
   ]
 }
