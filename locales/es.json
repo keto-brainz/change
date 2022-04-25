@@ -1363,7 +1363,10 @@
       "of": "de",
       "next_slide": "Diapositiva a la derecha",
       "previous_slide": "Diapositiva a la izquierda"
-    }
+    },
+    "social_twitter_link": "https:\/\/twitter.com\/ketobrainz",
+    "social_facebook_link": "https:\/\/www.facebook.com\/KetoBrainz\/",
+    "social_instagram_link": "http:\/\/instagram.com\/ketobrainz"
   },
   "newsletter": {
     "label": "Correo electrónico",
