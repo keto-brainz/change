@@ -1523,6 +1523,13 @@
         "error_heading": "Por favor, ajusta lo siguiente:"
       }
     },
+    "wholesale": {
+      "form": {
+        "name": "Name",
+        "email": "Correo electrónico",
+        "send": "Send"
+      }
+    },
     "404": {
       "title": "Página no encontrada",
       "subtext": "404"
