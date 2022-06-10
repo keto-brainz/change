@@ -84,6 +84,10 @@
         "quickViewModalPollingSelector": "",
         "scriptLoadDelay": "0",
         "formatMoneyOverride": "false",
+        "appstle_app_proxy_path_prefix": "apps\/subscriptions",
+        "updatePriceOnQuantityChange": "",
+        "widgetParentSelector": "",
+        "quantitySelector": "",
         "css": {
             "appstle_subscription_widget": {
                 "margin-top": "" ,
