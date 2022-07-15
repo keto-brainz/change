@@ -96,19 +96,6 @@
         "padding_bottom": 36
       }
     },
-    "1650903204efbe8798": {
-      "type": "video",
-      "settings": {
-        "heading": "Great Nootropic Icing Brick Promo Video From The Keto Brick Team!",
-        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-25_at_9.19.55_AM.png",
-        "video_url": "https:\/\/youtu.be\/2tNGpjW_iaI",
-        "description": "Keto nootoropics and the keto brainz keto brick by robert savage (keto savage).",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1643826548edf799ee": {
       "type": "featured-collection",
       "settings": {
@@ -184,6 +171,19 @@
         "content_layout": "overlap",
         "color_scheme": "accent-1",
         "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1650903204efbe8798": {
+      "type": "video",
+      "settings": {
+        "heading": "Great Nootropic Icing Brick Promo Video From The Keto Brick Team!",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-25_at_9.19.55_AM.png",
+        "video_url": "https:\/\/youtu.be\/2tNGpjW_iaI",
+        "description": "Keto nootoropics and the keto brainz keto brick by robert savage (keto savage).",
+        "full_width": false,
+        "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -343,10 +343,10 @@
     "image_banner",
     "rich_text",
     "1649367321cb5b95b2",
-    "1650903204efbe8798",
     "1643826548edf799ee",
     "featured_collection",
     "164339282504d23555",
+    "1650903204efbe8798",
     "16433928513ed89456",
     "1643393123dd097b2f",
     "1643343002f61d97f3",
