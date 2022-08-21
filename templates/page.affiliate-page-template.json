@@ -231,8 +231,8 @@
         "1643757779980e630a-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ketoneaid.webp",
-        "height": "small",
+        "image": "shopify:\/\/shop_images\/KetonAid.png",
+        "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
