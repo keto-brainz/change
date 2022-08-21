@@ -131,7 +131,7 @@
         "1643758525ab5080f7-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ingredients-banner.jpg",
+        "image": "shopify:\/\/shop_images\/KBZ-Shopify-Banner-Current_9f13e966-558a-4e6d-b26d-6d4a3b3cc5b5.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": true,
@@ -150,7 +150,7 @@
         "16437584352681270c-0": {
           "type": "heading",
           "settings": {
-            "heading": "CHANGE YOUR BRAIN. CHANGE YOUR LIFE.",
+            "heading": "KETO BRAINZ RECOMMENDS!",
             "heading_size": "h2"
           }
         },
@@ -195,8 +195,8 @@
         "1643757562512bfe2c-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/3_copy.png",
-        "height": "small",
+        "image": "shopify:\/\/shop_images\/BIOSENSE_E2_84_A2_20Breath_20Ketone_20Monitoring_20System_900x_c2f5c8ee-7dea-4d33-b02c-65815f541bf0.webp",
+        "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
@@ -214,7 +214,7 @@
         "1643757779980e630a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Lion's Mane",
+            "heading": "KetoneAid KE1",
             "heading_size": "h1"
           }
         },
@@ -231,7 +231,7 @@
         "1643757779980e630a-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled_design_14.png",
+        "image": "shopify:\/\/shop_images\/ketoneaid.webp",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",
