@@ -208,42 +208,6 @@
         "padding_bottom": 8
       }
     },
-    "16437577792dcc2219": {
-      "type": "image-with-text",
-      "blocks": {
-        "1643757779980e630a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "KetoneAid KE1",
-            "heading_size": "h1"
-          }
-        },
-        "1643757779980e630a-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Other ingredients: monk fruit, natural flavors, potassium sorbate. (no stevia, no allulose)<\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Even if you don't like Ketone Salts (see<\/a> <a href=\"http:\/\/ketoneaid.com\/salt\" target=\"_blank\" title=\"Ketone Ester vs Ketone Salts explained\">Salts vs Esters video<\/a>), <a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">that likely was due to the massive salt load. With KE1 expect no bloating, nor GI issues. <br\/><\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">This product is, for the most part, for those can't take the strong taste of KE4 and a more convenient ready to drink bottle.  Some people get both.<br\/><\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Select athletes may prefer this drink because of the extra salt. We have frequently advocated that athletes increase their electrolytes consumption while using KE4, now with KE1, it includes the electrolytes.<\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">The cost per gram of active ketones is a <strong>little higher<\/strong> than KE4. 2 Servings per bottle.<\/a><\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "1643757779980e630a-0",
-        "1643757779980e630a-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/KetonAid.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 8,
-        "padding_bottom": 8
-      }
-    },
     "1643757905685e89ba": {
       "type": "image-with-text",
       "blocks": {
@@ -316,6 +280,42 @@
         "padding_bottom": 80
       }
     },
+    "16437577792dcc2219": {
+      "type": "image-with-text",
+      "blocks": {
+        "1643757779980e630a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "KetoneAid KE1",
+            "heading_size": "h1"
+          }
+        },
+        "1643757779980e630a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Other ingredients: monk fruit, natural flavors, potassium sorbate. (no stevia, no allulose)<\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Even if you don't like Ketone Salts (see<\/a> <a href=\"http:\/\/ketoneaid.com\/salt\" target=\"_blank\" title=\"Ketone Ester vs Ketone Salts explained\">Salts vs Esters video<\/a>), <a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">that likely was due to the massive salt load. With KE1 expect no bloating, nor GI issues. <br\/><\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">This product is, for the most part, for those can't take the strong taste of KE4 and a more convenient ready to drink bottle.  Some people get both.<br\/><\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Select athletes may prefer this drink because of the extra salt. We have frequently advocated that athletes increase their electrolytes consumption while using KE4, now with KE1, it includes the electrolytes.<\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">The cost per gram of active ketones is a <strong>little higher<\/strong> than KE4. 2 Servings per bottle.<\/a><\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1643757779980e630a-0",
+        "1643757779980e630a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/KetonAid.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -330,9 +330,9 @@
     "164375852588d426e3",
     "164375843539717db6",
     "164375756250892317",
-    "16437577792dcc2219",
     "1643757905685e89ba",
     "1645039290b5140548",
+    "16437577792dcc2219",
     "main"
   ]
 }
