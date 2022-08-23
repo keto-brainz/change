@@ -211,7 +211,7 @@
   {% include 'appstle-subscription-helper' %}
 {% comment %}ly_dir_styles_begin{% endcomment %}{%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}{{- 'ly-rtl.css' | asset_url | stylesheet_tag -}}{%- endif -%}{% comment %}ly_dir_styles_end{% endcomment %}</head>
 
-  <body class="gradient"><div class="reputon-google-reviews-widget" id="3dc62a40-baca-11ec-b2da-a7654c95f0dc" ></div>
+  <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
