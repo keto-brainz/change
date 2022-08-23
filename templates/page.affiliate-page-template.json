@@ -172,150 +172,6 @@
         "padding_bottom": 52
       }
     },
-    "164375756250892317": {
-      "type": "image-with-text",
-      "blocks": {
-        "1643757562512bfe2c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Biosense",
-            "heading_size": "h1"
-          }
-        },
-        "1643757562512bfe2c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20\" target=\"_blank\" title=\"https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20\"><strong>Biosense<\/strong><\/a> is the only clinically validated, non-invasive, highly accurate breath ketone tracker. Biosense can help you visualize the depth and duration of your ketogenic state. Similar to glucose, ketone levels are highly variable throughout the day, requiring multiple daily measurements to obtain an accurate picture of a person's metabolic state.<\/p><p>• Breath Ketone Monitor & Mobile AppFDA class-1 medical device, backed by the 2019 clinical trial<\/p><p>• Unlimited measurements to validate fasting or carb-restrictive impact<\/p><p>• Closes biofeedback loop for consumers, clinicians, and researchers<\/p><p>• Bluetooth enabled device, micro USB charging cable included<\/p><p><a href=\"https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20\" target=\"_blank\" title=\"Biosense Breath Ketone Meter\">Get started on your breath ketone monitoring journey today!<\/a><\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "1643757562512bfe2c-0",
-        "1643757562512bfe2c-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/BIOSENSE_E2_84_A2_20Breath_20Ketone_20Monitoring_20System_900x_c2f5c8ee-7dea-4d33-b02c-65815f541bf0.webp",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 8,
-        "padding_bottom": 8
-      }
-    },
-    "1643757905685e89ba": {
-      "type": "image-with-text",
-      "blocks": {
-        "16437579052c59b8ec-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Self Decode",
-            "heading_size": "h1"
-          }
-        },
-        "16437579052c59b8ec-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A scientific approach that focuses on you. <\/p><p><a href=\"https:\/\/selfdecode.com\/?a_aid=5e8a0259e45ed\" target=\"_blank\" title=\"SelfDecode DNA Test Kit \">SelfDecode <\/a>is the only company in the world that directly provides you with a holistic set of accurate health recommendations based on your genes so that you can take charge of your own healthcare with data-driven precision health decisions.<\/p><p>In order to make the best health decisions, you must take all of your health data into account. Otherwise, you end up addressing individual problems or symptoms without looking at the whole picture.<\/p><p>The problem is that there is just too much information for any human to analyze. Self Decode helps to solve for this.<\/p><p>We've learned so much about our genetic starting points and what lifestyle interventions we can leverage via epigenetics to truly optimize our health.<\/p><p><a href=\"https:\/\/selfdecode.com\/?a_aid=5e8a0259e45ed\" target=\"_blank\" title=\"SelfDecode DNA Test KIt \">Start your own journey of genetic self discovery today!<\/a><\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "16437579052c59b8ec-0",
-        "16437579052c59b8ec-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Self_Decode.png",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 8,
-        "padding_bottom": 8
-      }
-    },
-    "1645039290b5140548": {
-      "type": "image-with-text",
-      "blocks": {
-        "16450392903981360c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Timeline Urolithin",
-            "heading_size": "h1"
-          }
-        },
-        "16450392903981360c-1": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "16450392903981360c-0",
-        "16450392903981360c-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Timeline-Urolithin_copy.png",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 80
-      }
-    },
-    "16437577792dcc2219": {
-      "type": "image-with-text",
-      "blocks": {
-        "1643757779980e630a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "KetoneAid KE1",
-            "heading_size": "h1"
-          }
-        },
-        "1643757779980e630a-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Other ingredients: monk fruit, natural flavors, potassium sorbate. (no stevia, no allulose)<\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Even if you don't like Ketone Salts (see<\/a> <a href=\"http:\/\/ketoneaid.com\/salt\" target=\"_blank\" title=\"Ketone Ester vs Ketone Salts explained\">Salts vs Esters video<\/a>), <a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">that likely was due to the massive salt load. With KE1 expect no bloating, nor GI issues. <br\/><\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">This product is, for the most part, for those can't take the strong taste of KE4 and a more convenient ready to drink bottle.  Some people get both.<br\/><\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">Select athletes may prefer this drink because of the extra salt. We have frequently advocated that athletes increase their electrolytes consumption while using KE4, now with KE1, it includes the electrolytes.<\/a><\/p><p><a href=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\" target=\"_blank\" title=\"https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1\">The cost per gram of active ketones is a <strong>little higher<\/strong> than KE4. 2 Servings per bottle.<\/a><\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "1643757779980e630a-0",
-        "1643757779980e630a-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/KetonAid.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 8,
-        "padding_bottom": 8
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -477,7 +333,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP NOW",
-            "button_link": ""
+            "button_link": "https:\/\/shop.ketoneaid.com\/collections\/all\/products\/ketoneaid-ke1"
           }
         }
       },
@@ -505,10 +361,6 @@
     "1643635504436c96f4",
     "164375852588d426e3",
     "164375843539717db6",
-    "164375756250892317",
-    "1643757905685e89ba",
-    "1645039290b5140548",
-    "16437577792dcc2219",
     "main",
     "16612773985a8822d8",
     "1661277423bf745b4c",
