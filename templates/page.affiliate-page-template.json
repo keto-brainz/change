@@ -356,8 +356,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BIOSENSE_E2_84_A2_20Breath_20Ketone_20Monitoring_20System_900x_c2f5c8ee-7dea-4d33-b02c-65815f541bf0.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
+        "height": "small",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -400,8 +400,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Self_Decode.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
+        "height": "small",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
