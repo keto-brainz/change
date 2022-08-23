@@ -323,6 +323,182 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16612773985a8822d8": {
+      "type": "image-with-text",
+      "blocks": {
+        "1661277398931952d2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1661277398931952d2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1661277398931952d2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661277398931952d2-0",
+        "1661277398931952d2-1",
+        "1661277398931952d2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BIOSENSE_E2_84_A2_20Breath_20Ketone_20Monitoring_20System_900x_c2f5c8ee-7dea-4d33-b02c-65815f541bf0.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1661277423bf745b4c": {
+      "type": "image-with-text",
+      "blocks": {
+        "1661277423a185d915-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1661277423a185d915-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1661277423a185d915-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661277423a185d915-0",
+        "1661277423a185d915-1",
+        "1661277423a185d915-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Self_Decode.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1661277436988f75fa": {
+      "type": "image-with-text",
+      "blocks": {
+        "1661277436c07217fb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1661277436c07217fb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1661277436c07217fb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661277436c07217fb-0",
+        "1661277436c07217fb-1",
+        "1661277436c07217fb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Timeline-Urolithin_8dfa5c7a-69ed-4bb0-9650-4fa9fcb93952.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1661277449ad12db3a": {
+      "type": "image-with-text",
+      "blocks": {
+        "1661277449ff0c1a9e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1661277449ff0c1a9e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1661277449ff0c1a9e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661277449ff0c1a9e-0",
+        "1661277449ff0c1a9e-1",
+        "1661277449ff0c1a9e-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/KetonAid.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -333,6 +509,10 @@
     "1643757905685e89ba",
     "1645039290b5140548",
     "16437577792dcc2219",
-    "main"
+    "main",
+    "16612773985a8822d8",
+    "1661277423bf745b4c",
+    "1661277436988f75fa",
+    "1661277449ad12db3a"
   ]
 }
