@@ -47,7 +47,7 @@ if (!customElements.get('product-form')) {
       const formData = new FormData(this.form);
       formData.append('sections', this.cartNotification.getSectionsToRender().map((section) => section.id));
       formData.append('sections_url', window.location.pathname);
-      formData.set('selling_plan', document.querySelector('[name=selling_plan]:checked') ? document.querySelector('[name=selling_plan]:checked').value : '');
+      formData.set('selling_plan', document.querySelector('[name=selling_plan]:checked') ? (document.querySelector('[name=selling_plan]:checked').value ? document.querySelector('select.appstle_select').value : '') : '');
       config.body = formData;
 
       fetch(`${routes.cart_add_url}`, config)
