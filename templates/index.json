@@ -79,6 +79,19 @@
         "padding_bottom": 0
       }
     },
+    "16636094927f532791": {
+      "type": "video",
+      "settings": {
+        "heading": "New Keto Brainz review and recommendation by Thomas Delauer! (Begins around 5:50)",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-19_at_10.49.47_AM.png",
+        "video_url": "https:\/\/youtu.be\/xSsFk9UJSws",
+        "description": "Keto Brainz Nootropics recommendation by Thomas Delauer!",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1649367321cb5b95b2": {
       "type": "featured-collection",
       "settings": {
@@ -319,23 +332,12 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "16636094927f532791": {
-      "type": "video",
-      "settings": {
-        "heading": "New Keto Brainz review and recommendation by Thomas Delauer! (Begins around 5:50)",
-        "video_url": "https:\/\/youtu.be\/xSsFk9UJSws",
-        "description": "Keto Brainz Nootropics recommendation by Thomas Delauer!",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
+    "16636094927f532791",
     "1649367321cb5b95b2",
     "164339282504d23555",
     "1643826548edf799ee",
@@ -344,7 +346,6 @@
     "1643393123dd097b2f",
     "1643343002f61d97f3",
     "16433430085ead5677",
-    "1647272983816bb360",
-    "16636094927f532791"
+    "1647272983816bb360"
   ]
 }
