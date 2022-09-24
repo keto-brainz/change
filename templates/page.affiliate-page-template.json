@@ -355,6 +355,98 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1664058248d016d520": {
+      "type": "multicolumn",
+      "blocks": {
+        "16640582483b6073aa-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/persistence_culture_image.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16640582483b6073aa-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Keto_Savage_Image.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16640582483b6073aa-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Justin_Food_Entrepreneurs_Image.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16640582483b6073aa-0",
+        "16640582483b6073aa-1",
+        "16640582483b6073aa-2"
+      ],
+      "settings": {
+        "title": "You",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1664058539eb2cc7ad": {
+      "type": "video",
+      "settings": {
+        "heading": "Dom D'Agostino & Thomas Delauer chat Keto Brainz and More!",
+        "cover_image": "shopify:\/\/shop_images\/Image_8-23-22_at_11.34_AM.jpg",
+        "video_url": "https:\/\/youtu.be\/8yIq0_v2zIw",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "166405883187067462": {
+      "type": "video",
+      "settings": {
+        "heading": "Thomas Delauer's Review Of Keto Brainz Nootropic Creamer!",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-08-23_at_11.46.05_AM.png",
+        "video_url": "https:\/\/youtu.be\/jfyoVN-w1es",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1664058987413534d3": {
+      "type": "video",
+      "settings": {
+        "heading": "The Secret to The Keto Brick Production Team's Success...LOL",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-25_at_9.19.55_AM.png",
+        "video_url": "https:\/\/youtu.be\/-3Vu1bTvJq8",
+        "description": "Keto Brainz & Keto Brick!",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -365,6 +457,10 @@
     "16612773985a8822d8",
     "1661277423bf745b4c",
     "1661277436988f75fa",
-    "1661277449ad12db3a"
+    "1661277449ad12db3a",
+    "1664058248d016d520",
+    "1664058539eb2cc7ad",
+    "166405883187067462",
+    "1664058987413534d3"
   ]
 }
