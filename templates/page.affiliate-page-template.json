@@ -150,14 +150,14 @@
         "16437584352681270c-0": {
           "type": "heading",
           "settings": {
-            "heading": "KETO BRAINZ RECOMMENDS!",
-            "heading_size": "h2"
+            "heading": "KETO BRAINZ IN THE WILD!",
+            "heading_size": "h1"
           }
         },
         "16437584352681270c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re always on the lookout for the best in the realm of optimizing our health. As we find, vet, and add new tools to our own lives, we’ll share them with you here!<\/p>"
+            "text": "<p>Keto Brainz Podcasts & Interviews - We're still not super great at these, but we've been fortunate enough have a good handful of friends and fanatics bring us on for chat about all things keto, nootropics, starting a business and tons more.<\/p>"
           }
         }
       },
@@ -186,21 +186,21 @@
         "1661277398931952d2-0": {
           "type": "heading",
           "settings": {
-            "heading": "Biosense",
+            "heading": "Persistence Culture Podcast",
             "heading_size": "h1"
           }
         },
         "1661277398931952d2-1": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20\" target=\"_blank\" title=\"https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20\"><strong>Biosense<\/strong><\/a> is the only clinically validated, non-invasive, highly accurate breath ketone tracker. Biosense can help you visualize the depth and duration of your ketogenic state. Similar to glucose, ketone levels are highly variable throughout the day, requiring multiple daily measurements to obtain an accurate picture of a person's metabolic state.<\/p><p>• Breath Ketone Monitor & Mobile AppFDA class-1 medical device, backed by the 2019 clinical trial<\/p><p>• Unlimited measurements to validate fasting or carb-restrictive impact<\/p><p>• Closes biofeedback loop for consumers, clinicians, and researchers<\/p><p>• Bluetooth enabled device, micro USB charging cable included<\/p><p><a href=\"https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20\" target=\"_blank\" title=\"Biosense Breath Ketone Meter\">Get started on your breath ketone monitoring journey today!<\/a><\/p>",
+            "text": "<p>This is the latest podcast we were invited to joing.<\/p>",
             "text_style": "body"
           }
         },
         "1661277398931952d2-2": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP NOW",
+            "button_label": "LISTEN NOW",
             "button_link": "https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20"
           }
         }
@@ -211,7 +211,7 @@
         "1661277398931952d2-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BIOSENSE_E2_84_A2_20Breath_20Ketone_20Monitoring_20System_900x_c2f5c8ee-7dea-4d33-b02c-65815f541bf0.webp",
+        "image": "shopify:\/\/shop_images\/persistence_culture_image.jpg",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -230,22 +230,22 @@
         "1661277423a185d915-0": {
           "type": "heading",
           "settings": {
-            "heading": "Self Decode",
+            "heading": "The Keto Savage Podcast",
             "heading_size": "h1"
           }
         },
         "1661277423a185d915-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A scientific approach that focuses on you. <\/p><p><a href=\"https:\/\/selfdecode.com\/?a_aid=5e8a0259e45ed\" target=\"_blank\" title=\"SelfDecode DNA Test Kit \">SelfDecode <\/a>is the only company in the world that directly provides you with a holistic set of accurate health recommendations based on your genes so that you can take charge of your own healthcare with data-driven precision health decisions.<\/p><p>In order to make the best health decisions, you must take all of your health data into account. Otherwise, you end up addressing individual problems or symptoms without looking at the whole picture.<\/p><p>The problem is that there is just too much information for any human to analyze. Self Decode helps to solve for this.<\/p><p>We've learned so much about our genetic starting points and what lifestyle interventions we can leverage via epigenetics to truly optimize our health.<\/p><p><a href=\"https:\/\/selfdecode.com\/?a_aid=5e8a0259e45ed\" target=\"_blank\" title=\"SelfDecode DNA Test KIt \">Start your own journey of genetic self discovery today!<\/a><\/p>",
+            "text": "<p>This is who we partnered with to collaborate with on the Keto Brainz Nootropic Icing Brick!<\/p><p><\/p>",
             "text_style": "body"
           }
         },
         "1661277423a185d915-2": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "https:\/\/selfdecode.com\/?a_aid=5e8a0259e45ed"
+            "button_label": "LISTEN NOW",
+            "button_link": "https:\/\/podcasts.apple.com\/us\/podcast\/the-keto-savage-podcast\/id1169900822?i=1000496583506"
           }
         }
       },
@@ -255,7 +255,7 @@
         "1661277423a185d915-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Self_Decode.png",
+        "image": "shopify:\/\/shop_images\/Keto_Savage_Image.jpg",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -281,14 +281,14 @@
         "1661277436c07217fb-1": {
           "type": "text",
           "settings": {
-            "text": "<p>As we age, the vital energy factories inside our cells, our mitochondria, become damaged and lose their power. Scientists in Switzerland discovered that a molecule derived from pomegranates, Urolithin A, activates an essential mitochondrial renewal and repair process. <\/p><p>Unfortunately, few people have the right microbiome to get enough of this molecule from diet alone which is why the team at Amazentis created Mitopure. <\/p><p>Mitopure is backed by multiple clinical studies and delivers 6X more Urolithin A than diet alone and supports improvements in mitochondrial function and muscle strength.<\/p>",
+            "text": "<p>As we age, the vital energy factories inside our cells, our mitochondria, <\/p>",
             "text_style": "body"
           }
         },
         "1661277436c07217fb-2": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP NOW",
+            "button_label": "LISTEN NOW",
             "button_link": "https:\/\/www.timelinenutrition.com\/?rfsn=6571025.d703c2"
           }
         }
