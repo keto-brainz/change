@@ -180,138 +180,6 @@
         "padding_bottom": 28
       }
     },
-    "16612773985a8822d8": {
-      "type": "image-with-text",
-      "blocks": {
-        "1661277398931952d2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Persistence Culture Podcast",
-            "heading_size": "h1"
-          }
-        },
-        "1661277398931952d2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This is the latest podcast we were invited to joing.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "1661277398931952d2-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "LISTEN NOW",
-            "button_link": "https:\/\/my-biosense.myshopify.com\/pages\/_go_\/biosense?ref=1907:381326&discount=ketobrainz20"
-          }
-        }
-      },
-      "block_order": [
-        "1661277398931952d2-0",
-        "1661277398931952d2-1",
-        "1661277398931952d2-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/persistence_culture_image.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1661277423bf745b4c": {
-      "type": "image-with-text",
-      "blocks": {
-        "1661277423a185d915-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Keto Savage Podcast",
-            "heading_size": "h1"
-          }
-        },
-        "1661277423a185d915-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This is who we partnered with to collaborate with on the Keto Brainz Nootropic Icing Brick!<\/p><p><\/p>",
-            "text_style": "body"
-          }
-        },
-        "1661277423a185d915-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "LISTEN NOW",
-            "button_link": "https:\/\/podcasts.apple.com\/us\/podcast\/the-keto-savage-podcast\/id1169900822?i=1000496583506"
-          }
-        }
-      },
-      "block_order": [
-        "1661277423a185d915-0",
-        "1661277423a185d915-1",
-        "1661277423a185d915-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Keto_Savage_Image.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1661277436988f75fa": {
-      "type": "image-with-text",
-      "blocks": {
-        "1661277436c07217fb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Justin & The Food Entrepreneurs Podcast - Part 1",
-            "heading_size": "h1"
-          }
-        },
-        "1661277436c07217fb-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As we age, the vital energy factories inside our cells, our mitochondria, <\/p>",
-            "text_style": "body"
-          }
-        },
-        "1661277436c07217fb-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "LISTEN NOW",
-            "button_link": "https:\/\/www.timelinenutrition.com\/?rfsn=6571025.d703c2"
-          }
-        }
-      },
-      "block_order": [
-        "1661277436c07217fb-0",
-        "1661277436c07217fb-1",
-        "1661277436c07217fb-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Justin_Food_Entrepreneurs_Image.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1661277449ad12db3a": {
       "type": "image-with-text",
       "blocks": {
@@ -388,12 +256,33 @@
             "link_label": "LISTEN TO PART 1 NOW",
             "link": "https:\/\/www.timelinenutrition.com\/?rfsn=6571025.d703c2"
           }
+        },
+        "5569e784-1a0b-4066-ab45-add909182d2e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Justin_Food_Entrepreneurs_Image.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "LISTEN TO PART 2 NOW",
+            "link": "https:\/\/podcasts.apple.com\/us\/podcast\/justin-and-the-food-entrepreneurs-podcast\/id1450333515?i=1000469116264"
+          }
+        },
+        "55597233-b68c-4956-870a-3348eb9db82b": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "16640582483b6073aa-0",
         "16640582483b6073aa-1",
-        "16640582483b6073aa-2"
+        "16640582483b6073aa-2",
+        "5569e784-1a0b-4066-ab45-add909182d2e",
+        "55597233-b68c-4956-870a-3348eb9db82b"
       ],
       "settings": {
         "title": "You",
@@ -454,9 +343,6 @@
     "164375852588d426e3",
     "164375843539717db6",
     "main",
-    "16612773985a8822d8",
-    "1661277423bf745b4c",
-    "1661277436988f75fa",
     "1661277449ad12db3a",
     "1664058248d016d520",
     "1664058539eb2cc7ad",
