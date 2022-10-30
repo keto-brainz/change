@@ -122,7 +122,7 @@
         "template--15625428795647__50b7faa1-ef11-4d19-a7c8-3495d130b76e-1667149053d2219e06-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "BUY NOW",
             "button_link": ""
           }
         }
@@ -166,7 +166,7 @@
         "template--15625428795647__18cd04e1-ac75-4446-adfd-515fcd87dc63-1667149053d2219e06-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "BUY NOW",
             "button_link": ""
           }
         }
@@ -210,7 +210,7 @@
         "template--15625428795647__9ea731aa-8d7e-415d-83d4-df7bb0a03805-1667149053d2219e06-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "BUY NOW",
             "button_link": ""
           }
         }
