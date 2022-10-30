@@ -64,7 +64,7 @@
         "template--15625428795647__db640d5f-2d7e-49db-9771-22496d4f58b9-1667149053d2219e06-0": {
           "type": "heading",
           "settings": {
-            "heading": "HVMN",
+            "heading": "HVMN Ketone-IQ",
             "heading_size": "h1"
           }
         },
@@ -89,6 +89,7 @@
         "template--15625428795647__db640d5f-2d7e-49db-9771-22496d4f58b9-1667149053d2219e06-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/HVMN-KetoneIQ.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
