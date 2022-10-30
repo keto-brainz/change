@@ -1,5 +1,56 @@
 {
   "sections": {
+    "a9a5c767-e543-4ed4-afab-eb3aa8209202": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15625428795647__a9a5c767-e543-4ed4-afab-eb3aa8209202-166714966263692cc9-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "template--15625428795647__a9a5c767-e543-4ed4-afab-eb3aa8209202-166714966263692cc9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--15625428795647__a9a5c767-e543-4ed4-afab-eb3aa8209202-166714966263692cc9-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15625428795647__a9a5c767-e543-4ed4-afab-eb3aa8209202-166714966263692cc9-0",
+        "template--15625428795647__a9a5c767-e543-4ed4-afab-eb3aa8209202-166714966263692cc9-1",
+        "template--15625428795647__a9a5c767-e543-4ed4-afab-eb3aa8209202-166714966263692cc9-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/KBZ-Shopify-Banner-Current_9f13e966-558a-4e6d-b26d-6d4a3b3cc5b5.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -181,6 +232,7 @@
     }
   },
   "order": [
+    "a9a5c767-e543-4ed4-afab-eb3aa8209202",
     "main",
     "db640d5f-2d7e-49db-9771-22496d4f58b9",
     "50b7faa1-ef11-4d19-a7c8-3495d130b76e",
