@@ -233,6 +233,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "2a51e8c0-210f-46db-870b-f6e544e34a48": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is an essential tool for anyone following a keto or ketogenic diet for weight loss, diabetes, general health benefits, or therapeutic purposes. Dial in your ketogenic diet by accurately measuring your level of ketosis.<\/p><p><\/p><p>Bluetooth integration allows you to instantly download all of your glucose and ketone readings right from your meter to the free <a href=\"https:\/\/keto-mojo.com\/bluetooth-app-connection\/\" title=\"https:\/\/keto-mojo.com\/bluetooth-app-connection\/\"><strong>Keto-Mojo Classic app<\/strong><\/a> on your mobile phone so you can track and monitor your results.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "BUY NOW",
+            "button_link": "https:\/\/shop.keto-mojo.com\/discount\/nji98uhbvgy76tfc?rfsn=3948780.d10b40&utm_source=refersion&utm_medium=affiliate&utm_campaign=3948780.d10b40"
+          }
+        }
+      },
+      "block_order": [
+        "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-0",
+        "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-1",
+        "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -241,6 +284,7 @@
     "db640d5f-2d7e-49db-9771-22496d4f58b9",
     "50b7faa1-ef11-4d19-a7c8-3495d130b76e",
     "18cd04e1-ac75-4446-adfd-515fcd87dc63",
-    "9ea731aa-8d7e-415d-83d4-df7bb0a03805"
+    "9ea731aa-8d7e-415d-83d4-df7bb0a03805",
+    "2a51e8c0-210f-46db-870b-f6e544e34a48"
   ]
 }
