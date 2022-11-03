@@ -240,14 +240,14 @@
         "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Keto Mojo",
             "heading_size": "h1"
           }
         },
         "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This is an essential tool for anyone following a keto or ketogenic diet for weight loss, diabetes, general health benefits, or therapeutic purposes. Dial in your ketogenic diet by accurately measuring your level of ketosis.<\/p><p><\/p><p>Bluetooth integration allows you to instantly download all of your glucose and ketone readings right from your meter to the free <a href=\"https:\/\/keto-mojo.com\/bluetooth-app-connection\/\" title=\"https:\/\/keto-mojo.com\/bluetooth-app-connection\/\"><strong>Keto-Mojo Classic app<\/strong><\/a> on your mobile phone so you can track and monitor your results.<\/p>",
+            "text": "<p>Bluetooth integration allows you to instantly download all of your glucose and ketone readings right from your meter to the free <a href=\"https:\/\/keto-mojo.com\/bluetooth-app-connection\/\" title=\"https:\/\/keto-mojo.com\/bluetooth-app-connection\/\"><strong>Keto-Mojo Classic app<\/strong><\/a> on your mobile phone so you can track and monitor your results. It’s a simple and seamless connection from your meter to the app where you can track other important health markers as well like the <a href=\"https:\/\/keto-mojo.com\/glucose-ketone-index-gki\/\" title=\"https:\/\/keto-mojo.com\/glucose-ketone-index-gki\/\"><strong>GKI<\/strong><\/a> or Glucose Ketone Index, an increasingly important bio-marker for tracking your metabolic health as well as your level of ketosis.<\/p>",
             "text_style": "body"
           }
         },
@@ -265,7 +265,7 @@
         "template--15625428795647__2a51e8c0-210f-46db-870b-f6e544e34a48-16675067780d4658b8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/keto-mojo-1847747780_c7e11aa9-9be5-4bfd-b2bf-b51f190ad990.png",
+        "image": "shopify:\/\/shop_images\/ketomojo.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
